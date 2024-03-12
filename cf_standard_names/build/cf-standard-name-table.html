@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 10,
-          <newdate>21 October 2008</newdate></b><br><br>
+<b>Version 11,
+          <newdate>11 November 2008</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -552,6 +552,22 @@ The canonical units associated with each standard name are usually the SI units 
 </td>
 <td>1</td>
 <td>psbg</td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="area_type_tr">
+<td>
+<a name="area_type"></a><img id="area_type_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_type')">area_type</a></code><div style="padding-left: 16px;">
+<i>alias:</i> land_cover</div>
+<div style="padding-left: 16px;">
+<i>alias:</i> surface_cover</div>
+<div id="area_type_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of area_type contains strings which indicate the nature of the surface e.g. land, sea, sea_ice. These strings are standardised.  Values must be taken from the <a href="http://cfconventions.org/Data/area-type-table/current/build/area-type-table.html">area_type table</a>.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
 <td>
                          
                     </td>
@@ -1443,11 +1459,35 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="cloud_ice_mixing_ratio_tr">
+<td>
+<a name="cloud_ice_mixing_ratio"></a><img id="cloud_ice_mixing_ratio_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_ice_mixing_ratio')">cloud_ice_mixing_ratio</a></code><div id="cloud_ice_mixing_ratio_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Cloud ice mixing ratio of a parcel of air is the ratio of the mass of ice to the mass of dry air.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="cloud_liquid_water_content_of_atmosphere_layer_tr">
 <td>
 <a name="cloud_liquid_water_content_of_atmosphere_layer"></a><img id="cloud_liquid_water_content_of_atmosphere_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_liquid_water_content_of_atmosphere_layer')">cloud_liquid_water_content_of_atmosphere_layer</a></code><div id="cloud_liquid_water_content_of_atmosphere_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well.</div>
 </td>
 <td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="cloud_liquid_water_mixing_ratio_tr">
+<td>
+<a name="cloud_liquid_water_mixing_ratio"></a><img id="cloud_liquid_water_mixing_ratio_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_liquid_water_mixing_ratio')">cloud_liquid_water_mixing_ratio</a></code><div id="cloud_liquid_water_mixing_ratio_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Cloud liquid water mixing ratio of a parcel of air is the ratio of the mass of liquid water to the mass of dry air.</div>
+</td>
+<td>1</td>
 <td>
                          
                     </td>
@@ -1583,6 +1623,18 @@ The canonical units associated with each standard name are usually the SI units 
 </td>
 <td>kg m-2 s-1</td>
 <td>prc</td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="convective_precipitation_rate_tr">
+<td>
+<a name="convective_precipitation_rate"></a><img id="convective_precipitation_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('convective_precipitation_rate')">convective_precipitation_rate</a></code><div id="convective_precipitation_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Precipitation rate" means the depth or thickness of the layer formed by precipitation per unit time.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
 <td>
                          
                     </td>
@@ -1864,6 +1916,18 @@ The canonical units associated with each standard name are usually the SI units 
 <tr id="downward_heat_flux_in_air_tr">
 <td>
 <a name="downward_heat_flux_in_air"></a><img id="downward_heat_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_heat_flux_in_air')">downward_heat_flux_in_air</a></code><div id="downward_heat_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Downward" indicates a vector component which is positive when directed downward (negative upward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="downward_heat_flux_in_floating_ice_tr">
+<td>
+<a name="downward_heat_flux_in_floating_ice"></a><img id="downward_heat_flux_in_floating_ice_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_heat_flux_in_floating_ice')">downward_heat_flux_in_floating_ice</a></code><div id="downward_heat_flux_in_floating_ice_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  "Floating ice" means any ice that is floating on water, e.g. on a sea or lake surface.</div>
 </td>
 <td>W m-2</td>
 <td>
@@ -2523,6 +2587,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="floating_ice_thickness_tr">
+<td>
+<a name="floating_ice_thickness"></a><img id="floating_ice_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('floating_ice_thickness')">floating_ice_thickness</a></code><div id="floating_ice_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Floating ice" means any ice that is floating on water, e.g. on a sea or lake surface.  "Thickness" means the vertical extent of the ice.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="forecast_period_tr">
 <td>
 <a name="forecast_period"></a><img id="forecast_period_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('forecast_period')">forecast_period</a></code><div id="forecast_period_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Forecast period is the time interval between the forecast reference time and the validity time. A period is an interval of time, or the time-period of an oscillation.</div>
@@ -2885,6 +2961,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="integral_of_surface_downward_eastward_stress_wrt_time_tr">
+<td>
+<a name="integral_of_surface_downward_eastward_stress_wrt_time"></a><img id="integral_of_surface_downward_eastward_stress_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downward_eastward_stress_wrt_time')">integral_of_surface_downward_eastward_stress_wrt_time</a></code><div id="integral_of_surface_downward_eastward_stress_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward eastward" indicates the ZX component of a tensor. A downward eastward stress is a downward flux of eastward momentum, which accelerates the lower medium eastward and the upper medium westward. The surface downward stress is the windstress on the surface.</div>
+</td>
+<td>Pa s</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="integral_of_surface_downward_latent_heat_flux_wrt_time_tr">
 <td>
 <a name="integral_of_surface_downward_latent_heat_flux_wrt_time"></a><img id="integral_of_surface_downward_latent_heat_flux_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downward_latent_heat_flux_wrt_time')">integral_of_surface_downward_latent_heat_flux_wrt_time</a></code><div id="integral_of_surface_downward_latent_heat_flux_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to.  The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -2897,9 +2985,45 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="integral_of_surface_downward_northward_stress_wrt_time_tr">
+<td>
+<a name="integral_of_surface_downward_northward_stress_wrt_time"></a><img id="integral_of_surface_downward_northward_stress_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downward_northward_stress_wrt_time')">integral_of_surface_downward_northward_stress_wrt_time</a></code><div id="integral_of_surface_downward_northward_stress_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. A downward northward stress is a downward flux of northward momentum, which accelerates the lower medium northward and the upper medium southward. The surface downward stress is the windstress on the surface.</div>
+</td>
+<td>Pa s</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="integral_of_surface_downward_sensible_heat_flux_wrt_time_tr">
 <td>
 <a name="integral_of_surface_downward_sensible_heat_flux_wrt_time"></a><img id="integral_of_surface_downward_sensible_heat_flux_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downward_sensible_heat_flux_wrt_time')">integral_of_surface_downward_sensible_heat_flux_wrt_time</a></code><div id="integral_of_surface_downward_sensible_heat_flux_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to.  The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward).  The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W s m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="integral_of_surface_downwelling_longwave_flux_in_air_wrt_time_tr">
+<td>
+<a name="integral_of_surface_downwelling_longwave_flux_in_air_wrt_time"></a><img id="integral_of_surface_downwelling_longwave_flux_in_air_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downwelling_longwave_flux_in_air_wrt_time')">integral_of_surface_downwelling_longwave_flux_in_air_wrt_time</a></code><div id="integral_of_surface_downwelling_longwave_flux_in_air_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W s m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time_tr">
+<td>
+<a name="integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time"></a><img id="integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time')">integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time</a></code><div id="integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. Downwelling radiation is radiation from above. It does not mean "net downward". Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called "global radiation". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W s m-2</td>
 <td>
@@ -3064,18 +3188,6 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 <td>E172</td>
-</tr>
-<tr id="land_cover_tr">
-<td>
-<a name="land_cover"></a><img id="land_cover_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_cover')">land_cover</a></code><div id="land_cover_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of land_cover contains strings which indicate the nature of the anthropogenic land use or vegetation e.g. urban, grass, needleleaf trees, ice. These strings have not yet been standardised. The alternative standard name of surface_cover is a generalisation of land_cover. Alternatively, the data variable may contain integers which can be translated to strings using flag_values and flag_meanings attributes.</div>
-</td>
-<td>1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
 </tr>
 <tr id="land_ice_area_fraction_tr">
 <td>
@@ -4134,6 +4246,42 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="minus_one_times_surface_upwelling_longwave_flux_in_air_tr">
+<td>
+<a name="minus_one_times_surface_upwelling_longwave_flux_in_air"></a><img id="minus_one_times_surface_upwelling_longwave_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('minus_one_times_surface_upwelling_longwave_flux_in_air')">minus_one_times_surface_upwelling_longwave_flux_in_air</a></code><div id="minus_one_times_surface_upwelling_longwave_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1. The surface called "surface" means the lower boundary of the atmosphere. "longwave" means longwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="minus_one_times_surface_upwelling_shortwave_flux_in_air_tr">
+<td>
+<a name="minus_one_times_surface_upwelling_shortwave_flux_in_air"></a><img id="minus_one_times_surface_upwelling_shortwave_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('minus_one_times_surface_upwelling_shortwave_flux_in_air')">minus_one_times_surface_upwelling_shortwave_flux_in_air</a></code><div id="minus_one_times_surface_upwelling_shortwave_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1. The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean "net upward". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="minus_one_times_toa_outgoing_shortwave_flux_tr">
+<td>
+<a name="minus_one_times_toa_outgoing_shortwave_flux"></a><img id="minus_one_times_toa_outgoing_shortwave_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('minus_one_times_toa_outgoing_shortwave_flux')">minus_one_times_toa_outgoing_shortwave_flux</a></code><div id="minus_one_times_toa_outgoing_shortwave_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Minus one times" means that the quantity described takes the opposite sign convention  to that for the quantity which has the same standard name apart from this phrase, i.e. the two quantities differ from one another by a factor of -1.  Shortwave means shortwave radiation. "toa" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the "upwelling" TOA shortwave flux, sometimes called the "outgoing shortwave radiation" or "OSR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="minus_one_times_water_flux_into_sea_water_from_rivers_tr">
 <td>
 <a name="minus_one_times_water_flux_into_sea_water_from_rivers"></a><img id="minus_one_times_water_flux_into_sea_water_from_rivers_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('minus_one_times_water_flux_into_sea_water_from_rivers')">minus_one_times_water_flux_into_sea_water_from_rivers</a></code><div id="minus_one_times_water_flux_into_sea_water_from_rivers_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity minus_one_times_water_flux_into_sea_water_from_rivers is the quantity with standard name water_flux_into_sea_water_from_rivers multiplied by -1. "Water" means water in all phases. The water flux or volume transport into sea water from rivers is the inflow to the ocean, often applied to the surface in ocean models. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -4548,9 +4696,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="mole_fraction_of_chlorine dioxide_in_air_tr">
+<tr id="mole_fraction_of_chlorine_dioxide_in_air_tr">
 <td>
-<a name="mole_fraction_of_chlorine%20dioxide_in_air"></a><img id="mole_fraction_of_chlorine dioxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_chlorine dioxide_in_air')">mole_fraction_of_chlorine dioxide_in_air</a></code><div id="mole_fraction_of_chlorine dioxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of chlorine dioxide is OClO.</div>
+<a name="mole_fraction_of_chlorine_dioxide_in_air"></a><img id="mole_fraction_of_chlorine_dioxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_chlorine_dioxide_in_air')">mole_fraction_of_chlorine_dioxide_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> mole_fraction_of_chlorine dioxide_in_air</div>
+<div id="mole_fraction_of_chlorine_dioxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of chlorine dioxide is OClO.</div>
 </td>
 <td>1</td>
 <td>
@@ -4560,9 +4710,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="mole_fraction_of_chlorine monoxide_in_air_tr">
+<tr id="mole_fraction_of_chlorine_monoxide_in_air_tr">
 <td>
-<a name="mole_fraction_of_chlorine%20monoxide_in_air"></a><img id="mole_fraction_of_chlorine monoxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_chlorine monoxide_in_air')">mole_fraction_of_chlorine monoxide_in_air</a></code><div id="mole_fraction_of_chlorine monoxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of chlorine monoxide is ClO.</div>
+<a name="mole_fraction_of_chlorine_monoxide_in_air"></a><img id="mole_fraction_of_chlorine_monoxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_chlorine_monoxide_in_air')">mole_fraction_of_chlorine_monoxide_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> mole_fraction_of_chlorine monoxide_in_air</div>
+<div id="mole_fraction_of_chlorine_monoxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of chlorine monoxide is ClO.</div>
 </td>
 <td>1</td>
 <td>
@@ -4584,9 +4736,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="mole_fraction_of_dichlorine peroxide_in_air_tr">
+<tr id="mole_fraction_of_dichlorine_peroxide_in_air_tr">
 <td>
-<a name="mole_fraction_of_dichlorine%20peroxide_in_air"></a><img id="mole_fraction_of_dichlorine peroxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_dichlorine peroxide_in_air')">mole_fraction_of_dichlorine peroxide_in_air</a></code><div id="mole_fraction_of_dichlorine peroxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of dichlorine peroxide is Cl2O2.</div>
+<a name="mole_fraction_of_dichlorine_peroxide_in_air"></a><img id="mole_fraction_of_dichlorine_peroxide_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_dichlorine_peroxide_in_air')">mole_fraction_of_dichlorine_peroxide_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> mole_fraction_of_dichlorine peroxide_in_air</div>
+<div id="mole_fraction_of_dichlorine_peroxide_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of dichlorine peroxide is Cl2O2.</div>
 </td>
 <td>1</td>
 <td>
@@ -4836,9 +4990,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="mole_fraction_of_hypochlorous acid_in_air_tr">
+<tr id="mole_fraction_of_hypochlorous_acid_in_air_tr">
 <td>
-<a name="mole_fraction_of_hypochlorous%20acid_in_air"></a><img id="mole_fraction_of_hypochlorous acid_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_hypochlorous acid_in_air')">mole_fraction_of_hypochlorous acid_in_air</a></code><div id="mole_fraction_of_hypochlorous acid_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of hypochlorous acid is HOCl.</div>
+<a name="mole_fraction_of_hypochlorous_acid_in_air"></a><img id="mole_fraction_of_hypochlorous_acid_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mole_fraction_of_hypochlorous_acid_in_air')">mole_fraction_of_hypochlorous_acid_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> mole_fraction_of_hypochlorous acid_in_air</div>
+<div id="mole_fraction_of_hypochlorous_acid_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of hypochlorous acid is HOCl.</div>
 </td>
 <td>1</td>
 <td>
@@ -6424,9 +6580,11 @@ The canonical units associated with each standard name are usually the SI units 
 <td>pr</td>
 <td>59</td>
 </tr>
-<tr id="precipitation_flux_onto_canopy_where_land_tr">
+<tr id="precipitation_flux_onto_canopy_tr">
 <td>
-<a name="precipitation_flux_onto_canopy_where_land"></a><img id="precipitation_flux_onto_canopy_where_land_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('precipitation_flux_onto_canopy_where_land')">precipitation_flux_onto_canopy_where_land</a></code><div id="precipitation_flux_onto_canopy_where_land_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. "Canopy" means the plant or vegetation canopy. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="precipitation_flux_onto_canopy"></a><img id="precipitation_flux_onto_canopy_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('precipitation_flux_onto_canopy')">precipitation_flux_onto_canopy</a></code><div style="padding-left: 16px;">
+<i>alias:</i> precipitation_flux_onto_canopy_where_land</div>
+<div id="precipitation_flux_onto_canopy_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Canopy" means the plant or vegetation canopy. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>prveg</td>
@@ -8436,18 +8594,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="surface_cover_tr">
-<td>
-<a name="surface_cover"></a><img id="surface_cover_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_cover')">surface_cover</a></code><div id="surface_cover_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. A variable with the standard name of surface_cover contains strings which indicate the nature of the surface e.g. urban, forest, vegetation, land, sea_ice, open_sea. These strings have not yet been standardised. This standard name is a generalisation of land_cover.</div>
-</td>
-<td>string</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_tr">
 <td>
 <a name="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air"></a><img id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air')">surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air</a></code><div id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -9046,19 +9192,9 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="surface_net_downward_radiative_flux_tr">
 <td>
-<a name="surface_net_downward_radiative_flux"></a><img id="surface_net_downward_radiative_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_net_downward_radiative_flux')">surface_net_downward_radiative_flux</a></code><div id="surface_net_downward_radiative_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>W m-2</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="surface_net_downward_radiative_flux_where_land_tr">
-<td>
-<a name="surface_net_downward_radiative_flux_where_land"></a><img id="surface_net_downward_radiative_flux_where_land_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_net_downward_radiative_flux_where_land')">surface_net_downward_radiative_flux_where_land</a></code><div id="surface_net_downward_radiative_flux_where_land_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type.</div>
+<a name="surface_net_downward_radiative_flux"></a><img id="surface_net_downward_radiative_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_net_downward_radiative_flux')">surface_net_downward_radiative_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_net_downward_radiative_flux_where_land</div>
+<div id="surface_net_downward_radiative_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>W m-2</td>
 <td>
@@ -9322,23 +9458,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="surface_snow_thickness_tr">
 <td>
-<a name="surface_snow_thickness"></a><img id="surface_snow_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_snow_thickness')">surface_snow_thickness</a></code><div id="surface_snow_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.</div>
+<a name="surface_snow_thickness"></a><img id="surface_snow_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_snow_thickness')">surface_snow_thickness</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_snow_thickness_where_sea_ice</div>
+<div id="surface_snow_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>m</td>
 <td>snd</td>
 <td>66</td>
-</tr>
-<tr id="surface_snow_thickness_where_sea_ice_tr">
-<td>
-<a name="surface_snow_thickness_where_sea_ice"></a><img id="surface_snow_thickness_where_sea_ice_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_snow_thickness_where_sea_ice')">surface_snow_thickness_where_sea_ice</a></code><div id="surface_snow_thickness_where_sea_ice_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
 </tr>
 <tr id="surface_specific_humidity_tr">
 <td>
@@ -9354,7 +9480,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="surface_temperature_tr">
 <td>
-<a name="surface_temperature"></a><img id="surface_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature')">surface_temperature</a></code><div id="surface_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. The surface temperature is the temperature at the interface, not the bulk temperature of the medium above or below.</div>
+<a name="surface_temperature"></a><img id="surface_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature')">surface_temperature</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_temperature_where_land</div>
+<div style="padding-left: 16px;">
+<i>alias:</i> surface_temperature_where_open_sea</div>
+<div style="padding-left: 16px;">
+<i>alias:</i> surface_temperature_where_snow</div>
+<div id="surface_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. The surface temperature is the temperature at the interface, not the bulk temperature of the medium above or below. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>K</td>
 <td>ts</td>
@@ -9363,42 +9495,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <tr id="surface_temperature_anomaly_tr">
 <td>
 <a name="surface_temperature_anomaly"></a><img id="surface_temperature_anomaly_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature_anomaly')">surface_temperature_anomaly</a></code><div id="surface_temperature_anomaly_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "anomaly" means difference from climatology. The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.</div>
-</td>
-<td>K</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="surface_temperature_where_land_tr">
-<td>
-<a name="surface_temperature_where_land"></a><img id="surface_temperature_where_land_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature_where_land')">surface_temperature_where_land</a></code><div id="surface_temperature_where_land_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.</div>
-</td>
-<td>K</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="surface_temperature_where_open_sea_tr">
-<td>
-<a name="surface_temperature_where_open_sea"></a><img id="surface_temperature_where_open_sea_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature_where_open_sea')">surface_temperature_where_open_sea</a></code><div id="surface_temperature_where_open_sea_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.</div>
-</td>
-<td>K</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="surface_temperature_where_snow_tr">
-<td>
-<a name="surface_temperature_where_snow"></a><img id="surface_temperature_where_snow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_temperature_where_snow')">surface_temperature_where_snow</a></code><div id="surface_temperature_where_snow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.</div>
 </td>
 <td>K</td>
 <td>
@@ -9430,23 +9526,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="surface_upward_sensible_heat_flux_tr">
 <td>
-<a name="surface_upward_sensible_heat_flux"></a><img id="surface_upward_sensible_heat_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upward_sensible_heat_flux')">surface_upward_sensible_heat_flux</a></code><div id="surface_upward_sensible_heat_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_upward_sensible_heat_flux"></a><img id="surface_upward_sensible_heat_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upward_sensible_heat_flux')">surface_upward_sensible_heat_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_upward_sensible_heat_flux_where_sea</div>
+<div id="surface_upward_sensible_heat_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>W m-2</td>
 <td>hfss</td>
 <td>122 E146</td>
-</tr>
-<tr id="surface_upward_sensible_heat_flux_where_sea_tr">
-<td>
-<a name="surface_upward_sensible_heat_flux_where_sea"></a><img id="surface_upward_sensible_heat_flux_where_sea_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upward_sensible_heat_flux_where_sea')">surface_upward_sensible_heat_flux_where_sea</a></code><div id="surface_upward_sensible_heat_flux_where_sea_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>W m-2</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
 </tr>
 <tr id="surface_upward_water_flux_tr">
 <td>
@@ -11921,6 +12007,18 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
+<tr id="toa_net_downward_longwave_flux_assuming_clear_sky_tr">
+<td>
+<a name="toa_net_downward_longwave_flux_assuming_clear_sky"></a><img id="toa_net_downward_longwave_flux_assuming_clear_sky_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('toa_net_downward_longwave_flux_assuming_clear_sky')">toa_net_downward_longwave_flux_assuming_clear_sky</a></code><div id="toa_net_downward_longwave_flux_assuming_clear_sky_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. "longwave" means longwave radiation. "toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="toa_net_downward_radiative_flux_tr">
 <td>
 <a name="toa_net_downward_radiative_flux"></a><img id="toa_net_downward_radiative_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('toa_net_downward_radiative_flux')">toa_net_downward_radiative_flux</a></code><div id="toa_net_downward_radiative_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -12831,7 +12929,9 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="water_evaporation_flux_tr">
 <td>
-<a name="water_evaporation_flux"></a><img id="water_evaporation_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux')">water_evaporation_flux</a></code><div id="water_evaporation_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="water_evaporation_flux"></a><img id="water_evaporation_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux')">water_evaporation_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> water_evaporation_flux_where_sea_ice</div>
+<div id="water_evaporation_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Water means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>evspsbl</td>
@@ -12841,22 +12941,14 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="water_evaporation_flux_from_canopy_tr">
 <td>
-<a name="water_evaporation_flux_from_canopy"></a><img id="water_evaporation_flux_from_canopy_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux_from_canopy')">water_evaporation_flux_from_canopy</a></code><div id="water_evaporation_flux_from_canopy_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. "Canopy" means the plant or vegetation canopy. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="water_evaporation_flux_from_canopy"></a><img id="water_evaporation_flux_from_canopy_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux_from_canopy')">water_evaporation_flux_from_canopy</a></code><div style="padding-left: 16px;">
+<i>alias:</i> water_evaporation_flux_from_canopy_where_land</div>
+<div id="water_evaporation_flux_from_canopy_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. "Canopy" means the plant or vegetation canopy. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated in the cell_methods attribute, a quantity is assumed to apply to the whole area of each horizontal grid box. Previously, the qualifier where_type was used to specify that the quantity applies only to the part of the grid box of the named type.  Names containing the where_type qualifier are deprecated and newly created data should use the cell_methods attribute to indicate the horizontal area to which the quantity applies.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>
                          
                     </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="water_evaporation_flux_from_canopy_where_land_tr">
-<td>
-<a name="water_evaporation_flux_from_canopy_where_land"></a><img id="water_evaporation_flux_from_canopy_where_land_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux_from_canopy_where_land')">water_evaporation_flux_from_canopy_where_land</a></code><div id="water_evaporation_flux_from_canopy_where_land_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. "Water" means water in all phases. "Canopy" means the plant or vegetation canopy. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>kg m-2 s-1</td>
-<td>evspsblveg</td>
 <td>
                          
                     </td>
@@ -12864,18 +12956,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <tr id="water_evaporation_flux_from_soil_tr">
 <td>
 <a name="water_evaporation_flux_from_soil"></a><img id="water_evaporation_flux_from_soil_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux_from_soil')">water_evaporation_flux_from_soil</a></code><div id="water_evaporation_flux_from_soil_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>kg m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="water_evaporation_flux_where_sea_ice_tr">
-<td>
-<a name="water_evaporation_flux_where_sea_ice"></a><img id="water_evaporation_flux_where_sea_ice_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_evaporation_flux_where_sea_ice')">water_evaporation_flux_where_sea_ice</a></code><div id="water_evaporation_flux_where_sea_ice_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type. "Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>
