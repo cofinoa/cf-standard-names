@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 24,
-          <newdate>27 June 2013</newdate></b><br><br>
+<b>Version 25,
+          <newdate>05 July 2013</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -492,7 +492,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="angle_of_rotation_from_solar_azimuth_to_platform_azimuth_tr">
 <td>
-<a name="angle_of_rotation_from_solar_azimuth_to_platform_azimuth"></a><img id="angle_of_rotation_from_solar_azimuth_to_platform_azimuth_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('angle_of_rotation_from_solar_azimuth_to_platform_azimuth')">angle_of_rotation_from_solar_azimuth_to_platform_azimuth</a></code><div id="angle_of_rotation_from_solar_azimuth_to_platform_azimuth_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for "platform" describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. An angle of rotation is reckoned positive in the anticlockwise direction. The "angle_of_rotation_from_solar_azimuth_to_platform_azimuth" is the angle of rotation between the solar azimuth angle and the platform azimuth angle. Solar azimuth angle is the horizontal angle between the line of sight to the sun and a reference direction which is often due north. The angle is measured clockwise. Platform azimuth angle is the horizontal angle between the line of sight to the platform and a reference direction which is often due north. The angle is measured clockwise.</div>
+<a name="angle_of_rotation_from_solar_azimuth_to_platform_azimuth"></a><img id="angle_of_rotation_from_solar_azimuth_to_platform_azimuth_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('angle_of_rotation_from_solar_azimuth_to_platform_azimuth')">angle_of_rotation_from_solar_azimuth_to_platform_azimuth</a></code><div id="angle_of_rotation_from_solar_azimuth_to_platform_azimuth_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for "platform" describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. An angle of rotation is reckoned positive in the anticlockwise direction. The "angle_of_rotation_from_solar_azimuth_to_platform_azimuth" is the angle of rotation between the solar azimuth angle and the platform azimuth angle. Solar azimuth angle is the horizontal angle between the line of sight from the observation point to the sun and a reference direction at the observation point, which is often due north. The angle is measured clockwise, starting from the reference direction. Platform azimuth angle is the horizontal angle between the line of sight from the observation point to the platform and a reference direction at the observation point, which is often due north. The angle is measured clockwise, starting from the reference direction.</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -10454,15 +10454,36 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_course_tr">
 <td>
-<a name="platform_course"></a><img id="platform_course_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_course')">platform_course</a></code><div id="platform_course_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform course is the direction in which the platform is travelling (not necessarily the same as the direction in which it is pointing, called platform_orientation).</div>
+<a name="platform_course"></a><img id="platform_course_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_course')">platform_course</a></code><div id="platform_course_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. The platform course is the direction in which the platform is travelling (not necessarily the same as the direction in which it is pointing, called platform_orientation).</div>
 </td>
 <td>degree</td>
 <td></td>
 <td></td>
 </tr>
+<tr id="platform_id_tr">
+<td>
+<a name="platform_id"></a><img id="platform_id_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_id')">platform_id</a></code><div style="padding-left: 16px;">
+<i>alias:</i> station_wmo_id</div>
+<div id="platform_id_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of platform_id contains strings which help to identify the platform from which an observation was made. For example, this may be a WMO station identification number.</div>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="platform_name_tr">
+<td>
+<a name="platform_name"></a><img id="platform_name_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_name')">platform_name</a></code><div style="padding-left: 16px;">
+<i>alias:</i> station_description</div>
+<div id="platform_name_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of platform_name contains strings which help to identify the platform from which an observation was made. For example, this may be a geographical place name such as "South Pole" or the name of a meteorological observing station.
+</div>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr id="platform_orientation_tr">
 <td>
-<a name="platform_orientation"></a><img id="platform_orientation_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_orientation')">platform_orientation</a></code><div id="platform_orientation_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform orientation is the direction in which the "front" or longitudinal axis of the platform is pointing (not necessarily the same as the direction in which it is travelling, called platform_course).</div>
+<a name="platform_orientation"></a><img id="platform_orientation_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_orientation')">platform_orientation</a></code><div id="platform_orientation_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. The platform orientation is the direction in which the "front" or longitudinal axis of the platform is pointing (not necessarily the same as the direction in which it is travelling, called platform_course).</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -10470,7 +10491,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_pitch_angle_tr">
 <td>
-<a name="platform_pitch_angle"></a><img id="platform_pitch_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_pitch_angle')">platform_pitch_angle</a></code><div id="platform_pitch_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_pitch_angle"></a><img id="platform_pitch_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_pitch_angle')">platform_pitch_angle</a></code><div id="platform_pitch_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -10478,7 +10499,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_pitch_rate_tr">
 <td>
-<a name="platform_pitch_rate"></a><img id="platform_pitch_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_pitch_rate')">platform_pitch_rate</a></code><div id="platform_pitch_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_pitch_rate"></a><img id="platform_pitch_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_pitch_rate')">platform_pitch_rate</a></code><div id="platform_pitch_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree s-1</td>
 <td></td>
@@ -10486,7 +10507,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_roll_angle_tr">
 <td>
-<a name="platform_roll_angle"></a><img id="platform_roll_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_roll_angle')">platform_roll_angle</a></code><div id="platform_roll_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_roll_angle"></a><img id="platform_roll_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_roll_angle')">platform_roll_angle</a></code><div id="platform_roll_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -10494,7 +10515,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_roll_rate_tr">
 <td>
-<a name="platform_roll_rate"></a><img id="platform_roll_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_roll_rate')">platform_roll_rate</a></code><div id="platform_roll_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_roll_rate"></a><img id="platform_roll_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_roll_rate')">platform_roll_rate</a></code><div id="platform_roll_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree s-1</td>
 <td></td>
@@ -10502,7 +10523,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_speed_wrt_air_tr">
 <td>
-<a name="platform_speed_wrt_air"></a><img id="platform_speed_wrt_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_air')">platform_speed_wrt_air</a></code><div id="platform_speed_wrt_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform speed with respect to air is often called the "air speed" of the platform.</div>
+<a name="platform_speed_wrt_air"></a><img id="platform_speed_wrt_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_air')">platform_speed_wrt_air</a></code><div id="platform_speed_wrt_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. The platform speed with respect to air is often called the "air speed" of the platform.</div>
 </td>
 <td>m s-1</td>
 <td></td>
@@ -10510,7 +10531,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_speed_wrt_ground_tr">
 <td>
-<a name="platform_speed_wrt_ground"></a><img id="platform_speed_wrt_ground_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_ground')">platform_speed_wrt_ground</a></code><div id="platform_speed_wrt_ground_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. The platform speed with respect to ground is relative to the solid Earth beneath it i.e. the sea floor for a ship. It is often called the "ground speed" of the platform.</div>
+<a name="platform_speed_wrt_ground"></a><img id="platform_speed_wrt_ground_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_ground')">platform_speed_wrt_ground</a></code><div id="platform_speed_wrt_ground_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. The platform speed with respect to ground is relative to the solid Earth beneath it, i.e. the sea floor for a ship. It is often called the "ground speed" of the platform.</div>
 </td>
 <td>m s-1</td>
 <td></td>
@@ -10518,7 +10539,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_speed_wrt_sea_water_tr">
 <td>
-<a name="platform_speed_wrt_sea_water"></a><img id="platform_speed_wrt_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_sea_water')">platform_speed_wrt_sea_water</a></code><div id="platform_speed_wrt_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_speed_wrt_sea_water"></a><img id="platform_speed_wrt_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_speed_wrt_sea_water')">platform_speed_wrt_sea_water</a></code><div id="platform_speed_wrt_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"wrt" means with respect to. Speed is the magnitude of velocity. Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>m s-1</td>
 <td></td>
@@ -10535,7 +10556,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_yaw_angle_tr">
 <td>
-<a name="platform_yaw_angle"></a><img id="platform_yaw_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_yaw_angle')">platform_yaw_angle</a></code><div id="platform_yaw_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_yaw_angle"></a><img id="platform_yaw_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_yaw_angle')">platform_yaw_angle</a></code><div id="platform_yaw_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -10543,7 +10564,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_yaw_rate_tr">
 <td>
-<a name="platform_yaw_rate"></a><img id="platform_yaw_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_yaw_rate')">platform_yaw_rate</a></code><div id="platform_yaw_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship.</div>
+<a name="platform_yaw_rate"></a><img id="platform_yaw_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_yaw_rate')">platform_yaw_rate</a></code><div id="platform_yaw_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite.</div>
 </td>
 <td>degree s-1</td>
 <td></td>
@@ -10551,7 +10572,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="platform_zenith_angle_tr">
 <td>
-<a name="platform_zenith_angle"></a><img id="platform_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_zenith_angle')">platform_zenith_angle</a></code><div id="platform_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for "platform" describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane or ship. Platform zenith angle is the the angle between the line of sight to the platform and the local vertical.</div>
+<a name="platform_zenith_angle"></a><img id="platform_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('platform_zenith_angle')">platform_zenith_angle</a></code><div id="platform_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Standard names for "platform" describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. Platform zenith angle is the the angle between the line of sight to the platform and the local zenith at the observation target. This angle is measured starting from directly overhead and its range is from zero (directly overhead the observation target) to 180 degrees (directly below the observation target). Local zenith is a line perpendicular to the Earth's surface at a given location. "Observation target" means a location on the Earth defined by the sensor performing the observations. A standard name also exists for sensor_zenith_angle. For some viewing geometries the sensor and the platform cannot be assumed to be close enough to neglect the difference in calculated zenith angle.</div>
 </td>
 <td>degree</td>
 <td></td>
@@ -12421,23 +12442,6 @@ The canonical units associated with each standard name are usually the SI units 
 <a name="square_of_upward_ocean_mass_transport"></a><img id="square_of_upward_ocean_mass_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('square_of_upward_ocean_mass_transport')">square_of_upward_ocean_mass_transport</a></code><div id="square_of_upward_ocean_mass_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Upward" indicates a vector component which is positive when directed upward (negative downward).  Ocean transport means transport by all processes, both sea water and sea ice.  "square_of_X" means X*X.</div>
 </td>
 <td>kg2 s-2</td>
-<td></td>
-<td></td>
-</tr>
-<tr id="station_description_tr">
-<td>
-<a name="station_description"></a><img id="station_description_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('station_description')">station_description</a></code><div id="station_description_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of station_description contains strings which help to identify the platform from which an observation was made. For example, this may be a geographical place name such as "South Pole" or the name of a meteorological observing station.
-</div>
-</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr id="station_wmo_id_tr">
-<td>
-<a name="station_wmo_id"></a><img id="station_wmo_id_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('station_wmo_id')">station_wmo_id</a></code><div id="station_wmo_id_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of station_wmo_id contains strings which help to identify the platform from which an observation was made. For example, this may be a WMO station identification number.</div>
-</td>
-<td></td>
 <td></td>
 <td></td>
 </tr>
