@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 34,
-          <newdate>13 June 2016</newdate></b><br><br>
+<b>Version 35,
+          <newdate>20 July 2016</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -12559,11 +12559,27 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="sea_surface_primary_swell_wave_significant_height_tr">
+<td>
+<a name="sea_surface_primary_swell_wave_significant_height"></a><img id="sea_surface_primary_swell_wave_significant_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_primary_swell_wave_significant_height')">sea_surface_primary_swell_wave_significant_height</a></code><div id="sea_surface_primary_swell_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="sea_surface_salinity_tr">
 <td>
 <a name="sea_surface_salinity"></a><img id="sea_surface_salinity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_salinity')">sea_surface_salinity</a></code><div id="sea_surface_salinity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea surface salinity is the salt content of sea water close to the sea surface, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. Sea surface salinity is often abbreviated as "SSS". For the salinity of sea water at a particular depth or layer, a data variable of "sea_water_salinity" or one of the more precisely defined salinities should be used with a vertical coordinate axis. There are standard names for the precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit "parts per thousand" was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</div>
 </td>
 <td>1e-3</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_secondary_swell_wave_significant_height_tr">
+<td>
+<a name="sea_surface_secondary_swell_wave_significant_height"></a><img id="sea_surface_secondary_swell_wave_significant_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_secondary_swell_wave_significant_height')">sea_surface_secondary_swell_wave_significant_height</a></code><div id="sea_surface_secondary_swell_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</div>
+</td>
+<td>m</td>
 <td></td>
 <td></td>
 </tr>
@@ -12629,7 +12645,7 @@ totals are summed to obtain the index.</div>
 <td>
 <a name="sea_surface_swell_wave_significant_height"></a><img id="sea_surface_swell_wave_significant_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_swell_wave_significant_height')">sea_surface_swell_wave_significant_height</a></code><div style="padding-left: 16px;">
 <i>alias:</i> significant_height_of_swell_waves</div>
-<div id="sea_surface_swell_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Height is the vertical distance above the surface. Swell waves are waves on the ocean surface.</div>
+<div id="sea_surface_swell_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</div>
 </td>
 <td>m</td>
 <td></td>
@@ -12677,6 +12693,46 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="sea_surface_wave_maximum_crest_height_tr">
+<td>
+<a name="sea_surface_wave_maximum_crest_height"></a><img id="sea_surface_wave_maximum_crest_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_maximum_crest_height')">sea_surface_wave_maximum_crest_height</a></code><div id="sea_surface_wave_maximum_crest_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The crest is the highest point of a wave. Crest height is the vertical distance between the crest and the calm sea surface. Maximum crest height is the maximum value measured during the observation period.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_wave_maximum_height_tr">
+<td>
+<a name="sea_surface_wave_maximum_height"></a><img id="sea_surface_wave_maximum_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_maximum_height')">sea_surface_wave_maximum_height</a></code><div id="sea_surface_wave_maximum_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Wave height is defined as the vertical distance from a wave trough to the following wave crest. The maximum wave height is the greatest trough to crest distance measured during the observation period.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_wave_maximum_trough_depth_tr">
+<td>
+<a name="sea_surface_wave_maximum_trough_depth"></a><img id="sea_surface_wave_maximum_trough_depth_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_maximum_trough_depth')">sea_surface_wave_maximum_trough_depth</a></code><div id="sea_surface_wave_maximum_trough_depth_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The trough is the lowest point of a wave. Trough depth is the vertical distance between the trough and the calm sea surface. Maximum trough depth is the maximum value measured during the observation period.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_wave_mean_height_tr">
+<td>
+<a name="sea_surface_wave_mean_height"></a><img id="sea_surface_wave_mean_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_mean_height')">sea_surface_wave_mean_height</a></code><div id="sea_surface_wave_mean_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Wave height is defined as the vertical distance from a wave trough to the following wave crest. The mean wave height is the mean trough to crest distance measured during the observation period.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_wave_mean_height_of_highest_tenth_tr">
+<td>
+<a name="sea_surface_wave_mean_height_of_highest_tenth"></a><img id="sea_surface_wave_mean_height_of_highest_tenth_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_mean_height_of_highest_tenth')">sea_surface_wave_mean_height_of_highest_tenth</a></code><div id="sea_surface_wave_mean_height_of_highest_tenth_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Wave height is defined as the vertical distance from a wave trough to the following wave crest. The height of the highest tenth is defined as the mean of the highest ten per cent of trough to crest distances measured during the observation period.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment_tr">
 <td>
 <a name="sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment"></a><img id="sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment')">sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment</a></code><div id="sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The first wave period, T(m1)  is calculated as the ratio M(0)/M(1).</div>
@@ -12713,7 +12769,7 @@ totals are summed to obtain the index.</div>
 <td>
 <a name="sea_surface_wave_significant_height"></a><img id="sea_surface_wave_significant_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_significant_height')">sea_surface_wave_significant_height</a></code><div style="padding-left: 16px;">
 <i>alias:</i> significant_height_of_wind_and_swell_waves</div>
-<div id="sea_surface_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Height is the vertical distance above the surface.</div>
+<div id="sea_surface_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</div>
 </td>
 <td>m</td>
 <td></td>
@@ -12805,7 +12861,7 @@ totals are summed to obtain the index.</div>
 <td>
 <a name="sea_surface_wind_wave_significant_height"></a><img id="sea_surface_wind_wave_significant_height_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wind_wave_significant_height')">sea_surface_wind_wave_significant_height</a></code><div style="padding-left: 16px;">
 <i>alias:</i> significant_height_of_wind_waves</div>
-<div id="sea_surface_wind_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Height is the vertical distance above the surface. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</div>
+<div id="sea_surface_wind_wave_significant_height_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</div>
 </td>
 <td>m</td>
 <td></td>
