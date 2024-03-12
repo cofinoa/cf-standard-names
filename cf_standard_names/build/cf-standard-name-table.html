@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 30,
-          <newdate>03 December 2015</newdate></b><br><br>
+<b>Version 31,
+          <newdate>08 March 2016</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -252,6 +252,14 @@ The canonical units associated with each standard name are usually the SI units 
 <th width="8%">Canonical Units</th>
 <th width="8%">AMIP</th>
 <th width="8%">GRIB</th>
+<tr id="acoustic_signal_roundtrip_travel_time_in_sea_water_tr">
+<td>
+<a name="acoustic_signal_roundtrip_travel_time_in_sea_water"></a><img id="acoustic_signal_roundtrip_travel_time_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('acoustic_signal_roundtrip_travel_time_in_sea_water')">acoustic_signal_roundtrip_travel_time_in_sea_water</a></code><div id="acoustic_signal_roundtrip_travel_time_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name acoustic_signal_roundtrip_travel_time_in_sea_water is the time taken for an acoustic signal to propagate from the emitting instrument to a reflecting surface and back again to the instrument. In the case of an instrument based on the sea floor and measuring the roundtrip time to the sea surface, the data are commonly used as a measure of ocean heat content.</div>
+</td>
+<td>s</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="aerodynamic_particle_diameter_tr">
 <td>
 <a name="aerodynamic_particle_diameter"></a><img id="aerodynamic_particle_diameter_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('aerodynamic_particle_diameter')">aerodynamic_particle_diameter</a></code><div id="aerodynamic_particle_diameter_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The diameter of a spherical particle with density 1000 kg m-3 having the same aerodynamic properties as the particles in question.</div>
@@ -3230,6 +3238,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="change_in_land_ice_amount_tr">
+<td>
+<a name="change_in_land_ice_amount"></a><img id="change_in_land_ice_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('change_in_land_ice_amount')">change_in_land_ice_amount</a></code><div id="change_in_land_ice_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. Zero change in land ice amount is an arbitrary level. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+</td>
+<td>kg m-2</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="change_over_time_in_atmosphere_mass_content_of_water_due_to_advection_tr">
 <td>
 <a name="change_over_time_in_atmosphere_mass_content_of_water_due_to_advection"></a><img id="change_over_time_in_atmosphere_mass_content_of_water_due_to_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('change_over_time_in_atmosphere_mass_content_of_water_due_to_advection')">change_over_time_in_atmosphere_mass_content_of_water_due_to_advection</a></code><div style="padding-left: 16px;">
@@ -3716,6 +3732,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td>44 E155</td>
 </tr>
+<tr id="downward_air_velocity_tr">
+<td>
+<a name="downward_air_velocity"></a><img id="downward_air_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_air_velocity')">downward_air_velocity</a></code><div id="downward_air_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. “Downward" indicates a vector component which is positive when directed downward (negative upward). Downward air velocity is the vertical component of the 3D air velocity vector. The standard name upward_air_velocity may be used for a vector component with the opposite sign convention.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="downward_dry_static_energy_flux_due_to_diffusion_tr">
 <td>
 <a name="downward_dry_static_energy_flux_due_to_diffusion"></a><img id="downward_dry_static_energy_flux_due_to_diffusion_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_dry_static_energy_flux_due_to_diffusion')">downward_dry_static_energy_flux_due_to_diffusion</a></code><div id="downward_dry_static_energy_flux_due_to_diffusion_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Downward" indicates a vector component which is positive when directed downward (negative upward). Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -4084,6 +4108,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="dry_atmosphere_mole_fraction_of_carbon_dioxide_tr">
+<td>
+<a name="dry_atmosphere_mole_fraction_of_carbon_dioxide"></a><img id="dry_atmosphere_mole_fraction_of_carbon_dioxide_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dry_atmosphere_mole_fraction_of_carbon_dioxide')">dry_atmosphere_mole_fraction_of_carbon_dioxide</a></code><div id="dry_atmosphere_mole_fraction_of_carbon_dioxide_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The construction "dry_atmosphere_mole_fraction" means that the quantity refers to the whole atmospheric column and is calculated as the total number of particles of X in the column divided by the number of dry air particles in the same column, i.e. the effect of water vapor is excluded. For localized values within the atmospheric medium, standard names including "in_air" are used. The chemical formula for carbon dioxide is CO2.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="dry_atmosphere_mole_fraction_of_methane_tr">
+<td>
+<a name="dry_atmosphere_mole_fraction_of_methane"></a><img id="dry_atmosphere_mole_fraction_of_methane_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dry_atmosphere_mole_fraction_of_methane')">dry_atmosphere_mole_fraction_of_methane</a></code><div id="dry_atmosphere_mole_fraction_of_methane_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The construction "dry_atmosphere_mole_fraction" means that the quantity refers to the whole atmospheric column and is calculated as the total number of particles of X in the column divided by the number of dry air particles in the same column, i.e. the effect of water vapor is excluded. For localized values within the atmospheric medium, standard names including "in_air" are used. Methane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The chemical formula for methane is CH4.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="dry_energy_content_of_atmosphere_layer_tr">
 <td>
 <a name="dry_energy_content_of_atmosphere_layer"></a><img id="dry_energy_content_of_atmosphere_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dry_energy_content_of_atmosphere_layer')">dry_energy_content_of_atmosphere_layer</a></code><div id="dry_energy_content_of_atmosphere_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Dry energy is the sum of dry static energy and kinetic energy. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</div>
@@ -4161,6 +4201,14 @@ totals are summed to obtain the index.</div>
 <a name="eastward_derivative_of_northward_sea_ice_velocity"></a><img id="eastward_derivative_of_northward_sea_ice_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('eastward_derivative_of_northward_sea_ice_velocity')">eastward_derivative_of_northward_sea_ice_velocity</a></code><div id="eastward_derivative_of_northward_sea_ice_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity.  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Northward" indicates a vector component which is positive when directed northward (negative southward).  Sea ice velocity is defined as a two-dimensional vector, with no vertical component.  "component_derivative_of_X" means  derivative of X with respect to distance in the component  direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.  The named quantity is a component of the strain rate tensor for sea ice.</div>
 </td>
 <td>s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="eastward_land_ice_velocity_tr">
+<td>
+<a name="eastward_land_ice_velocity"></a><img id="eastward_land_ice_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('eastward_land_ice_velocity')">eastward_land_ice_velocity</a></code><div id="eastward_land_ice_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Land ice velocity is defined as a two-dimensional vector, with no vertical component. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+</td>
+<td>m s-1</td>
 <td></td>
 <td></td>
 </tr>
@@ -10337,6 +10385,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="northward_land_ice_velocity_tr">
+<td>
+<a name="northward_land_ice_velocity"></a><img id="northward_land_ice_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('northward_land_ice_velocity')">northward_land_ice_velocity</a></code><div id="northward_land_ice_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). Land ice velocity is defined as a two-dimensional vector, with no vertical component. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="northward_mass_flux_of_air_tr">
 <td>
 <a name="northward_mass_flux_of_air"></a><img id="northward_mass_flux_of_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('northward_mass_flux_of_air')">northward_mass_flux_of_air</a></code><div id="northward_mass_flux_of_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Northward" indicates a vector component which is positive when directed northward (negative southward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -10662,6 +10718,14 @@ totals are summed to obtain the index.</div>
 <tr id="number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold_tr">
 <td>
 <a name="number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold"></a><img id="number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold')">number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold</a></code><div id="number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area.  The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area.  "lwe" means liquid water equivalent.  A variable whose standard name has the form number_of_days_with_X_below|above_threshold is a count of the number of days on which the condition X_below|above_threshold is satisfied.  It must have a coordinate variable or scalar coordinate variable with the a standard name of X to supply the threshold(s). It must have a climatological time variable, and a cell_methods entry for within days which describes the processing of quantity X before the threshold is applied. A number_of_days is an extensive quantity in time, and the cell_methods entry for over days should be "sum".</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="number_of_days_with_surface_temperature_below_threshold_tr">
+<td>
+<a name="number_of_days_with_surface_temperature_below_threshold"></a><img id="number_of_days_with_surface_temperature_below_threshold_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('number_of_days_with_surface_temperature_below_threshold')">number_of_days_with_surface_temperature_below_threshold</a></code><div id="number_of_days_with_surface_temperature_below_threshold_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface temperature is the temperature at the interface, not the bulk temperature of the medium above or below. The surface called "surface" means the lower boundary of the atmosphere. A variable whose standard name has the form number_of_days_with_X_below|above_threshold is a count of the number of days on which the condition X_below|above_threshold is satisfied. It must have a coordinate variable or scalar coordinate variable with the a standard name of X to supply the threshold(s). It must have a climatological time variable, and a cell_methods entry for within days which describes the processing of quantity X before the threshold is applied. A number_of_days is an extensive quantity in time, and the cell_methods entry for over days should be "sum".</div>
 </td>
 <td>1</td>
 <td></td>
@@ -12888,6 +12952,14 @@ totals are summed to obtain the index.</div>
 <tr id="shallow_convection_time_fraction_tr">
 <td>
 <a name="shallow_convection_time_fraction"></a><img id="shallow_convection_time_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('shallow_convection_time_fraction')">shallow_convection_time_fraction</a></code><div id="shallow_convection_time_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Time fraction" means a fraction of a time interval. The interval in question must be specified by the values or bounds of the time coordinate variable associated with the data. "X_time_fraction" means the fraction of the time interval during which X occurs.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles_tr">
+<td>
+<a name="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles"></a><img id="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('single_scattering_albedo_in_air_due_to_ambient_aerosol_particles')">single_scattering_albedo_in_air_due_to_ambient_aerosol_particles</a></code><div id="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Single scattering albedo" is the fraction of radiation in an incident light beam scattered by the particles of an aerosol reference volume for a given wavelength. It is the ratio of the scattering and the extinction coefficients of the aerosol particles in the reference volume. A coordinate variable with a standard name of radiation_wavelength or radiation_frequency should be included to specify either the wavelength or frequency. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. "Ambient_aerosol" means that the aerosol is measured or modelled at the ambient state of pressure, temperature and relative humidity that exists in its immediate environment. "Ambient aerosol particles" are aerosol particles that have taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the particles. To specify the relative humidity and temperature at which the quantity described by the standard name applies, provide scalar coordinate variables with standard names of "relative_humidity" and "air_temperature". The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>1</td>
 <td></td>
@@ -20863,9 +20935,9 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
 </tr>
 <tr id="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing_tr">
 <td>
-<a name="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing"></a><img id="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing')">tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing</a></code><div id="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Specific humidity is the mass fraction of water vapor in (moist) air.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "specific" means per unit mass.</div>
+<a name="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing"></a><img id="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing')">tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing</a></code><div id="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Specific humidity is the mass fraction of water vapor in (moist) air. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes). The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "specific" means per unit mass.</div>
 </td>
-<td>K s-1</td>
+<td>s-1</td>
 <td></td>
 <td></td>
 </tr>
@@ -21571,7 +21643,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
 </tr>
 <tr id="upward_air_velocity_tr">
 <td>
-<a name="upward_air_velocity"></a><img id="upward_air_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_air_velocity')">upward_air_velocity</a></code><div id="upward_air_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Upward air velocity is the vertical component of the 3D air velocity vector.</div>
+<a name="upward_air_velocity"></a><img id="upward_air_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_air_velocity')">upward_air_velocity</a></code><div id="upward_air_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Upward air velocity is the vertical component of the 3D air velocity vector. The standard name downward_air_velocity may be used for a vector component with the opposite sign convention.</div>
 </td>
 <td>m s-1</td>
 <td></td>
