@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 20,
-          <newdate>11 September 2012</newdate></b><br><br>
+<b>Version 21,
+          <newdate>12 January 2013</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -2280,6 +2280,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="atmosphere_mole_content_of_ozone_tr">
+<td>
+<a name="atmosphere_mole_content_of_ozone"></a><img id="atmosphere_mole_content_of_ozone_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_mole_content_of_ozone')">atmosphere_mole_content_of_ozone</a></code><div id="atmosphere_mole_content_of_ozone_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The construction "atmosphere_mole_content_of_X" means the vertically integrated number of moles of X above a unit area. The chemical formula for ozone is O3. atmosphere_mole_content_of_ozone is usually measured in Dobson Units which are equivalent to 446.2 micromoles m-2. N.B. Data variables containing column content of ozone can be given the standard name of either equivalent_thickness_at_stp_of_atmosphere_ozone_content or atmosphere_mole_content_of_ozone.The latter name is recommended for consistency with mole content names for chemical species other than ozone.</div>
+</td>
+<td>mol m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="atmosphere_moles_of_acetic_acid_tr">
 <td>
 <a name="atmosphere_moles_of_acetic_acid"></a><img id="atmosphere_moles_of_acetic_acid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_moles_of_acetic_acid')">atmosphere_moles_of_acetic_acid</a></code><div id="atmosphere_moles_of_acetic_acid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for acetic_acid is CH3COOH. The IUPAC name for acetic acid is ethanoic acid.</div>
@@ -3808,7 +3820,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="barotropic_sea_water_x_velocity_tr">
 <td>
-<a name="barotropic_sea_water_x_velocity"></a><img id="barotropic_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('barotropic_sea_water_x_velocity')">barotropic_sea_water_x_velocity</a></code><div id="barotropic_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity.  "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<a name="barotropic_sea_water_x_velocity"></a><img id="barotropic_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('barotropic_sea_water_x_velocity')">barotropic_sea_water_x_velocity</a></code><div id="barotropic_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity.  "x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -3820,7 +3832,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="barotropic_sea_water_y_velocity_tr">
 <td>
-<a name="barotropic_sea_water_y_velocity"></a><img id="barotropic_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('barotropic_sea_water_y_velocity')">barotropic_sea_water_y_velocity</a></code><div id="barotropic_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity.  "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<a name="barotropic_sea_water_y_velocity"></a><img id="barotropic_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('barotropic_sea_water_y_velocity')">barotropic_sea_water_y_velocity</a></code><div id="barotropic_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity.  "y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -3928,7 +3940,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="bolus_sea_water_x_velocity_tr">
 <td>
-<a name="bolus_sea_water_x_velocity"></a><img id="bolus_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('bolus_sea_water_x_velocity')">bolus_sea_water_x_velocity</a></code><div id="bolus_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model.  bolus_sea_water_x_velocity is used in some parameteris a tions of lateral diffusion in the ocean.</div>
+<a name="bolus_sea_water_x_velocity"></a><img id="bolus_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('bolus_sea_water_x_velocity')">bolus_sea_water_x_velocity</a></code><div id="bolus_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model. bolus_sea_water_x_velocity is used in some parameterisations of lateral diffusion in the ocean.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -3940,7 +3952,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="bolus_sea_water_y_velocity_tr">
 <td>
-<a name="bolus_sea_water_y_velocity"></a><img id="bolus_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('bolus_sea_water_y_velocity')">bolus_sea_water_y_velocity</a></code><div id="bolus_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true longitude, positive with increasing y. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model. bolus_sea_water_y_velocity is used in some parameteris a tions of lateral diffusion in the ocean.</div>
+<a name="bolus_sea_water_y_velocity"></a><img id="bolus_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('bolus_sea_water_y_velocity')">bolus_sea_water_y_velocity</a></code><div id="bolus_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. Bolus velocity in an ocean model means the velocity due to a scheme representing eddy-induced effects which are not resolved on the grid scale of the model. bolus_sea_water_y_velocity is used in some parameterisations of lateral diffusion in the ocean.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -4992,7 +5004,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="downward_x_stress_at_sea_ice_base_tr">
 <td>
-<a name="downward_x_stress_at_sea_ice_base"></a><img id="downward_x_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_x_stress_at_sea_ice_base')">downward_x_stress_at_sea_ice_base</a></code><div id="downward_x_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
+<a name="downward_x_stress_at_sea_ice_base"></a><img id="downward_x_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_x_stress_at_sea_ice_base')">downward_x_stress_at_sea_ice_base</a></code><div id="downward_x_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -5004,7 +5016,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="downward_y_stress_at_sea_ice_base_tr">
 <td>
-<a name="downward_y_stress_at_sea_ice_base"></a><img id="downward_y_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_y_stress_at_sea_ice_base')">downward_y_stress_at_sea_ice_base</a></code><div id="downward_y_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
+<a name="downward_y_stress_at_sea_ice_base"></a><img id="downward_y_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downward_y_stress_at_sea_ice_base')">downward_y_stress_at_sea_ice_base</a></code><div id="downward_y_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -5754,7 +5766,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="equivalent_thickness_at_stp_of_atmosphere_ozone_content"></a><img id="equivalent_thickness_at_stp_of_atmosphere_ozone_content_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('equivalent_thickness_at_stp_of_atmosphere_ozone_content')">equivalent_thickness_at_stp_of_atmosphere_ozone_content</a></code><div style="padding-left: 16px;">
 <i>alias:</i> equivalent_thickness_at_stp_of_atmosphere_o3_content</div>
-<div id="equivalent_thickness_at_stp_of_atmosphere_ozone_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"stp" means standard temperature (0 degC) and pressure (101325 Pa). "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The equivalent thickness at STP of a particular constituent of the atmosphere is the thickness of the layer that the gas would occupy if it was separated from the other constituents and gathered together at STP.</div>
+<div id="equivalent_thickness_at_stp_of_atmosphere_ozone_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"stp" means standard temperature (0 degC) and pressure (101325 Pa). "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The equivalent thickness at STP of a particular constituent of the atmosphere is the thickness of the layer that the gas would occupy if it was separated from the other constituents and gathered together at STP. equivalent_thickness_at_stp_of_atmosphere_ozone_content is usually measured in Dobson Units which are equivalent to 446.2 micromoles m-2 or an equivalent thickness at STP of 10 micrometers. N.B. Data variables containing column content of ozone can be given the standard name of either equivalent_thickness_at_stp_of_atmosphere_ozone_content or atmosphere_mole_content_of_ozone. The latter name is recommended for consistency with mole content names for chemical species other than ozone.</div>
 </td>
 <td>m</td>
 <td>
@@ -6125,6 +6137,18 @@ The canonical units associated with each standard name are usually the SI units 
 <a name="heterotrophic_respiration_carbon_flux"></a><img id="heterotrophic_respiration_carbon_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('heterotrophic_respiration_carbon_flux')">heterotrophic_respiration_carbon_flux</a></code><div id="heterotrophic_respiration_carbon_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Respiration carbon" refers to the rate at which biomass is respired expressed as the mass of carbon which it contains. Heterotrophic respiration is respiration by heterotrophs ("consumers"), which are organisms (including animals and decomposers) that consume other organisms or dead organic material, rather than synthesising organic material from inorganic precursors using energy from the environment (especially sunlight) as autotrophs ("producers") do. Heterotrophic respiration goes on both above and within the soil. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>kg m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="high_type_cloud_area_fraction_tr">
+<td>
+<a name="high_type_cloud_area_fraction"></a><img id="high_type_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('high_type_cloud_area_fraction')">high_type_cloud_area_fraction</a></code><div id="high_type_cloud_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">High type clouds are: Cirrus, Cirrostratus, Cirrocumulus. "X_area_fraction" means the fraction of horizontal area occupied by X. Cloud area fraction is also called "cloud amount" and "cloud cover". X_type_cloud_area_fraction is determined on the basis of cloud type and not on the vertical location of the cloud.</div>
+</td>
+<td>1</td>
 <td>
                          
                     </td>
@@ -6514,6 +6538,18 @@ The canonical units associated with each standard name are usually the SI units 
                     </td>
 <td>E172</td>
 </tr>
+<tr id="land_cover_lccs_tr">
+<td>
+<a name="land_cover_lccs"></a><img id="land_cover_lccs_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_cover_lccs')">land_cover_lccs</a></code><div id="land_cover_lccs_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of land_cover_sccs contains strings which indicate the nature of the surface, e.g. cropland_..., tree_... . These strings are standardised. Values must be combinations of classifiers from the Land Cover Classification System (LCCS; Di Gregorio A., 2005, UN Land Cover Classification System (LCCS) - Classification concepts and user manual for Software version 2; available at www.fao.org/DOCREP/003/X0596E/X0596e00.htm).</div>
+</td>
+<td></td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="land_ice_area_fraction_tr">
 <td>
 <a name="land_ice_area_fraction"></a><img id="land_ice_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_area_fraction')">land_ice_area_fraction</a></code><div id="land_ice_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X.  "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
@@ -6538,7 +6574,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_basal_x_velocity_tr">
 <td>
-<a name="land_ice_basal_x_velocity"></a><img id="land_ice_basal_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_x_velocity')">land_ice_basal_x_velocity</a></code><div id="land_ice_basal_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+<a name="land_ice_basal_x_velocity"></a><img id="land_ice_basal_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_x_velocity')">land_ice_basal_x_velocity</a></code><div id="land_ice_basal_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6550,7 +6586,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_basal_y_velocity_tr">
 <td>
-<a name="land_ice_basal_y_velocity"></a><img id="land_ice_basal_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_y_velocity')">land_ice_basal_y_velocity</a></code><div id="land_ice_basal_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+<a name="land_ice_basal_y_velocity"></a><img id="land_ice_basal_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_y_velocity')">land_ice_basal_y_velocity</a></code><div id="land_ice_basal_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6658,7 +6694,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_vertical_mean_x_velocity_tr">
 <td>
-<a name="land_ice_vertical_mean_x_velocity"></a><img id="land_ice_vertical_mean_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_vertical_mean_x_velocity')">land_ice_vertical_mean_x_velocity</a></code><div id="land_ice_vertical_mean_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</div>
+<a name="land_ice_vertical_mean_x_velocity"></a><img id="land_ice_vertical_mean_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_vertical_mean_x_velocity')">land_ice_vertical_mean_x_velocity</a></code><div id="land_ice_vertical_mean_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6670,7 +6706,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_vertical_mean_y_velocity_tr">
 <td>
-<a name="land_ice_vertical_mean_y_velocity"></a><img id="land_ice_vertical_mean_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_vertical_mean_y_velocity')">land_ice_vertical_mean_y_velocity</a></code><div id="land_ice_vertical_mean_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</div>
+<a name="land_ice_vertical_mean_y_velocity"></a><img id="land_ice_vertical_mean_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_vertical_mean_y_velocity')">land_ice_vertical_mean_y_velocity</a></code><div id="land_ice_vertical_mean_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. The vertical mean land ice velocity is the average from the bedrock to the surface of the ice.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6682,7 +6718,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_x_velocity_tr">
 <td>
-<a name="land_ice_x_velocity"></a><img id="land_ice_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_x_velocity')">land_ice_x_velocity</a></code><div id="land_ice_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+<a name="land_ice_x_velocity"></a><img id="land_ice_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_x_velocity')">land_ice_x_velocity</a></code><div id="land_ice_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6694,7 +6730,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="land_ice_y_velocity_tr">
 <td>
-<a name="land_ice_y_velocity"></a><img id="land_ice_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_y_velocity')">land_ice_y_velocity</a></code><div id="land_ice_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
+<a name="land_ice_y_velocity"></a><img id="land_ice_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_y_velocity')">land_ice_y_velocity</a></code><div id="land_ice_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6806,6 +6842,18 @@ The canonical units associated with each standard name are usually the SI units 
 </td>
 <td>degree_east</td>
 <td>longitude</td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="low_type_cloud_area_fraction_tr">
+<td>
+<a name="low_type_cloud_area_fraction"></a><img id="low_type_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('low_type_cloud_area_fraction')">low_type_cloud_area_fraction</a></code><div id="low_type_cloud_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Low type clouds are: Stratus, Stratocumulus, Cumulus, Cumulonimbus. "X_area_fraction" means the fraction of horizontal area occupied by X. Cloud area fraction is also called "cloud amount" and "cloud cover". X_type_cloud_area_fraction is determined on the basis of cloud type and not on the vertical location of the cloud.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
 <td>
                          
                     </td>
@@ -10339,6 +10387,18 @@ The canonical units associated with each standard name are usually the SI units 
 <a name="medium_soil_pool_carbon_content"></a><img id="medium_soil_pool_carbon_content_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('medium_soil_pool_carbon_content')">medium_soil_pool_carbon_content</a></code><div id="medium_soil_pool_carbon_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area.  The "soil content" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used.  "Soil carbon" is the organic matter present in soil quantified by the mass of carbon it contains. Soil carbon is returned to the atmosphere as the organic matter decays. The decay process takes varying amounts of time depending on the composition of the organic matter, the temperature and the availability of moisture. A carbon "soil pool" means the carbon contained in organic matter which has a characteristic period over which it decays and releases carbon into the atmosphere. "Medium soil pool" refers to the decay of organic matter in soil with a characteristic period of between ten and one hundred years under reference climate conditions of a temperature of 20 degrees Celsius and no water limitations.</div>
 </td>
 <td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="medium_type_cloud_area_fraction_tr">
+<td>
+<a name="medium_type_cloud_area_fraction"></a><img id="medium_type_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('medium_type_cloud_area_fraction')">medium_type_cloud_area_fraction</a></code><div id="medium_type_cloud_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Middle type clouds are: Altostratus, Altocumulus, Nimbostratus. "X_area_fraction" means the fraction of horizontal area occupied by X. Cloud area fraction is also called "cloud amount" and "cloud cover". X_type_cloud_area_fraction is determined on the basis of cloud type and not on the vertical location of the cloud.</div>
+</td>
+<td>1</td>
 <td>
                          
                     </td>
@@ -14192,7 +14252,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_x_transport_tr">
 <td>
-<a name="ocean_heat_x_transport"></a><img id="ocean_heat_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport')">ocean_heat_x_transport</a></code><div id="ocean_heat_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<a name="ocean_heat_x_transport"></a><img id="ocean_heat_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport')">ocean_heat_x_transport</a></code><div id="ocean_heat_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>W</td>
 <td>
@@ -14204,7 +14264,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_x_transport_due_to_bolus_advection_tr">
 <td>
-<a name="ocean_heat_x_transport_due_to_bolus_advection"></a><img id="ocean_heat_x_transport_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport_due_to_bolus_advection')">ocean_heat_x_transport_due_to_bolus_advection</a></code><div id="ocean_heat_x_transport_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.  The specification of a physical process by the phrase due_to_processmeans that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_heat_x_transport_due_to_bolus_advection"></a><img id="ocean_heat_x_transport_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport_due_to_bolus_advection')">ocean_heat_x_transport_due_to_bolus_advection</a></code><div id="ocean_heat_x_transport_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>W</td>
 <td>
@@ -14216,7 +14276,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_x_transport_due_to_diffusion_tr">
 <td>
-<a name="ocean_heat_x_transport_due_to_diffusion"></a><img id="ocean_heat_x_transport_due_to_diffusion_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport_due_to_diffusion')">ocean_heat_x_transport_due_to_diffusion</a></code><div id="ocean_heat_x_transport_due_to_diffusion_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_heat_x_transport_due_to_diffusion"></a><img id="ocean_heat_x_transport_due_to_diffusion_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_x_transport_due_to_diffusion')">ocean_heat_x_transport_due_to_diffusion</a></code><div id="ocean_heat_x_transport_due_to_diffusion_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
 </td>
 <td>W</td>
 <td>
@@ -14228,7 +14288,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_y_transport_tr">
 <td>
-<a name="ocean_heat_y_transport"></a><img id="ocean_heat_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport')">ocean_heat_y_transport</a></code><div id="ocean_heat_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<a name="ocean_heat_y_transport"></a><img id="ocean_heat_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport')">ocean_heat_y_transport</a></code><div id="ocean_heat_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>W</td>
 <td>
@@ -14240,7 +14300,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_y_transport_due_to_bolus_advection_tr">
 <td>
-<a name="ocean_heat_y_transport_due_to_bolus_advection"></a><img id="ocean_heat_y_transport_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport_due_to_bolus_advection')">ocean_heat_y_transport_due_to_bolus_advection</a></code><div id="ocean_heat_y_transport_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included inthe velocity field.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_heat_y_transport_due_to_bolus_advection"></a><img id="ocean_heat_y_transport_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport_due_to_bolus_advection')">ocean_heat_y_transport_due_to_bolus_advection</a></code><div id="ocean_heat_y_transport_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>W</td>
 <td>
@@ -14252,7 +14312,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_heat_y_transport_due_to_diffusion_tr">
 <td>
-<a name="ocean_heat_y_transport_due_to_diffusion"></a><img id="ocean_heat_y_transport_due_to_diffusion_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport_due_to_diffusion')">ocean_heat_y_transport_due_to_diffusion</a></code><div id="ocean_heat_y_transport_due_to_diffusion_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_heat_y_transport_due_to_diffusion"></a><img id="ocean_heat_y_transport_due_to_diffusion_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_heat_y_transport_due_to_diffusion')">ocean_heat_y_transport_due_to_diffusion</a></code><div id="ocean_heat_y_transport_due_to_diffusion_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>W</td>
 <td>
@@ -14324,7 +14384,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_x_transport_tr">
 <td>
-<a name="ocean_mass_x_transport"></a><img id="ocean_mass_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport')">ocean_mass_x_transport</a></code><div id="ocean_mass_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<a name="ocean_mass_x_transport"></a><img id="ocean_mass_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport')">ocean_mass_x_transport</a></code><div id="ocean_mass_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14336,7 +14396,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_x_transport_due_to_advection_tr">
 <td>
-<a name="ocean_mass_x_transport_due_to_advection"></a><img id="ocean_mass_x_transport_due_to_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport_due_to_advection')">ocean_mass_x_transport_due_to_advection</a></code><div id="ocean_mass_x_transport_due_to_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_mass_x_transport_due_to_advection"></a><img id="ocean_mass_x_transport_due_to_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport_due_to_advection')">ocean_mass_x_transport_due_to_advection</a></code><div id="ocean_mass_x_transport_due_to_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14348,7 +14408,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_x_transport_due_to_advection_and_bolus_advection_tr">
 <td>
-<a name="ocean_mass_x_transport_due_to_advection_and_bolus_advection"></a><img id="ocean_mass_x_transport_due_to_advection_and_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport_due_to_advection_and_bolus_advection')">ocean_mass_x_transport_due_to_advection_and_bolus_advection</a></code><div id="ocean_mass_x_transport_due_to_advection_and_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.</div>
+<a name="ocean_mass_x_transport_due_to_advection_and_bolus_advection"></a><img id="ocean_mass_x_transport_due_to_advection_and_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_x_transport_due_to_advection_and_bolus_advection')">ocean_mass_x_transport_due_to_advection_and_bolus_advection</a></code><div id="ocean_mass_x_transport_due_to_advection_and_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase. Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14360,7 +14420,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_y_transport_tr">
 <td>
-<a name="ocean_mass_y_transport"></a><img id="ocean_mass_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport')">ocean_mass_y_transport</a></code><div id="ocean_mass_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<a name="ocean_mass_y_transport"></a><img id="ocean_mass_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport')">ocean_mass_y_transport</a></code><div id="ocean_mass_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14372,7 +14432,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_y_transport_due_to_advection_tr">
 <td>
-<a name="ocean_mass_y_transport_due_to_advection"></a><img id="ocean_mass_y_transport_due_to_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport_due_to_advection')">ocean_mass_y_transport_due_to_advection</a></code><div id="ocean_mass_y_transport_due_to_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_mass_y_transport_due_to_advection"></a><img id="ocean_mass_y_transport_due_to_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport_due_to_advection')">ocean_mass_y_transport_due_to_advection</a></code><div id="ocean_mass_y_transport_due_to_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14384,7 +14444,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_mass_y_transport_due_to_advection_and_bolus_advection_tr">
 <td>
-<a name="ocean_mass_y_transport_due_to_advection_and_bolus_advection"></a><img id="ocean_mass_y_transport_due_to_advection_and_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport_due_to_advection_and_bolus_advection')">ocean_mass_y_transport_due_to_advection_and_bolus_advection</a></code><div id="ocean_mass_y_transport_due_to_advection_and_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included inthe velocity field.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_mass_y_transport_due_to_advection_and_bolus_advection"></a><img id="ocean_mass_y_transport_due_to_advection_and_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_mass_y_transport_due_to_advection_and_bolus_advection')">ocean_mass_y_transport_due_to_advection_and_bolus_advection</a></code><div id="ocean_mass_y_transport_due_to_advection_and_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. Transport by bolus advection in an ocean model means the part due to a scheme representing eddy-induced effects not included in the velocity field. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14572,7 +14632,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_salt_x_transport_tr">
 <td>
-<a name="ocean_salt_x_transport"></a><img id="ocean_salt_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_salt_x_transport')">ocean_salt_x_transport</a></code><div id="ocean_salt_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. Salt transport refers to the mass ofsalt being transported.</div>
+<a name="ocean_salt_x_transport"></a><img id="ocean_salt_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_salt_x_transport')">ocean_salt_x_transport</a></code><div id="ocean_salt_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. Salt transport refers to the mass of salt being transported.</div>
 </td>
 <td>1e-3 kg s-1</td>
 <td>
@@ -14584,7 +14644,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_salt_y_transport_tr">
 <td>
-<a name="ocean_salt_y_transport"></a><img id="ocean_salt_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_salt_y_transport')">ocean_salt_y_transport</a></code><div id="ocean_salt_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. Salt transport refers to the mass of salt being transported.</div>
+<a name="ocean_salt_y_transport"></a><img id="ocean_salt_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_salt_y_transport')">ocean_salt_y_transport</a></code><div id="ocean_salt_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. Salt transport refers to the mass of salt being transported.</div>
 </td>
 <td>1e-3 kg s-1</td>
 <td>
@@ -14860,7 +14920,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_y_overturning_mass_streamfunction_tr">
 <td>
-<a name="ocean_y_overturning_mass_streamfunction"></a><img id="ocean_y_overturning_mass_streamfunction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_y_overturning_mass_streamfunction')">ocean_y_overturning_mass_streamfunction</a></code><div id="ocean_y_overturning_mass_streamfunction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  In contrast to the quantity with standard name ocean_meridional_overturning_streamfunction, this quantity includes all physicalprocesses, resolved or parameterized, that impact mass/volume transport.  Thus it includescontributions from the bolus and Gent-McWilliams velocity.</div>
+<a name="ocean_y_overturning_mass_streamfunction"></a><img id="ocean_y_overturning_mass_streamfunction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_y_overturning_mass_streamfunction')">ocean_y_overturning_mass_streamfunction</a></code><div id="ocean_y_overturning_mass_streamfunction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. In contrast to the quantity with standard name ocean_meridional_overturning_streamfunction, this quantity includes all physical processes, resolved or parameterized, that impact mass/volume transport.  Thus it includes contributions from the bolus and Gent-McWilliams velocity.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -14872,7 +14932,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection_tr">
 <td>
-<a name="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection"></a><img id="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_y_overturning_mass_streamfunction_due_to_bolus_advection')">ocean_y_overturning_mass_streamfunction_due_to_bolus_advection</a></code><div id="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection"></a><img id="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_y_overturning_mass_streamfunction_due_to_bolus_advection')">ocean_y_overturning_mass_streamfunction_due_to_bolus_advection</a></code><div id="ocean_y_overturning_mass_streamfunction_due_to_bolus_advection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -15564,7 +15624,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_tr">
 <td>
-<a name="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density"></a><img id="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density')">ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density</a></code><div id="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  Sea surface density is the density of sea water near the surface (including the part under sea-ice, if any). "component_derivative_of_X" means  derivative of X with respect to distance in the component  direction, which may be northward, southward, eastward, westward, x or y. The last two indicatederivatives along the axes of the grid, in the case where they are not true longitude and latitude.  "ratio_of_X_to_Y"  means X/Y.  "Ocean rigid lid pressure" means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</div>
+<a name="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density"></a><img id="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density')">ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density</a></code><div id="ratio_of_x_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea surface density is the density of sea water near the surface (including the part under sea-ice, if any). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, whether or not they are true longitude and latitude.  "ratio_of_X_to_Y"  means X/Y.  "Ocean rigid lid pressure" means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</div>
 </td>
 <td>m s-2</td>
 <td>
@@ -15576,7 +15636,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_tr">
 <td>
-<a name="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density"></a><img id="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density')">ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density</a></code><div id="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  Sea surface density is the density of sea water near the surface (including the part under sea-ice, if any). "component_derivative_of_X" means  derivative of X with respect to distance in the component  direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.  "ratio_of_X_to_Y"  means X/Y.  "Ocean rigid lid pressure" means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</div>
+<a name="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density"></a><img id="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density')">ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density</a></code><div id="ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea surface density is the density of sea water near the surface (including the part under sea-ice, if any). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, whether or not they are true longitude and latitude.  "ratio_of_X_to_Y" means X/Y.  "Ocean rigid lid pressure" means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</div>
 </td>
 <td>m s-2</td>
 <td>
@@ -15840,6 +15900,18 @@ The canonical units associated with each standard name are usually the SI units 
 <td>sic</td>
 <td>91</td>
 </tr>
+<tr id="sea_ice_classification_tr">
+<td>
+<a name="sea_ice_classification"></a><img id="sea_ice_classification_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_classification')">sea_ice_classification</a></code><div id="sea_ice_classification_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of sea_ice_classification contains strings which indicate the character of the ice surface e.g. open_ice, or first_year_ice. These strings have not yet been standardised. However, and whenever possible, they should follow the terminology defined in the WMO Standard Nomenclature for Sea Ice Classification. Alternatively, the data variable may contain integers which can be translated to strings using flag_values and flag_meanings attributes.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="sea_ice_draft_tr">
 <td>
 <a name="sea_ice_draft"></a><img id="sea_ice_draft_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_draft')">sea_ice_draft</a></code><div id="sea_ice_draft_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea ice draft is the depth of the sea-ice lower surface below the water surface.</div>
@@ -15968,7 +16040,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_x_displacement_tr">
 <td>
-<a name="sea_ice_x_displacement"></a><img id="sea_ice_x_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_displacement')">sea_ice_x_displacement</a></code><div id="sea_ice_x_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Displacement" means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable.  A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component. An x displacement is calculated from the difference in the moving object's grid x coordinate between the start and end of the time interval associated with the displacement variable.</div>
+<a name="sea_ice_x_displacement"></a><img id="sea_ice_x_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_displacement')">sea_ice_x_displacement</a></code><div id="sea_ice_x_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. "Displacement" means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable.  A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component. An x displacement is calculated from the difference in the moving object's grid x coordinate between the start and end of the time interval associated with the displacement variable.</div>
 </td>
 <td>m</td>
 <td>
@@ -15980,7 +16052,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_x_transport_tr">
 <td>
-<a name="sea_ice_x_transport"></a><img id="sea_ice_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_transport')">sea_ice_x_transport</a></code><div id="sea_ice_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<a name="sea_ice_x_transport"></a><img id="sea_ice_x_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_transport')">sea_ice_x_transport</a></code><div id="sea_ice_x_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -15992,7 +16064,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_x_velocity_tr">
 <td>
-<a name="sea_ice_x_velocity"></a><img id="sea_ice_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_velocity')">sea_ice_x_velocity</a></code><div id="sea_ice_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<a name="sea_ice_x_velocity"></a><img id="sea_ice_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_x_velocity')">sea_ice_x_velocity</a></code><div id="sea_ice_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -16004,7 +16076,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_y_displacement_tr">
 <td>
-<a name="sea_ice_y_displacement"></a><img id="sea_ice_y_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_displacement')">sea_ice_y_displacement</a></code><div id="sea_ice_y_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Displacement" means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable.  A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component. A y displacement is calculated from the difference in the moving object's grid y coordinate between the start and end of the time interval associated with the displacement variable.</div>
+<a name="sea_ice_y_displacement"></a><img id="sea_ice_y_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_displacement')">sea_ice_y_displacement</a></code><div id="sea_ice_y_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. "Displacement" means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable. A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component. A y displacement is calculated from the difference in the moving object's grid y coordinate between the start and end of the time interval associated with the displacement variable.</div>
 </td>
 <td>m</td>
 <td>
@@ -16016,7 +16088,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_y_transport_tr">
 <td>
-<a name="sea_ice_y_transport"></a><img id="sea_ice_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_transport')">sea_ice_y_transport</a></code><div id="sea_ice_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<a name="sea_ice_y_transport"></a><img id="sea_ice_y_transport_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_transport')">sea_ice_y_transport</a></code><div id="sea_ice_y_transport_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>kg s-1</td>
 <td>
@@ -16028,7 +16100,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="sea_ice_y_velocity_tr">
 <td>
-<a name="sea_ice_y_velocity"></a><img id="sea_ice_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_velocity')">sea_ice_y_velocity</a></code><div id="sea_ice_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<a name="sea_ice_y_velocity"></a><img id="sea_ice_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_y_velocity')">sea_ice_y_velocity</a></code><div id="sea_ice_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -16864,7 +16936,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="sea_water_x_velocity"></a><img id="sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_water_x_velocity')">sea_water_x_velocity</a></code><div style="padding-left: 16px;">
 <i>alias:</i> x_sea_water_velocity</div>
-<div id="sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.</div>
+<div id="sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -16878,7 +16950,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="sea_water_y_velocity"></a><img id="sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_water_y_velocity')">sea_water_y_velocity</a></code><div style="padding-left: 16px;">
 <i>alias:</i> y_sea_water_velocity</div>
-<div id="sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.</div>
+<div id="sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -17868,6 +17940,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="surface_bidirectional_reflectance_tr">
+<td>
+<a name="surface_bidirectional_reflectance"></a><img id="surface_bidirectional_reflectance_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_bidirectional_reflectance')">surface_bidirectional_reflectance</a></code><div id="surface_bidirectional_reflectance_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Bidirectional_reflectance" depends on the angles of incident and measured radiation. Reflectance is the ratio of the energy of the reflected to the incident radiation. A coordinate variable of radiation_wavelength or radiation_frequency can be used to specify the wavelength or frequency, respectively, of the radiation.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="surface_brightness_temperature_tr">
 <td>
 <a name="surface_brightness_temperature"></a><img id="surface_brightness_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_brightness_temperature')">surface_brightness_temperature</a></code><div id="surface_brightness_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.The brightness temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area.</div>
@@ -18066,7 +18150,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_downward_x_stress_tr">
 <td>
-<a name="surface_downward_x_stress"></a><img id="surface_downward_x_stress_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_x_stress')">surface_downward_x_stress</a></code><div id="surface_downward_x_stress_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
+<a name="surface_downward_x_stress"></a><img id="surface_downward_x_stress_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_x_stress')">surface_downward_x_stress</a></code><div id="surface_downward_x_stress_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -18078,7 +18162,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_downward_x_stress_correction_tr">
 <td>
-<a name="surface_downward_x_stress_correction"></a><img id="surface_downward_x_stress_correction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_x_stress_correction')">surface_downward_x_stress_correction</a></code><div id="surface_downward_x_stress_correction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Downward" indicates a vector component which is positive when directed downward (negative upward).  The surface called "surface" means the lower boundary of the atmosphere.  A downward x stress is a downward flux of momentum towards the positive direction of the model's x-axis.</div>
+<a name="surface_downward_x_stress_correction"></a><img id="surface_downward_x_stress_correction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_x_stress_correction')">surface_downward_x_stress_correction</a></code><div id="surface_downward_x_stress_correction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface called "surface" means the lower boundary of the atmosphere. A downward x stress is a downward flux of momentum towards the positive direction of the model's x-axis.</div>
 </td>
 <td>Pa</td>
 <td>
@@ -18090,7 +18174,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_downward_y_stress_tr">
 <td>
-<a name="surface_downward_y_stress"></a><img id="surface_downward_y_stress_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_y_stress')">surface_downward_y_stress</a></code><div id="surface_downward_y_stress_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
+<a name="surface_downward_y_stress"></a><img id="surface_downward_y_stress_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_y_stress')">surface_downward_y_stress</a></code><div id="surface_downward_y_stress_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -18102,7 +18186,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_downward_y_stress_correction_tr">
 <td>
-<a name="surface_downward_y_stress_correction"></a><img id="surface_downward_y_stress_correction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_y_stress_correction')">surface_downward_y_stress_correction</a></code><div id="surface_downward_y_stress_correction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Downward" indicates a vector component which is positive when directed downward (negative upward).  The surface called "surface" means the lower boundary of the atmosphere.  A downward y stress is a downward flux of momentum towards the positive direction of the model's y-axis.</div>
+<a name="surface_downward_y_stress_correction"></a><img id="surface_downward_y_stress_correction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_y_stress_correction')">surface_downward_y_stress_correction</a></code><div id="surface_downward_y_stress_correction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface called "surface" means the lower boundary of the atmosphere. A downward y stress is a downward flux of momentum towards the positive direction of the model's y-axis.</div>
 </td>
 <td>Pa</td>
 <td>
@@ -18544,7 +18628,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_geostrophic_sea_water_x_velocity_tr">
 <td>
-<a name="surface_geostrophic_sea_water_x_velocity"></a><img id="surface_geostrophic_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_x_velocity')">surface_geostrophic_sea_water_x_velocity</a></code><div id="surface_geostrophic_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_x_velocity is the sum of a variable part, surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
+<a name="surface_geostrophic_sea_water_x_velocity"></a><img id="surface_geostrophic_sea_water_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_x_velocity')">surface_geostrophic_sea_water_x_velocity</a></code><div id="surface_geostrophic_sea_water_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_x_velocity is the sum of a variable part, surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -18556,7 +18640,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid_tr">
 <td>
-<a name="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid"></a><img id="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid')">surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
+<a name="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid"></a><img id="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid')">surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -18568,7 +18652,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_geostrophic_sea_water_y_velocity_tr">
 <td>
-<a name="surface_geostrophic_sea_water_y_velocity"></a><img id="surface_geostrophic_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_y_velocity')">surface_geostrophic_sea_water_y_velocity</a></code><div id="surface_geostrophic_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_y_velocity is the sum of a variable part, surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
+<a name="surface_geostrophic_sea_water_y_velocity"></a><img id="surface_geostrophic_sea_water_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_y_velocity')">surface_geostrophic_sea_water_y_velocity</a></code><div id="surface_geostrophic_sea_water_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_y_velocity is the sum of a variable part, surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -18580,7 +18664,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid_tr">
 <td>
-<a name="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid"></a><img id="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid')">surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Geostrophic" indicates that geostrophic balance is assumed.  "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
+<a name="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid"></a><img id="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid')">surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_y_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -23102,7 +23186,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production_tr">
 <td>
-<a name="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production"></a><img id="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production')">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production</a></code><div id="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for propane is C3H8. Propane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The "agricultural production" sector comprises the agricultural processes of enteric fermentation, manure management, rice cultivation, agricultural soils and other. It may also include any not-classified or "other" combustion, which is commonly included in agriculture-related inventory data. "Agricultural production" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 4A, 4B, 4C, 4D and 4G as defined in the 2006 IPCC guidelines for national greenhouse gas inventories". </div>
+<a name="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production"></a><img id="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production')">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production</a></code><div id="tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for propane is C3H8. Propane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The "agricultural production" sector comprises the agricultural processes of enteric fermentation, manure management, rice cultivation, agricultural soils and other. It may also include any not-classified or "other" combustion, which is commonly included in agriculture-related inventory data. "Agricultural production" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 4A, 4B, 4C, 4D and 4G as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>
@@ -28340,7 +28424,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="upward_x_stress_at_sea_ice_base_tr">
 <td>
-<a name="upward_x_stress_at_sea_ice_base"></a><img id="upward_x_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_x_stress_at_sea_ice_base')">upward_x_stress_at_sea_ice_base</a></code><div id="upward_x_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x.  "Upward" indicates a vector component which is positive when directed upward (negative downward).</div>
+<a name="upward_x_stress_at_sea_ice_base"></a><img id="upward_x_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_x_stress_at_sea_ice_base')">upward_x_stress_at_sea_ice_base</a></code><div id="upward_x_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. "Upward" indicates a vector component which is positive when directed upward (negative downward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -28352,7 +28436,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="upward_y_stress_at_sea_ice_base_tr">
 <td>
-<a name="upward_y_stress_at_sea_ice_base"></a><img id="upward_y_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_y_stress_at_sea_ice_base')">upward_y_stress_at_sea_ice_base</a></code><div id="upward_y_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y.  "Upward" indicates a vector component which is positive when directed upward (negative downward).</div>
+<a name="upward_y_stress_at_sea_ice_base"></a><img id="upward_y_stress_at_sea_ice_base_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_y_stress_at_sea_ice_base')">upward_y_stress_at_sea_ice_base</a></code><div id="upward_y_stress_at_sea_ice_base_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. "Upward" indicates a vector component which is positive when directed upward (negative downward).</div>
 </td>
 <td>Pa</td>
 <td>
@@ -29280,7 +29364,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="x_derivative_of_ocean_rigid_lid_pressure_tr">
 <td>
-<a name="x_derivative_of_ocean_rigid_lid_pressure"></a><img id="x_derivative_of_ocean_rigid_lid_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('x_derivative_of_ocean_rigid_lid_pressure')">x_derivative_of_ocean_rigid_lid_pressure</a></code><div id="x_derivative_of_ocean_rigid_lid_pressure_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"component_derivative_of_X " means the derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude. x_derivative_of_ocean_rigid_lid_pressure means (d/dx) of the ocean surface pressure, as derived by a rigid lid approximation, keeping the other horizontal coordinate (y, presumably) constant.</div>
+<a name="x_derivative_of_ocean_rigid_lid_pressure"></a><img id="x_derivative_of_ocean_rigid_lid_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('x_derivative_of_ocean_rigid_lid_pressure')">x_derivative_of_ocean_rigid_lid_pressure</a></code><div id="x_derivative_of_ocean_rigid_lid_pressure_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"component_derivative_of_X" means the derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid,  whether or not they are true longitude and latitude. x_derivative_of_ocean_rigid_lid_pressure means (d/dx) of the ocean surface pressure, as derived by a rigid lid approximation, keeping the other horizontal coordinate (y, presumably) constant.</div>
 </td>
 <td>Pa m-1</td>
 <td>
@@ -29294,7 +29378,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="x_wind"></a><img id="x_wind_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('x_wind')">x_wind</a></code><div style="padding-left: 16px;">
 <i>alias:</i> grid_eastward_wind</div>
-<div id="x_wind_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, when this is not true longitude, positive with increasing x. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</div>
+<div id="x_wind_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"x" indicates a vector component along the grid x-axis, positive with increasing x. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</div>
 </td>
 <td>m s-1</td>
 <td>
@@ -29306,7 +29390,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="y_derivative_of_ocean_rigid_lid_pressure_tr">
 <td>
-<a name="y_derivative_of_ocean_rigid_lid_pressure"></a><img id="y_derivative_of_ocean_rigid_lid_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('y_derivative_of_ocean_rigid_lid_pressure')">y_derivative_of_ocean_rigid_lid_pressure</a></code><div id="y_derivative_of_ocean_rigid_lid_pressure_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"component_derivative_of_X " means the derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude. y_derivative_of_ocean_rigid_lid_pressure means (d/dy) of the ocean surface pressure, as derived by a rigid lid approximation, keeping the other horizontal coordinate (x, presumably) constant.</div>
+<a name="y_derivative_of_ocean_rigid_lid_pressure"></a><img id="y_derivative_of_ocean_rigid_lid_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('y_derivative_of_ocean_rigid_lid_pressure')">y_derivative_of_ocean_rigid_lid_pressure</a></code><div id="y_derivative_of_ocean_rigid_lid_pressure_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"component_derivative_of_X" means the derivative of X with respect to distance in the component direction, which may be northward, southward, eastward, westward, x or y. The last two indicate derivatives along the axes of the grid, whether or not they are true longitude and latitude. y_derivative_of_ocean_rigid_lid_pressure means (d/dy) of the ocean surface pressure, as derived by a rigid lid approximation, keeping the other horizontal coordinate (x, presumably) constant.</div>
 </td>
 <td>Pa m-1</td>
 <td>
@@ -29320,7 +29404,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="y_wind"></a><img id="y_wind_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('y_wind')">y_wind</a></code><div style="padding-left: 16px;">
 <i>alias:</i> grid_northward_wind</div>
-<div id="y_wind_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, when this is not true latitude, positive with increasing y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</div>
+<div id="y_wind_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"y" indicates a vector component along the grid y-axis, positive with increasing y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</div>
 </td>
 <td>m s-1</td>
 <td>
