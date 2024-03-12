@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 3,
-          <newdate>20 February 2007</newdate></b><br><br>
+<b>Version 4,
+          <newdate>09 March 2007</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -5240,7 +5240,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="sea_surface_wave_directional_variance_spectral_density"></a><img id="sea_surface_wave_directional_variance_spectral_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_directional_variance_spectral_density')">sea_surface_wave_directional_variance_spectral_density</a></code><div id="sea_surface_wave_directional_variance_spectral_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea surface wave directional variance spectral density is the variance of the amplitude of the waves within given ranges of direction and wave frequency.</div>
 </td>
-<td>m2 s-1 rad-1</td>
+<td>m2 s rad-1</td>
 <td>
                          
                     </td>
@@ -5300,7 +5300,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="sea_surface_wave_variance_spectral_density"></a><img id="sea_surface_wave_variance_spectral_density_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_variance_spectral_density')">sea_surface_wave_variance_spectral_density</a></code><div id="sea_surface_wave_variance_spectral_density_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Sea surface wave variance spectral density is the variance of wave amplitude within a range of wave frequency.</div>
 </td>
-<td>m2 s-1</td>
+<td>m2 s</td>
 <td>
                          
                     </td>
@@ -8255,6 +8255,18 @@ The canonical units associated with each standard name are usually the SI units 
 <tr id="toa_instantaneous_shortwave_forcing_tr">
 <td>
 <a name="toa_instantaneous_shortwave_forcing"></a><img id="toa_instantaneous_shortwave_forcing_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('toa_instantaneous_shortwave_forcing')">toa_instantaneous_shortwave_forcing</a></code><div id="toa_instantaneous_shortwave_forcing_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"shortwave" means shortwave radiation. "toa" means top of atmosphere. Instantaneous forcing is the radiative flux change caused instantaneously by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.).</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="toa_net_downward_longwave_flux_tr">
+<td>
+<a name="toa_net_downward_longwave_flux"></a><img id="toa_net_downward_longwave_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('toa_net_downward_longwave_flux')">toa_net_downward_longwave_flux</a></code><div id="toa_net_downward_longwave_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"longwave" means longwave radiation. "toa" means top of atmosphere.   "Downward" indicates a vector component which is positive when directed downward (negative upward).  Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2</td>
 <td>
