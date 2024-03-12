@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 35,
-          <newdate>20 July 2016</newdate></b><br><br>
+<b>Version 36,
+          <newdate>21 September 2016</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -12313,9 +12313,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="sea_ice_extent_tr">
 <td>
-<a name="sea_ice_extent"></a><img id="sea_ice_extent_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_extent')">sea_ice_extent</a></code><div id="sea_ice_extent_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">
-                            No help available.
-                        </div>
+<a name="sea_ice_extent"></a><img id="sea_ice_extent_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_extent')">sea_ice_extent</a></code><div id="sea_ice_extent_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The term sea_ice_extent means the total area of all grid cells in which the sea ice area fraction equals or exceeds a threshold, often chosen to be 15 per cent. The threshold must be specified by supplying a coordinate variable or scalar coordinate variable with the standard name of sea_ice_area_fraction.  The horizontal domain over which sea ice extent is calculated is described by the associated coordinate variables and coordinate bounds or by a coordinate variable or scalar coordinate variable with the standard name of "region" supplied according to section 6.1.1 of the CF conventions.</div>
 </td>
 <td>m2</td>
 <td></td>
@@ -12393,9 +12391,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="sea_ice_volume_tr">
 <td>
-<a name="sea_ice_volume"></a><img id="sea_ice_volume_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_volume')">sea_ice_volume</a></code><div id="sea_ice_volume_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">
-                            No help available.
-                        </div>
+<a name="sea_ice_volume"></a><img id="sea_ice_volume_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_volume')">sea_ice_volume</a></code><div id="sea_ice_volume_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_volume" means the volume occupied by X within the grid cell.</div>
 </td>
 <td>m3</td>
 <td></td>
