@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 39,
-          <newdate>16 December 2016</newdate></b><br><br>
+<b>Version 40,
+          <newdate>25 January 2017</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -4578,6 +4578,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="floating_ice_sheet_area_fraction_tr">
+<td>
+<a name="floating_ice_sheet_area_fraction"></a><img id="floating_ice_sheet_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('floating_ice_sheet_area_fraction')">floating_ice_sheet_area_fraction</a></code><div id="floating_ice_sheet_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. A "floating ice sheet", sometimes called an "ice shelf", indicates where the ice sheet is flowing over sea water.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="floating_ice_thickness_tr">
 <td>
 <a name="floating_ice_thickness"></a><img id="floating_ice_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('floating_ice_thickness')">floating_ice_thickness</a></code><div id="floating_ice_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Floating ice" means any ice that is floating on water, e.g. on a sea or lake surface.  "Thickness" means the vertical extent of the ice.</div>
@@ -4803,6 +4811,14 @@ totals are summed to obtain the index.</div>
 <a name="gross_rate_of_increase_in_area_fraction"></a><img id="gross_rate_of_increase_in_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('gross_rate_of_increase_in_area_fraction')">gross_rate_of_increase_in_area_fraction</a></code><div id="gross_rate_of_increase_in_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The "rate of increase in area fraction" is the fraction of a grid cell that transitions to a given area type per unit time, for example, as a result of land use changes. The quantity described by this standard name is a gross increase because it includes only land where the use transitions to the given area type and excludes land that transitions away from that area type during the same period. The area type should be specified using a coordinate or scalar coordinate variable with standard name area_type. There is also a standard name for gross_rate_of_decrease_in_area_fraction.</div>
 </td>
 <td>s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="grounded_ice_sheet_area_fraction_tr">
+<td>
+<a name="grounded_ice_sheet_area_fraction"></a><img id="grounded_ice_sheet_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('grounded_ice_sheet_area_fraction')">grounded_ice_sheet_area_fraction</a></code><div id="grounded_ice_sheet_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "Grounded ice sheet" indicates where the ice sheet rests over bedrock and is thus grounded. It excludes ice-caps, glaciers and floating ice shelves.</div>
+</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -5332,6 +5348,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="land_ice_basal_specific_mass_balance_flux_tr">
+<td>
+<a name="land_ice_basal_specific_mass_balance_flux"></a><img id="land_ice_basal_specific_mass_balance_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_specific_mass_balance_flux')">land_ice_basal_specific_mass_balance_flux</a></code><div id="land_ice_basal_specific_mass_balance_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">“Land ice” means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. "Specific mass balance" means the net rate at which ice is added per unit area. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. "Basal specific mass balance" means the net rate at which ice is added per unit area at the land ice base.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_basal_upward_velocity_tr">
+<td>
+<a name="land_ice_basal_upward_velocity"></a><img id="land_ice_basal_upward_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_upward_velocity')">land_ice_basal_upward_velocity</a></code><div id="land_ice_basal_upward_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward).</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="land_ice_basal_x_velocity_tr">
 <td>
 <a name="land_ice_basal_x_velocity"></a><img id="land_ice_basal_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_basal_x_velocity')">land_ice_basal_x_velocity</a></code><div id="land_ice_basal_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
@@ -5382,6 +5414,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="land_ice_runoff_flux_tr">
+<td>
+<a name="land_ice_runoff_flux"></a><img id="land_ice_runoff_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_runoff_flux')">land_ice_runoff_flux</a></code><div id="land_ice_runoff_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage. Runoff flux over land ice is the difference between any available liquid water in the snowpack due to rainfall and melting minus any refreezing and liquid water retained in the snowpack. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="land_ice_sigma_coordinate_tr">
 <td>
 <a name="land_ice_sigma_coordinate"></a><img id="land_ice_sigma_coordinate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_sigma_coordinate')">land_ice_sigma_coordinate</a></code><div id="land_ice_sigma_coordinate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</div>
@@ -5390,9 +5430,33 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="land_ice_specific_mass_flux_due_to_calving_tr">
+<td>
+<a name="land_ice_specific_mass_flux_due_to_calving"></a><img id="land_ice_specific_mass_flux_due_to_calving_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_specific_mass_flux_due_to_calving')">land_ice_specific_mass_flux_due_to_calving</a></code><div id="land_ice_specific_mass_flux_due_to_calving_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "Specific mass flux due to calving" means the change in land ice mass per unit area resulting from iceberg calving. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting_tr">
+<td>
+<a name="land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting"></a><img id="land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting')">land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting</a></code><div id="land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. "Specific mass flux due to calving and ice front melting" means the change in land ice mass per unit area resulting from iceberg calving and melting on the vertical ice front. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_surface_melt_flux_tr">
+<td>
+<a name="land_ice_surface_melt_flux"></a><img id="land_ice_surface_melt_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_melt_flux')">land_ice_surface_melt_flux</a></code><div id="land_ice_surface_melt_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The surface called "surface" means the lower boundary of the atmosphere. The land_ice_surface_melt_flux is the loss of ice mass resulting from surface melting. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. There is also a standard name for the quantity surface_snow_and_ice_melt_flux.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="land_ice_surface_specific_mass_balance_flux_tr">
 <td>
-<a name="land_ice_surface_specific_mass_balance_flux"></a><img id="land_ice_surface_specific_mass_balance_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_specific_mass_balance_flux')">land_ice_surface_specific_mass_balance_flux</a></code><div id="land_ice_surface_specific_mass_balance_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. A negative value means loss of ice. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="land_ice_surface_specific_mass_balance_flux"></a><img id="land_ice_surface_specific_mass_balance_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_specific_mass_balance_flux')">land_ice_surface_specific_mass_balance_flux</a></code><div id="land_ice_surface_specific_mass_balance_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. "Specific mass balance" means the net rate at which ice is added per unit area. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. "Surface specific mass balance" means the net rate at which ice is added per unit area at the land ice surface due to all processes of surface accumulation and ablation.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td></td>
@@ -5403,6 +5467,30 @@ totals are summed to obtain the index.</div>
 <a name="land_ice_surface_specific_mass_balance_rate"></a><img id="land_ice_surface_specific_mass_balance_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_specific_mass_balance_rate')">land_ice_surface_specific_mass_balance_rate</a></code><div style="padding-left: 16px;">
 <i>alias:</i> land_ice_surface_specific_mass_balance</div>
 <div id="land_ice_surface_specific_mass_balance_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Specific mass balance means the net rate at which ice is added at the land ice surface due to all processes of surface accumulation and ablation. A negative value means loss of ice.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_surface_upward_velocity_tr">
+<td>
+<a name="land_ice_surface_upward_velocity"></a><img id="land_ice_surface_upward_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_upward_velocity')">land_ice_surface_upward_velocity</a></code><div id="land_ice_surface_upward_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). The surface called "surface" means the lower boundary of the atmosphere.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_surface_x_velocity_tr">
+<td>
+<a name="land_ice_surface_x_velocity"></a><img id="land_ice_surface_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_x_velocity')">land_ice_surface_x_velocity</a></code><div id="land_ice_surface_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. The surface called "surface" means the lower boundary of the atmosphere.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="land_ice_surface_y_velocity_tr">
+<td>
+<a name="land_ice_surface_y_velocity"></a><img id="land_ice_surface_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('land_ice_surface_y_velocity')">land_ice_surface_y_velocity</a></code><div id="land_ice_surface_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. The surface called "surface" means the lower boundary of the atmosphere.</div>
 </td>
 <td>m s-1</td>
 <td></td>
@@ -6718,6 +6806,14 @@ totals are summed to obtain the index.</div>
 <tr id="mass_concentration_of_peroxy_radicals_in_air_tr">
 <td>
 <a name="mass_concentration_of_peroxy_radicals_in_air"></a><img id="mass_concentration_of_peroxy_radicals_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mass_concentration_of_peroxy_radicals_in_air')">mass_concentration_of_peroxy_radicals_in_air</a></code><div id="mass_concentration_of_peroxy_radicals_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The term "peroxy_radicals" means all organic and inorganic peroxy radicals. This includes HO2 and all organic peroxy radicals, sometimes referred to as RO2. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</div>
+</td>
+<td>kg m-3</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="mass_concentration_of_petroleum_hydrocarbons_in_sea_water_tr">
+<td>
+<a name="mass_concentration_of_petroleum_hydrocarbons_in_sea_water"></a><img id="mass_concentration_of_petroleum_hydrocarbons_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('mass_concentration_of_petroleum_hydrocarbons_in_sea_water')">mass_concentration_of_petroleum_hydrocarbons_in_sea_water</a></code><div id="mass_concentration_of_petroleum_hydrocarbons_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". Petroleum hydrocarbons are compounds containing just carbon and hydrogen originating from the fossil fuel crude oil.</div>
 </td>
 <td>kg m-3</td>
 <td></td>
@@ -15413,6 +15509,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="temperature_at_base_of_ice_sheet_model_tr">
+<td>
+<a name="temperature_at_base_of_ice_sheet_model"></a><img id="temperature_at_base_of_ice_sheet_model_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('temperature_at_base_of_ice_sheet_model')">temperature_at_base_of_ice_sheet_model</a></code><div id="temperature_at_base_of_ice_sheet_model_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name temperature_at_base_of_ice_sheet_model is the lower boundary temperature that is used to force ice sheet models. Beneath ice shelves it is the temperature at the ice-ocean interface. Beneath grounded ice, it is the temperature at the ice-bedrock interface. In all instances the temperature is that of the interface itself and not that of the medium above or below the interface.</div>
+</td>
+<td>K</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="temperature_at_top_of_ice_sheet_model_tr">
+<td>
+<a name="temperature_at_top_of_ice_sheet_model"></a><img id="temperature_at_top_of_ice_sheet_model_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('temperature_at_top_of_ice_sheet_model')">temperature_at_top_of_ice_sheet_model</a></code><div id="temperature_at_top_of_ice_sheet_model_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name temperature_at_top_of_ice_sheet_model is the upper boundary temperature that is used to force ice sheet models. It is the temperature at the interface between the ice sheet and the overlying medium which may be snow or the atmosphere. In all instances the temperature is that of the interface itself and not that of the medium above or below the interface.</div>
+</td>
+<td>K</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="temperature_difference_between_ambient_air_and_air_lifted_adiabatically_tr">
 <td>
 <a name="temperature_difference_between_ambient_air_and_air_lifted_adiabatically"></a><img id="temperature_difference_between_ambient_air_and_air_lifted_adiabatically_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('temperature_difference_between_ambient_air_and_air_lifted_adiabatically')">temperature_difference_between_ambient_air_and_air_lifted_adiabatically</a></code><div id="temperature_difference_between_ambient_air_and_air_lifted_adiabatically_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">This quantity is defined as the temperature difference between a parcel of air lifted adiabatically from a starting air pressure to a finishing air pressure in the troposphere and the ambient air temperature at the finishing air pressure in the troposphere. It is 
@@ -20266,6 +20378,22 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
 <td></td>
 <td></td>
 </tr>
+<tr id="tendency_of_land_ice_mass_due_to_basal_mass_balance_tr">
+<td>
+<a name="tendency_of_land_ice_mass_due_to_basal_mass_balance"></a><img id="tendency_of_land_ice_mass_due_to_basal_mass_balance_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_land_ice_mass_due_to_basal_mass_balance')">tendency_of_land_ice_mass_due_to_basal_mass_balance</a></code><div id="tendency_of_land_ice_mass_due_to_basal_mass_balance_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. Mass balance means the net rate at which ice is accumulated. A negative value means loss of ice. "tendency_of_X" means derivative of X with respect to time. The tendency of land ice mass is the spatially integrated mass balance. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The tendency in ice mass due to the basal mass balance is the spatial integral of the quantity with standard name land_ice_basal_specific_mass_balance_flux. The horizontal domain over which the quantity is calculated is described by the associated coordinate variables and coordinate bounds or by a coordinate variable or scalar coordinate variable with the standard name of "region" supplied according to section 6.1.1 of the CF conventions.</div>
+</td>
+<td>kg s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="tendency_of_land_ice_mass_due_to_calving_tr">
+<td>
+<a name="tendency_of_land_ice_mass_due_to_calving"></a><img id="tendency_of_land_ice_mass_due_to_calving_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_land_ice_mass_due_to_calving')">tendency_of_land_ice_mass_due_to_calving</a></code><div id="tendency_of_land_ice_mass_due_to_calving_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The tendency in ice mass due to calving is the spatial integral of the quantity named land_ice_specific_mass_flux_due_to_calving. The horizontal domain over which the quantity is calculated is described by the associated coordinate variables and coordinate bounds or by a coordinate variable or scalar coordinate variable with the standard name of "region" supplied according to section 6.1.1 of the CF conventions.</div>
+</td>
+<td>kg s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="tendency_of_land_ice_thickness_tr">
 <td>
 <a name="tendency_of_land_ice_thickness"></a><img id="tendency_of_land_ice_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_land_ice_thickness')">tendency_of_land_ice_thickness</a></code><div id="tendency_of_land_ice_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"tendency_of_X" means derivative of X with respect to time. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.  "Thickness" means the vertical extent of a layer..</div>
@@ -22377,6 +22505,14 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
 <td></td>
 <td></td>
 </tr>
+<tr id="upward_geothermal_heat_flux_at_ground_level_in_land_ice_tr">
+<td>
+<a name="upward_geothermal_heat_flux_at_ground_level_in_land_ice"></a><img id="upward_geothermal_heat_flux_at_ground_level_in_land_ice_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_geothermal_heat_flux_at_ground_level_in_land_ice')">upward_geothermal_heat_flux_at_ground_level_in_land_ice</a></code><div id="upward_geothermal_heat_flux_at_ground_level_in_land_ice_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "ground_level" means the land surface (including beneath snow, ice and surface water, if any). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. "Upward" indicates a vector component which is positive when directed upward (negative downward). The quantity with standard name upward_geothermal_heat_flux_at_ground_level_in_land_ice is the upward heat flux at the interface between the ice and bedrock. It does not include any heat flux from the ocean into an ice shelf.</div>
+</td>
+<td>W m-2</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="upward_geothermal_heat_flux_at_sea_floor_tr">
 <td>
 <a name="upward_geothermal_heat_flux_at_sea_floor"></a><img id="upward_geothermal_heat_flux_at_sea_floor_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('upward_geothermal_heat_flux_at_sea_floor')">upward_geothermal_heat_flux_at_sea_floor</a></code><div id="upward_geothermal_heat_flux_at_sea_floor_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Upward" indicates a vector component which is positive when directed upward (negative downward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -22980,6 +23116,14 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
 <tr id="water_flux_into_sea_water_from_icebergs_tr">
 <td>
 <a name="water_flux_into_sea_water_from_icebergs"></a><img id="water_flux_into_sea_water_from_icebergs_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_flux_into_sea_water_from_icebergs')">water_flux_into_sea_water_from_icebergs</a></code><div id="water_flux_into_sea_water_from_icebergs_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The water flux into sea water is the freshwater entering as a result of precipitation, evaporation, river inflow, sea ice effects and water flux correction (if applied).  The water flux into sea water from icebergs is due to the melting of the iceberg. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+</td>
+<td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="water_flux_into_sea_water_from_land_ice_tr">
+<td>
+<a name="water_flux_into_sea_water_from_land_ice"></a><img id="water_flux_into_sea_water_from_land_ice_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_flux_into_sea_water_from_land_ice')">water_flux_into_sea_water_from_land_ice</a></code><div id="water_flux_into_sea_water_from_land_ice_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The water flux into sea water from land ice is the freshwater entering the ocean as a result of runoff from the surface and base of the ice and melting from the ice shelf base and vertical ice front. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of the ocean portion only.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td></td>
