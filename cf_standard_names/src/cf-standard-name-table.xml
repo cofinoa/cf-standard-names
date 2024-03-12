@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <standard_name_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cf-standard-name-table-1.1.xsd">
-   <version_number>53</version_number>
-   <last_modified>2018-05-30T10:26:34Z</last_modified>
+   <version_number>54</version_number>
+   <last_modified>2018-05-31T12:09:22Z</last_modified>
    <institution>Centre for Environmental Data Analysis</institution>
    <contact>support@ceda.ac.uk</contact>
 
@@ -3313,18 +3313,18 @@ totals are summed to obtain the index.</description>
       <description>&quot;shortwave&quot; means shortwave radiation. Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
-   <entry id="downwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
-      <canonical_units>W m-2</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clean sky&quot; means in the absence of atmospheric aerosol. &quot;Clear sky&quot; means in the absence of clouds.</description>
-   </entry>
-  
    <entry id="downwelling_shortwave_flux_in_air_assuming_clear_sky">
       <canonical_units>W m-2</canonical_units>
       <grib></grib>
       <amip></amip>
       <description>Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;.  When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;.  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;.  In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  &quot;shortwave&quot; means shortwave radiation.</description>
+   </entry>
+  
+   <entry id="downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol">
+      <canonical_units>W m-2</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clear sky&quot; means in the absence of clouds.</description>
    </entry>
   
    <entry id="downwelling_shortwave_flux_in_sea_water">
@@ -18731,18 +18731,18 @@ totals are summed to obtain the index.</description>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;shortwave&quot; means shortwave radiation. Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called &quot;global radiation&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
-   <entry id="surface_downwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
-      <canonical_units>W m-2</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. The term &quot;shortwave&quot; means shortwave radiation. Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called &quot;global radiation&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clean sky&quot; means in the absence of atmospheric aerosol. &quot;Clear sky&quot; means in the absence of clouds.</description>
-   </entry>
-  
    <entry id="surface_downwelling_shortwave_flux_in_air_assuming_clear_sky">
       <canonical_units>W m-2</canonical_units>
       <grib></grib>
       <amip>rsdscs</amip>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;shortwave&quot; means shortwave radiation. Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called &quot;global radiation&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
+   </entry>
+  
+   <entry id="surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol">
+      <canonical_units>W m-2</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean &quot;net downward&quot;. The term &quot;shortwave&quot; means shortwave radiation. Surface downwelling shortwave is the sum of direct and diffuse solar radiation incident on the surface, and is sometimes called &quot;global radiation&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clear sky&quot; means in the absence of clouds.</description>
    </entry>
   
    <entry id="surface_downwelling_shortwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles">
@@ -22133,18 +22133,18 @@ totals are summed to obtain the index.</description>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;shortwave&quot; means shortwave radiation. Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
-   <entry id="surface_upwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
-      <canonical_units>W m-2</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clean sky&quot; means in the absence of atmospheric aerosol. &quot;Clear sky&quot; means in the absence of clouds.</description>
-   </entry>
-  
    <entry id="surface_upwelling_shortwave_flux_in_air_assuming_clear_sky">
       <canonical_units>W m-2</canonical_units>
       <grib></grib>
       <amip>rsuscs</amip>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;shortwave&quot; means shortwave radiation. Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
+   </entry>
+  
+   <entry id="surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol">
+      <canonical_units>W m-2</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clear sky&quot; means in the absence of clouds.</description>
    </entry>
   
    <entry id="surface_water_amount">
@@ -28249,18 +28249,18 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <description>&quot;shortwave&quot; means shortwave radiation. &quot;toa&quot; means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the &quot;upwelling&quot; TOA shortwave flux, sometimes called the &quot;outgoing shortwave radiation&quot; or &quot;OSR&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
-   <entry id="toa_outgoing_shortwave_flux_assuming_clean_clear_sky">
-      <canonical_units>W m-2</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>The abbreviation &quot;toa&quot; means top of atmosphere. The term &quot;shortwave&quot; means shortwave radiation. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the &quot;upwelling&quot; TOA shortwave flux, sometimes called the &quot;outgoing shortwave radiation&quot; or &quot;OSR&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clean sky&quot; means in the absence of atmospheric aerosol. &quot;Clear sky&quot; means in the absence of clouds.</description>
-   </entry>
-  
    <entry id="toa_outgoing_shortwave_flux_assuming_clear_sky">
       <canonical_units>W m-2</canonical_units>
       <grib></grib>
       <amip>rsutcs</amip>
       <description>A phrase assuming_condition indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;shortwave&quot; means shortwave radiation. &quot;toa&quot; means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the &quot;upwelling&quot; TOA shortwave flux, sometimes called the &quot;outgoing shortwave radiation&quot; or &quot;OSR&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
+   </entry>
+  
+   <entry id="toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol">
+      <canonical_units>W m-2</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The abbreviation &quot;toa&quot; means top of atmosphere. The term &quot;shortwave&quot; means shortwave radiation. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the &quot;upwelling&quot; TOA shortwave flux, sometimes called the &quot;outgoing shortwave radiation&quot; or &quot;OSR&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clear sky&quot; means in the absence of clouds.</description>
    </entry>
   
    <entry id="toa_outgoing_shortwave_flux_assuming_no_aerosol">
@@ -28725,18 +28725,18 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <description>&quot;shortwave&quot; means shortwave radiation. Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
-   <entry id="upwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
-      <canonical_units>W m-2</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clean sky&quot; means in the absence of atmospheric aerosol. &quot;Clear sky&quot; means in the absence of clouds.</description>
-   </entry>
-  
    <entry id="upwelling_shortwave_flux_in_air_assuming_clear_sky">
       <canonical_units>W m-2</canonical_units>
       <grib></grib>
       <amip></amip>
       <description>Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;.  When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;.  In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;.  In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.  A phrase assuming_condition  indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition.  &quot;shortwave&quot; means shortwave radiation.</description>
+   </entry>
+  
+   <entry id="upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol">
+      <canonical_units>W m-2</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Upwelling radiation is radiation from below. It does not mean &quot;net upward&quot;. The term &quot;shortwave&quot; means shortwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called &quot;irradiance&quot;. In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called &quot;vector irradiance&quot;. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. A phrase &quot;assuming_condition&quot; indicates that the named quantity is the value which would obtain if all aspects of the system were unaltered except for the assumption of the circumstances specified by the condition. &quot;Clear sky&quot; means in the absence of clouds.</description>
    </entry>
   
    <entry id="upwelling_shortwave_radiance_in_air">
@@ -31340,6 +31340,26 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="water_flux_into_ocean_from_rivers">
     <entry_id>water_flux_into_sea_water_from_rivers</entry_id>
+  </alias>
+  
+  <alias id="downwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
+    <entry_id>downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</entry_id>
+  </alias>
+  
+  <alias id="surface_downwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
+    <entry_id>surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</entry_id>
+  </alias>
+  
+  <alias id="surface_upwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
+    <entry_id>surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</entry_id>
+  </alias>
+  
+  <alias id="toa_outgoing_shortwave_flux_assuming_clean_clear_sky">
+    <entry_id>toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol</entry_id>
+  </alias>
+  
+  <alias id="upwelling_shortwave_flux_in_air_assuming_clean_clear_sky">
+    <entry_id>upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</entry_id>
   </alias>
  
 
