@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 14,
-          <newdate>12 May 2010</newdate></b><br><br>
+<b>Version 15,
+          <newdate>26 July 2010</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -2121,11 +2121,13 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_tr">
+<tr id="atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_tr">
 <td>
-<a name="atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol"></a><img id="atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol')">atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol</a></code><div id="atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</div>
+<a name="atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur"></a><img id="atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur')">atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur</a></code><div style="padding-left: 16px;">
+<i>alias:</i> atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol</div>
+<div id="atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets). Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The chemical formula for the sulfate anion is SO4(2-).</div>
 </td>
-<td> kg m-2</td>
+<td>kg m-2</td>
 <td>
                          
                     </td>
@@ -4530,18 +4532,6 @@ The canonical units associated with each standard name are usually the SI units 
                     </td>
 <td>47</td>
 </tr>
-<tr id="dissipation_in_atmosphere_boundary_layer_tr">
-<td>
-<a name="dissipation_in_atmosphere_boundary_layer"></a><img id="dissipation_in_atmosphere_boundary_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dissipation_in_atmosphere_boundary_layer')">dissipation_in_atmosphere_boundary_layer</a></code><div id="dissipation_in_atmosphere_boundary_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">
-                            No help available.
-                        </div>
-</td>
-<td>W m-2</td>
-<td>
-                         
-                    </td>
-<td>E145</td>
-</tr>
 <tr id="divergence_of_sea_ice_velocity_tr">
 <td>
 <a name="divergence_of_sea_ice_velocity"></a><img id="divergence_of_sea_ice_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('divergence_of_sea_ice_velocity')">divergence_of_sea_ice_velocity</a></code><div id="divergence_of_sea_ice_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"[horizontal_]divergence_of_X" means [horizontal] divergence of a vector X; if X does not have a vertical component then "horizontal" should be omitted. A velocity is a vector quantity. Sea ice velocity is defined as a two-dimensional vector, with no vertical component.</div>
@@ -5250,9 +5240,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="eastward_water_vapor_flux_tr">
+<tr id="eastward_water_vapor_flux_in_air_tr">
 <td>
-<a name="eastward_water_vapor_flux"></a><img id="eastward_water_vapor_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('eastward_water_vapor_flux')">eastward_water_vapor_flux</a></code><div id="eastward_water_vapor_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Eastward" indicates a vector component which is positive when directed eastward (negative westward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="eastward_water_vapor_flux_in_air"></a><img id="eastward_water_vapor_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('eastward_water_vapor_flux_in_air')">eastward_water_vapor_flux_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> eastward_water_vapor_flux</div>
+<div id="eastward_water_vapor_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. </div>
 </td>
 <td>kg m-2 s-1</td>
 <td>
@@ -5852,7 +5844,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid_tr">
 <td>
-<a name="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid"></a><img id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid')">histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid</a></code><div id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Equivalent reflectivity factor"  is the radar reflectivity factor that is calculated from the measured radar return power assuming the target is composed of liquid water droplets whose diameter is less than one tenth of the radar wavelength, i.e., treating the droplets as Rayleigh scatterers.  The actual radar reflectivity factor would depend on the size distribution and composition of the particles within the target volume and these are  often unknown. "histogram_of_X[_over_Z]" means histogram (i.e. number of counts for each  range of X) of variations (over Z) of X.   The data variable should have an  axis for X. </div>
+<a name="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid"></a><img id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid')">histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid</a></code><div id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Equivalent reflectivity factor"  is the radar reflectivity factor that is calculated from the measured radar return power assuming the target is composed of liquid water droplets whose diameter is less than one tenth of the radar wavelength, i.e., treating the droplets as Rayleigh scatterers.  The actual radar reflectivity factor would depend on the size distribution and composition of the particles within the target volume and these are  often unknown. "histogram_of_X[_over_Z]" means histogram (i.e. number of counts for each  range of X) of variations (over Z) of X.   The data variable should have an  axis for X.  A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy.</div>
 </td>
 <td> 1 </td>
 <td>
@@ -6152,6 +6144,20 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="kinetic_energy_dissipation_in_atmosphere_boundary_layer_tr">
+<td>
+<a name="kinetic_energy_dissipation_in_atmosphere_boundary_layer"></a><img id="kinetic_energy_dissipation_in_atmosphere_boundary_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('kinetic_energy_dissipation_in_atmosphere_boundary_layer')">kinetic_energy_dissipation_in_atmosphere_boundary_layer</a></code><div style="padding-left: 16px;">
+<i>alias:</i> dissipation_in_atmosphere_boundary_layer</div>
+<div id="kinetic_energy_dissipation_in_atmosphere_boundary_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">
+                            No help available.
+                        </div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>E145</td>
+</tr>
 <tr id="lagrangian_tendency_of_air_pressure_tr">
 <td>
 <a name="lagrangian_tendency_of_air_pressure"></a><img id="lagrangian_tendency_of_air_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lagrangian_tendency_of_air_pressure')">lagrangian_tendency_of_air_pressure</a></code><div style="padding-left: 16px;">
@@ -6386,112 +6392,6 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="large_scale_cloud_area_fraction_tr">
-<td>
-<a name="large_scale_cloud_area_fraction"></a><img id="large_scale_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_cloud_area_fraction')">large_scale_cloud_area_fraction</a></code><div id="large_scale_cloud_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. Cloud area fraction is also called "cloud amount" and "cloud cover". The cloud area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere. The cloud area fraction in a layer of the atmosphere has the standard name cloud_area_fraction_in_atmosphere_layer.</div>
-</td>
-<td>1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_graupel_flux_tr">
-<td>
-<a name="large_scale_graupel_flux"></a><img id="large_scale_graupel_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_graupel_flux')">large_scale_graupel_flux</a></code><div id="large_scale_graupel_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. </div>
-</td>
-<td> kg m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_precipitation_amount_tr">
-<td>
-<a name="large_scale_precipitation_amount"></a><img id="large_scale_precipitation_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_precipitation_amount')">large_scale_precipitation_amount</a></code><div id="large_scale_precipitation_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area.</div>
-</td>
-<td>kg m-2</td>
-<td>
-                         
-                    </td>
-<td>62</td>
-</tr>
-<tr id="large_scale_precipitation_flux_tr">
-<td>
-<a name="large_scale_precipitation_flux"></a><img id="large_scale_precipitation_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_precipitation_flux')">large_scale_precipitation_flux</a></code><div id="large_scale_precipitation_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>kg m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_rainfall_amount_tr">
-<td>
-<a name="large_scale_rainfall_amount"></a><img id="large_scale_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_rainfall_amount')">large_scale_rainfall_amount</a></code><div id="large_scale_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area.</div>
-</td>
-<td>kg m-2</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_rainfall_flux_tr">
-<td>
-<a name="large_scale_rainfall_flux"></a><img id="large_scale_rainfall_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_rainfall_flux')">large_scale_rainfall_flux</a></code><div id="large_scale_rainfall_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>kg m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_rainfall_rate_tr">
-<td>
-<a name="large_scale_rainfall_rate"></a><img id="large_scale_rainfall_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_rainfall_rate')">large_scale_rainfall_rate</a></code><div id="large_scale_rainfall_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">
-                            No help available.
-                        </div>
-</td>
-<td>m s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="large_scale_snowfall_amount_tr">
-<td>
-<a name="large_scale_snowfall_amount"></a><img id="large_scale_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_snowfall_amount')">large_scale_snowfall_amount</a></code><div id="large_scale_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area.</div>
-</td>
-<td>kg m-2</td>
-<td>
-                         
-                    </td>
-<td>79</td>
-</tr>
-<tr id="large_scale_snowfall_flux_tr">
-<td>
-<a name="large_scale_snowfall_flux"></a><img id="large_scale_snowfall_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('large_scale_snowfall_flux')">large_scale_snowfall_flux</a></code><div id="large_scale_snowfall_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>kg m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="latitude_tr">
 <td>
 <a name="latitude"></a><img id="latitude_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('latitude')">latitude</a></code><div id="latitude_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Latitude is positive northward; its units of degree_north (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_latitude should be used instead of latitude. Grid latitude is positive in the grid-northward direction, but its units should be plain degree.</div>
@@ -6514,9 +6414,9 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="liquid_water_content_of_snow_layer_tr">
+<tr id="liquid_water_content_of_soil_layer_tr">
 <td>
-<a name="liquid_water_content_of_snow_layer"></a><img id="liquid_water_content_of_snow_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('liquid_water_content_of_snow_layer')">liquid_water_content_of_snow_layer</a></code><div id="liquid_water_content_of_snow_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area.</div>
+<a name="liquid_water_content_of_soil_layer"></a><img id="liquid_water_content_of_soil_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('liquid_water_content_of_soil_layer')">liquid_water_content_of_soil_layer</a></code><div id="liquid_water_content_of_soil_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Quantities defined for a soil layer must have a vertical coordinate variable with boundaries indicating the extent of the layer(s).</div>
 </td>
 <td>kg m-2</td>
 <td>
@@ -6526,9 +6426,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="liquid_water_content_of_soil_layer_tr">
+<tr id="liquid_water_content_of_surface_snow_tr">
 <td>
-<a name="liquid_water_content_of_soil_layer"></a><img id="liquid_water_content_of_soil_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('liquid_water_content_of_soil_layer')">liquid_water_content_of_soil_layer</a></code><div id="liquid_water_content_of_soil_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Quantities defined for a soil layer must have a vertical coordinate variable with boundaries indicating the extent of the layer(s).</div>
+<a name="liquid_water_content_of_surface_snow"></a><img id="liquid_water_content_of_surface_snow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('liquid_water_content_of_surface_snow')">liquid_water_content_of_surface_snow</a></code><div style="padding-left: 16px;">
+<i>alias:</i> liquid_water_content_of_snow_layer</div>
+<div id="liquid_water_content_of_surface_snow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The surface called "surface" means the lower boundary of the atmosphere. </div>
 </td>
 <td>kg m-2</td>
 <td>
@@ -6596,30 +6498,6 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="lwe_large_scale_precipitation_rate_tr">
-<td>
-<a name="lwe_large_scale_precipitation_rate"></a><img id="lwe_large_scale_precipitation_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_large_scale_precipitation_rate')">lwe_large_scale_precipitation_rate</a></code><div id="lwe_large_scale_precipitation_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent.</div>
-</td>
-<td>m s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="lwe_large_scale_snowfall_rate_tr">
-<td>
-<a name="lwe_large_scale_snowfall_rate"></a><img id="lwe_large_scale_snowfall_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_large_scale_snowfall_rate')">lwe_large_scale_snowfall_rate</a></code><div id="lwe_large_scale_snowfall_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent.</div>
-</td>
-<td>m s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="lwe_precipitation_rate_tr">
 <td>
 <a name="lwe_precipitation_rate"></a><img id="lwe_precipitation_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_precipitation_rate')">lwe_precipitation_rate</a></code><div id="lwe_precipitation_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent.</div>
@@ -6635,6 +6513,34 @@ The canonical units associated with each standard name are usually the SI units 
 <tr id="lwe_snowfall_rate_tr">
 <td>
 <a name="lwe_snowfall_rate"></a><img id="lwe_snowfall_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_snowfall_rate')">lwe_snowfall_rate</a></code><div id="lwe_snowfall_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="lwe_stratiform_precipitation_rate_tr">
+<td>
+<a name="lwe_stratiform_precipitation_rate"></a><img id="lwe_stratiform_precipitation_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_stratiform_precipitation_rate')">lwe_stratiform_precipitation_rate</a></code><div style="padding-left: 16px;">
+<i>alias:</i> lwe_large_scale_precipitation_rate</div>
+<div id="lwe_stratiform_precipitation_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.  "lwe" means liquid water equivalent. </div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="lwe_stratiform_snowfall_rate_tr">
+<td>
+<a name="lwe_stratiform_snowfall_rate"></a><img id="lwe_stratiform_snowfall_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_stratiform_snowfall_rate')">lwe_stratiform_snowfall_rate</a></code><div style="padding-left: 16px;">
+<i>alias:</i> lwe_large_scale_snowfall_rate</div>
+<div id="lwe_stratiform_snowfall_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.  "lwe" means liquid water equivalent. </div>
 </td>
 <td>m s-1</td>
 <td>
@@ -6700,28 +6606,6 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="lwe_thickness_of_large_scale_precipitation_amount_tr">
-<td>
-<a name="lwe_thickness_of_large_scale_precipitation_amount"></a><img id="lwe_thickness_of_large_scale_precipitation_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_thickness_of_large_scale_precipitation_amount')">lwe_thickness_of_large_scale_precipitation_amount</a></code><div id="lwe_thickness_of_large_scale_precipitation_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent. "Amount" means mass per unit area. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>E142</td>
-</tr>
-<tr id="lwe_thickness_of_large_scale_snowfall_amount_tr">
-<td>
-<a name="lwe_thickness_of_large_scale_snowfall_amount"></a><img id="lwe_thickness_of_large_scale_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_thickness_of_large_scale_snowfall_amount')">lwe_thickness_of_large_scale_snowfall_amount</a></code><div id="lwe_thickness_of_large_scale_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent. "Amount" means mass per unit area. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="lwe_thickness_of_moisture_content_of_soil_layer_tr">
 <td>
 <a name="lwe_thickness_of_moisture_content_of_soil_layer"></a><img id="lwe_thickness_of_moisture_content_of_soil_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_thickness_of_moisture_content_of_soil_layer')">lwe_thickness_of_moisture_content_of_soil_layer</a></code><div id="lwe_thickness_of_moisture_content_of_soil_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"lwe" means liquid water equivalent. "moisture" means water in all phases contained in soil. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Quantities defined for a soil layer must have a vertical coordinate variable with boundaries indicating the extent of the layer(s).</div>
@@ -6765,6 +6649,32 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 <td>E140</td>
+</tr>
+<tr id="lwe_thickness_of_stratiform_precipitation_amount_tr">
+<td>
+<a name="lwe_thickness_of_stratiform_precipitation_amount"></a><img id="lwe_thickness_of_stratiform_precipitation_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_thickness_of_stratiform_precipitation_amount')">lwe_thickness_of_stratiform_precipitation_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> lwe_thickness_of_large_scale_precipitation_amount</div>
+<div id="lwe_thickness_of_stratiform_precipitation_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Amount" means mass per unit area.  "lwe" means liquid water equivalent. The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>E142</td>
+</tr>
+<tr id="lwe_thickness_of_stratiform_snowfall_amount_tr">
+<td>
+<a name="lwe_thickness_of_stratiform_snowfall_amount"></a><img id="lwe_thickness_of_stratiform_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lwe_thickness_of_stratiform_snowfall_amount')">lwe_thickness_of_stratiform_snowfall_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> lwe_thickness_of_large_scale_snowfall_amount</div>
+<div id="lwe_thickness_of_stratiform_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Amount" means mass per unit area.  "lwe" means liquid water equivalent.  The construction lwe_thickness_of_X_amount or _content means the vertical extent of a layer of liquid water having the same mass per unit area.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
 </tr>
 <tr id="lwe_thickness_of_surface_snow_amount_tr">
 <td>
@@ -6825,6 +6735,21 @@ The canonical units associated with each standard name are usually the SI units 
 <tr id="magnitude_of_derivative_of_position_wrt_y_coordinate_index_tr">
 <td>
 <a name="magnitude_of_derivative_of_position_wrt_y_coordinate_index"></a><img id="magnitude_of_derivative_of_position_wrt_y_coordinate_index_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('magnitude_of_derivative_of_position_wrt_y_coordinate_index')">magnitude_of_derivative_of_position_wrt_y_coordinate_index</a></code><div id="magnitude_of_derivative_of_position_wrt_y_coordinate_index_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name magnitude_of_derivative_of_position_wrt_y_coordinate_index (known in differential geometry as a "scale factor") is | (dr/dj)ik|, where r(i,j,k) is the vector 3D position of the point with coordinate indices (i,j,k). It is a measure of the gridblock spacing in the y-direction.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="magnitude_of_sea_ice_displacement_tr">
+<td>
+<a name="magnitude_of_sea_ice_displacement"></a><img id="magnitude_of_sea_ice_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('magnitude_of_sea_ice_displacement')">magnitude_of_sea_ice_displacement</a></code><div style="padding-left: 16px;">
+<i>alias:</i> sea_ice_displacement</div>
+<div id="magnitude_of_sea_ice_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "magnitude_of_X" means magnitude of a vector X.   'Displacement' means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable.  A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the
+tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component.</div>
 </td>
 <td>m</td>
 <td>
@@ -13378,9 +13303,11 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="northward_water_vapor_flux_tr">
+<tr id="northward_water_vapor_flux_in_air_tr">
 <td>
-<a name="northward_water_vapor_flux"></a><img id="northward_water_vapor_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('northward_water_vapor_flux')">northward_water_vapor_flux</a></code><div id="northward_water_vapor_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Northward" indicates a vector component which is positive when directed northward (negative southward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="northward_water_vapor_flux_in_air"></a><img id="northward_water_vapor_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('northward_water_vapor_flux_in_air')">northward_water_vapor_flux_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> northward_water_vapor_flux</div>
+<div id="northward_water_vapor_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Northward" indicates a vector component which is positive when directed northward (negative southward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. </div>
 </td>
 <td>kg m-2 s-1</td>
 <td>
@@ -15098,18 +15025,6 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
-<tr id="sea_ice_displacement_tr">
-<td>
-<a name="sea_ice_displacement"></a><img id="sea_ice_displacement_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_displacement')">sea_ice_displacement</a></code><div id="sea_ice_displacement_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Displacement" means the change in geospatial position of an object that has moved over time. If possible, the time interval over which the motion took place should be specified using a bounds variable for the time coordinate variable.  A displacement can be represented as a vector. Such a vector should however not be interpreted as describing a rectilinear, constant speed motion but merely as an indication that the start point of the vector is found at the tip of the vector after the time interval associated with the displacement variable.  A displacement does not prescribe a trajectory. Sea ice displacement can be defined as a two-dimensional vector, with no vertical component. In that case, "displacement" is also the distance across the earth's surface calculated from the change in a moving object's geospatial position between the start and end of the time interval associated with the displacement variable.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="sea_ice_area_fraction_tr">
 <td>
 <a name="sea_ice_area_fraction"></a><img id="sea_ice_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_ice_area_fraction')">sea_ice_area_fraction</a></code><div id="sea_ice_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. Sea ice area fraction is area of the sea surface occupied by sea ice. It is also called "sea ice concentration".</div>
@@ -16028,7 +15943,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B,where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water. Aragonite is a  mineral that is a polymorph of calcium carbonate. The chemical formula of aragonite is CaCO3. Standard names also exist for calcite, another polymorph of calcium carbonate.</div>
+<a name="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Aragonite is a mineral that is a polymorph of calcium carbonate. The chemical formula of aragonite is CaCO3. Standard names also exist for calcite, another polymorph of calcium carbonate.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16040,7 +15955,8 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B,where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.</div>
+<a name="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of
+calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16052,7 +15968,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_particulate_iron_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_particulate_iron_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_iron_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_iron_in_sea_water')">sinking_mole_flux_of_particulate_iron_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_iron_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water.</div>
+<a name="sinking_mole_flux_of_particulate_iron_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_iron_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_iron_in_sea_water')">sinking_mole_flux_of_particulate_iron_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_iron_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16064,7 +15980,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B,where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water.</div>
+<a name="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water')">sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16076,7 +15992,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water')">sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water.</div>
+<a name="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water')">sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16088,7 +16004,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water')">sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  'Sinking' is the gravitational settling of particulate matter within a body of water.</div>
+<a name="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water')">sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16100,7 +16016,7 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 </tr>
 <tr id="sinking_mole_flux_of_particulate_silicon_in_sea_water_tr">
 <td>
-<a name="sinking_mole_flux_of_particulate_silicon_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_silicon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_silicon_in_sea_water')">sinking_mole_flux_of_particulate_silicon_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_silicon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter within a body of water.</div>
+<a name="sinking_mole_flux_of_particulate_silicon_in_sea_water"></a><img id="sinking_mole_flux_of_particulate_silicon_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sinking_mole_flux_of_particulate_silicon_in_sea_water')">sinking_mole_flux_of_particulate_silicon_in_sea_water</a></code><div id="sinking_mole_flux_of_particulate_silicon_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td>
@@ -16131,40 +16047,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                         </div>
 </td>
 <td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="snow_soot_content_tr">
-<td>
-<a name="snow_soot_content"></a><img id="snow_soot_content_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('snow_soot_content')">snow_soot_content</a></code><div id="snow_soot_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area.</div>
-</td>
-<td>kg m-2</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="snow_temperature_tr">
-<td>
-<a name="snow_temperature"></a><img id="snow_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('snow_temperature')">snow_temperature</a></code><div id="snow_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Snow temperature is the bulk temperature of the snow, not the surface (skin) temperature.</div>
-</td>
-<td>K</td>
-<td>
-                         
-                    </td>
-<td>E238</td>
-</tr>
-<tr id="snow_thermal_energy_content_tr">
-<td>
-<a name="snow_thermal_energy_content"></a><img id="snow_thermal_energy_content_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('snow_thermal_energy_content')">snow_thermal_energy_content</a></code><div id="snow_thermal_energy_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. Thermal energy is the total vibrational energy, kinetic and potential, of all the molecules and atoms in a substance.</div>
-</td>
-<td>J m-2</td>
 <td>
                          
                     </td>
@@ -16367,6 +16249,20 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <a name="solar_zenith_angle"></a><img id="solar_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('solar_zenith_angle')">solar_zenith_angle</a></code><div id="solar_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Solar zenith angle is the the angle between the line of sight to the sun and the local vertical.</div>
 </td>
 <td>degree</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="soot_content_of_surface_snow_tr">
+<td>
+<a name="soot_content_of_surface_snow"></a><img id="soot_content_of_surface_snow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('soot_content_of_surface_snow')">soot_content_of_surface_snow</a></code><div style="padding-left: 16px;">
+<i>alias:</i> snow_soot_content</div>
+<div id="soot_content_of_surface_snow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The surface called "surface" means the lower boundary of the atmosphere. </div>
+</td>
+<td>kg m-2</td>
 <td>
                          
                     </td>
@@ -16736,6 +16632,20 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
+<tr id="stratiform_cloud_area_fraction_tr">
+<td>
+<a name="stratiform_cloud_area_fraction"></a><img id="stratiform_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_cloud_area_fraction')">stratiform_cloud_area_fraction</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_cloud_area_fraction</div>
+<div id="stratiform_cloud_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "X_area_fraction" means the fraction of horizontal area occupied by X.  Cloud area fraction is also called "cloud amount" and "cloud cover".  The cloud area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere. The cloud area fraction in a layer of the atmosphere has the standard name cloud_area_fraction_in_atmosphere_layer.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes). </div>
+</td>
+<td> 1 </td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="stratiform_cloud_area_fraction_in_atmosphere_layer_tr">
 <td>
 <a name="stratiform_cloud_area_fraction_in_atmosphere_layer"></a><img id="stratiform_cloud_area_fraction_in_atmosphere_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_cloud_area_fraction_in_atmosphere_layer')">stratiform_cloud_area_fraction_in_atmosphere_layer</a></code><div id="stratiform_cloud_area_fraction_in_atmosphere_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. "X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. Cloud area fraction is also called "cloud amount" and "cloud cover". In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).</div>
@@ -16753,6 +16663,114 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <a name="stratiform_cloud_longwave_emissivity"></a><img id="stratiform_cloud_longwave_emissivity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_cloud_longwave_emissivity')">stratiform_cloud_longwave_emissivity</a></code><div id="stratiform_cloud_longwave_emissivity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Emissivity is the ratio of the power emitted by an object to the power that would be emitted by a perfect black body having the same temperature as the object. The emissivity is assumed to be an integral over all wavelengths, unless a coordinate of radiation_wavelength or radiation_frequency is included to specify either the wavelength or frequency. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  "longwave" means longwave radiation. </div>
 </td>
 <td> 1 </td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_graupel_flux_tr">
+<td>
+<a name="stratiform_graupel_flux"></a><img id="stratiform_graupel_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_graupel_flux')">stratiform_graupel_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_graupel_flux</div>
+<div id="stratiform_graupel_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>kg m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_precipitation_amount_tr">
+<td>
+<a name="stratiform_precipitation_amount"></a><img id="stratiform_precipitation_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_precipitation_amount')">stratiform_precipitation_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_precipitation_amount</div>
+<div id="stratiform_precipitation_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.  "Amount" means mass per unit area. </div>
+</td>
+<td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>62</td>
+</tr>
+<tr id="stratiform_precipitation_flux_tr">
+<td>
+<a name="stratiform_precipitation_flux"></a><img id="stratiform_precipitation_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_precipitation_flux')">stratiform_precipitation_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_precipitation_flux</div>
+<div id="stratiform_precipitation_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>kg m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_rainfall_amount_tr">
+<td>
+<a name="stratiform_rainfall_amount"></a><img id="stratiform_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_rainfall_amount')">stratiform_rainfall_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_rainfall_amount</div>
+<div id="stratiform_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.  "Amount" means mass per unit area. </div>
+</td>
+<td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_rainfall_flux_tr">
+<td>
+<a name="stratiform_rainfall_flux"></a><img id="stratiform_rainfall_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_rainfall_flux')">stratiform_rainfall_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_rainfall_flux</div>
+<div id="stratiform_rainfall_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>kg m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_rainfall_rate_tr">
+<td>
+<a name="stratiform_rainfall_rate"></a><img id="stratiform_rainfall_rate_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_rainfall_rate')">stratiform_rainfall_rate</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_rainfall_rate</div>
+<div id="stratiform_rainfall_rate_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="stratiform_snowfall_amount_tr">
+<td>
+<a name="stratiform_snowfall_amount"></a><img id="stratiform_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_snowfall_amount')">stratiform_snowfall_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_snowfall_amount</div>
+<div id="stratiform_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.  "Amount" means mass per unit area. </div>
+</td>
+<td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>79</td>
+</tr>
+<tr id="stratiform_snowfall_flux_tr">
+<td>
+<a name="stratiform_snowfall_flux"></a><img id="stratiform_snowfall_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_snowfall_flux')">stratiform_snowfall_flux</a></code><div style="padding-left: 16px;">
+<i>alias:</i> large_scale_snowfall_flux</div>
+<div id="stratiform_snowfall_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>kg m-2 s-1</td>
 <td>
                          
                     </td>
@@ -16872,18 +16890,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="surface_carbon_dioxide_mole_flux_tr">
-<td>
-<a name="surface_carbon_dioxide_mole_flux"></a><img id="surface_carbon_dioxide_mole_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_carbon_dioxide_mole_flux')">surface_carbon_dioxide_mole_flux</a></code><div id="surface_carbon_dioxide_mole_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
-</td>
-<td>mol m-2 s-1</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water_tr">
 <td>
 <a name="surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water"></a><img id="surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water')">surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water</a></code><div id="surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</div>
@@ -16967,6 +16973,21 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <a name="surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon"></a><img id="surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon')">surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon</a></code><div id="surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Downward" indicates a vector component which is positive when directed downward (negative upward).  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2.</div>
 </td>
 <td>kg m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="surface_downward_mole_flux_of_carbon_dioxide_tr">
+<td>
+<a name="surface_downward_mole_flux_of_carbon_dioxide"></a><img id="surface_downward_mole_flux_of_carbon_dioxide_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downward_mole_flux_of_carbon_dioxide')">surface_downward_mole_flux_of_carbon_dioxide</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_carbon_dioxide_mole_flux</div>
+<div id="surface_downward_mole_flux_of_carbon_dioxide_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Downward" indicates a vector component which is positive when directed downward (negative upward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2. The standard name surface_upward_mole_flux_of_carbon_dioxide should be used to label data in which the flux is positive when directed
+upward. The standard name "surface_carbon_dioxide_mole_flux" is deprecated because it does not specify in which direction the flux is positive.  Any data having the standard name "surface_carbon_dioxide_mole_flux" should be examined carefully to determine which sign convention was used.</div>
+</td>
+<td>mol m-2 s-1</td>
 <td>
                          
                     </td>
@@ -17934,6 +17955,21 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <td>hfls</td>
 <td>121 E147</td>
 </tr>
+<tr id="surface_upward_mole_flux_of_carbon_dioxide_tr">
+<td>
+<a name="surface_upward_mole_flux_of_carbon_dioxide"></a><img id="surface_upward_mole_flux_of_carbon_dioxide_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upward_mole_flux_of_carbon_dioxide')">surface_upward_mole_flux_of_carbon_dioxide</a></code><div style="padding-left: 16px;">
+<i>alias:</i> surface_carbon_dioxide_mole_flux</div>
+<div id="surface_upward_mole_flux_of_carbon_dioxide_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Upward" indicates a vector component which is positive when directed upward (negative downward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2. The standard name surface_downward_mole_flux_of_carbon_dioxide should be used to label data in which the flux is positive when directed
+downward. The standard name "surface_carbon_dioxide_mole_flux" is deprecated because it does not specify in which direction the flux is positive.  Any data having the standard name "surface_carbon_dioxide_mole_flux" should be examined carefully to determine which sign convention was used.</div>
+</td>
+<td>mol m-2 s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="surface_upward_mole_flux_of_dimethyl_sulfide_tr">
 <td>
 <a name="surface_upward_mole_flux_of_dimethyl_sulfide"></a><img id="surface_upward_mole_flux_of_dimethyl_sulfide_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upward_mole_flux_of_dimethyl_sulfide')">surface_upward_mole_flux_of_dimethyl_sulfide</a></code><div id="surface_upward_mole_flux_of_dimethyl_sulfide_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Upward" indicates a vector component which is positive when directed upward (negative downward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  Thechemical formula for dimethyl sulfide is (CH3)2S.  Dimethyl sulfide is sometimes referredto as DMS.</div>
@@ -18209,6 +18245,18 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <td>
                          
                     </td>
+</tr>
+<tr id="temperature_in_surface_snow_tr">
+<td>
+<a name="temperature_in_surface_snow"></a><img id="temperature_in_surface_snow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('temperature_in_surface_snow')">temperature_in_surface_snow</a></code><div style="padding-left: 16px;">
+<i>alias:</i> snow_temperature</div>
+<div id="temperature_in_surface_snow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Temperature in surface snow" is the bulk temperature of the snow, not the surface (skin) temperature.  The surface called "surface" means the lower boundary of the atmosphere. </div>
+</td>
+<td>K</td>
+<td>
+                         
+                    </td>
+<td>E238</td>
 </tr>
 <tr id="temperature_of_sensor_for_oxygen_in_sea_water_tr">
 <td>
@@ -19847,11 +19895,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition_tr">
+<tr id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition_tr">
 <td>
-<a name="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition</a></code><div id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Dry deposition" is the sum of turbulent deposition and gravitational settling. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</div>
+<a name="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_dry_deposition</div>
+<div id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Dry deposition" is the sum of turbulent deposition and gravitational settling. "tendency_of_X" means derivative of X with respect to time. The chemical formula for the sulfate anion is SO4(2-).</div>
 </td>
-<td> kg m-2 s-1</td>
+<td>kg m-2 s-1</td>
 <td>
                          
                     </td>
@@ -19859,11 +19909,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling_tr">
+<tr id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling_tr">
 <td>
-<a name="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling')">tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling</a></code><div id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  The sum of turbulent deposition and gravitational settling is dry deposition. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</div>
+<a name="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling')">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_gravitational_settling</div>
+<div id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The sum of turbulent deposition and gravitational settling is dry deposition. "tendency_of_X" means derivative of X with respect to time. The chemical formula for the sulfate anion is SO4(2-).</div>
 </td>
-<td> kg m-2 s-1</td>
+<td>kg m-2 s-1</td>
 <td>
                          
                     </td>
@@ -19871,11 +19923,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition_tr">
+<tr id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition_tr">
 <td>
-<a name="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition</a></code><div id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  The sum of turbulent deposition and gravitational settling is dry deposition. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</div>
+<a name="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_turbulent_deposition</div>
+<div id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The sum of turbulent deposition and gravitational settling is dry deposition. "tendency_of_X" means derivative of X with respect to time.  The chemical formula for the sulfate anion is SO4(2-).</div>
 </td>
-<td> kg m-2 s-1</td>
+<td>kg m-2 s-1</td>
 <td>
                          
                     </td>
@@ -19883,11 +19937,13 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition_tr">
+<tr id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition_tr">
 <td>
-<a name="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition</a></code><div id="tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Wet deposition" means deposition by precipitation. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</div>
+<a name="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition"></a><img id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition')">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition</div>
+<div id="tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets). Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Wet deposition" means deposition by precipitation. "tendency_of_X" means derivative of X with respect to time. The chemical formula for the sulfate anion is SO4(2-).</div>
 </td>
-<td> kg m-2 s-1</td>
+<td>kg m-2 s-1</td>
 <td>
                          
                     </td>
@@ -22249,9 +22305,11 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes_tr">
+<tr id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes_tr">
 <td>
-<a name="tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes"></a><img id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes')">tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes</a></code><div id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> 'Mole concentration' means number of moles per unit volume, also called"molarity", and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. "Dissolved inorganic phosphorus/phosphate" means phosphate ions in solution.  The chemical formula of the phosphate anion is PO4 with a charge of minus three.</div>
+<a name="tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes"></a><img id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes')">tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_mole_concentration_of_dissolved_inorganic_phosphate_in_sea_water_due_to_biological_processes</div>
+<div id="tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">  'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Dissolved inorganic phosphorus/phosphate means phosphate ions in solution.</div>
 </td>
 <td>mol m-3 s-1</td>
 <td>
@@ -22261,9 +22319,11 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes_tr">
+<tr id="tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes_tr">
 <td>
-<a name="tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes"></a><img id="tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes')">tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes</a></code><div id="tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> 'Mole concentration' means number of moles per unit volume, also called"molarity", and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Dissolved inorganic silicon/silicate" means silicate ions in solution.</div>
+<a name="tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes"></a><img id="tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes')">tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes</a></code><div style="padding-left: 16px;">
+<i>alias:</i> tendency_of_mole_concentration_of_dissolved_inorganic_silicate_in_sea_water_due_to_biological_processes</div>
+<div id="tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">  'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  Dissolved inorganic silicon/silicate means silicate ions in solution.</div>
 </td>
 <td>mol m-3 s-1</td>
 <td>
@@ -23319,6 +23379,20 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
+<tr id="thermal_energy_content_of_surface_snow_tr">
+<td>
+<a name="thermal_energy_content_of_surface_snow"></a><img id="thermal_energy_content_of_surface_snow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thermal_energy_content_of_surface_snow')">thermal_energy_content_of_surface_snow</a></code><div style="padding-left: 16px;">
+<i>alias:</i> snow_thermal_energy_content</div>
+<div id="thermal_energy_content_of_surface_snow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Content" indicates a quantity per unit area. Thermal energy is the total vibrational energy, kinetic and potential, of all the molecules and atoms in a substance. The surface called "surface" means the lower boundary of the atmosphere. </div>
+</td>
+<td>J m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="thickness_of_convective_rainfall_amount_tr">
 <td>
 <a name="thickness_of_convective_rainfall_amount"></a><img id="thickness_of_convective_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_convective_rainfall_amount')">thickness_of_convective_rainfall_amount</a></code><div id="thickness_of_convective_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. The construction thickness_of_[X_]rainfall_amount means the accumulated "depth" of rainfall i.e. the thickness of a layer of liquid water having the same mass per unit area as the rainfall amount.</div>
@@ -23343,30 +23417,6 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="thickness_of_large_scale_rainfall_amount_tr">
-<td>
-<a name="thickness_of_large_scale_rainfall_amount"></a><img id="thickness_of_large_scale_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_large_scale_rainfall_amount')">thickness_of_large_scale_rainfall_amount</a></code><div id="thickness_of_large_scale_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. The construction thickness_of_[X_]rainfall_amount means the accumulated "depth" of rainfall i.e. the thickness of a layer of liquid water having the same mass per unit area as the rainfall amount.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
-<tr id="thickness_of_large_scale_snowfall_amount_tr">
-<td>
-<a name="thickness_of_large_scale_snowfall_amount"></a><img id="thickness_of_large_scale_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_large_scale_snowfall_amount')">thickness_of_large_scale_snowfall_amount</a></code><div id="thickness_of_large_scale_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. The construction thickness_of_[X_]snowfall_amount means the accumulated "depth" of snow which fell i.e. the thickness of the layer of snow at its own density. There are corresponding standard names for liquid water equivalent (lwe) thickness.</div>
-</td>
-<td>m</td>
-<td>
-                         
-                    </td>
-<td>
-                         
-                    </td>
-</tr>
 <tr id="thickness_of_rainfall_amount_tr">
 <td>
 <a name="thickness_of_rainfall_amount"></a><img id="thickness_of_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_rainfall_amount')">thickness_of_rainfall_amount</a></code><div id="thickness_of_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. The construction thickness_of_[X_]rainfall_amount means the accumulated "depth" of rainfall i.e. the thickness of a layer of liquid water having the same mass per unit area as the rainfall amount.</div>
@@ -23382,6 +23432,34 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
 <tr id="thickness_of_snowfall_amount_tr">
 <td>
 <a name="thickness_of_snowfall_amount"></a><img id="thickness_of_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_snowfall_amount')">thickness_of_snowfall_amount</a></code><div id="thickness_of_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area. The construction thickness_of_[X_]snowfall_amount means the accumulated "depth" of snow which fell i.e. the thickness of the layer of snow at its own density. There are corresponding standard names for liquid water equivalent (lwe) thickness.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="thickness_of_stratiform_rainfall_amount_tr">
+<td>
+<a name="thickness_of_stratiform_rainfall_amount"></a><img id="thickness_of_stratiform_rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_stratiform_rainfall_amount')">thickness_of_stratiform_rainfall_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> thickness_of_large_scale_rainfall_amount</div>
+<div id="thickness_of_stratiform_rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Amount" means mass per unit area. The construction thickness_of_[X_]rainfall_amount means the accumulated "depth" of rainfall i.e. the thickness of a layer of liquid water having the same mass per unit area as the rainfall amount.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="thickness_of_stratiform_snowfall_amount_tr">
+<td>
+<a name="thickness_of_stratiform_snowfall_amount"></a><img id="thickness_of_stratiform_snowfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thickness_of_stratiform_snowfall_amount')">thickness_of_stratiform_snowfall_amount</a></code><div style="padding-left: 16px;">
+<i>alias:</i> thickness_of_large_scale_snowfall_amount</div>
+<div id="thickness_of_stratiform_snowfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> "Amount" means mass per unit area. The construction thickness_of_[X_]snowfall_amount means the accumulated "depth" of snow which fell i.e. the thickness of the layer of snow at its own density. There are corresponding standard names for liquid water equivalent (lwe) thickness.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud. </div>
 </td>
 <td>m</td>
 <td>
@@ -24839,6 +24917,30 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
+<tr id="water_surface_height_above_reference_datum_tr">
+<td>
+<a name="water_surface_height_above_reference_datum"></a><img id="water_surface_height_above_reference_datum_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_surface_height_above_reference_datum')">water_surface_height_above_reference_datum</a></code><div id="water_surface_height_above_reference_datum_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">'Water surface height above reference datum' means the height of the upper surface of a body of liquid water, such as sea, lake or river, above an arbitrary reference datum. The altitude of the datum should be provided in a variable with standard name water_surface_reference_datum_altitude. The surface called "surface" means the lower boundary of the atmosphere.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="water_surface_reference_datum_altitude_tr">
+<td>
+<a name="water_surface_reference_datum_altitude"></a><img id="water_surface_reference_datum_altitude_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_surface_reference_datum_altitude')">water_surface_reference_datum_altitude</a></code><div id="water_surface_reference_datum_altitude_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level. 'Water surface reference datum altitude' means the altitude of the arbitrary datum referred to by a quantity with standard name 'water_surface_height_above_reference_datum'. The surface called "surface" means the lower boundary of the atmosphere. </div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="water_vapor_content_of_atmosphere_layer_tr">
 <td>
 <a name="water_vapor_content_of_atmosphere_layer"></a><img id="water_vapor_content_of_atmosphere_layer_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_vapor_content_of_atmosphere_layer')">water_vapor_content_of_atmosphere_layer</a></code><div id="water_vapor_content_of_atmosphere_layer_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well.</div>
@@ -24851,9 +24953,11 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                          
                     </td>
 </tr>
-<tr id="water_vapor_pressure_tr">
+<tr id="water_vapor_partial_pressure_in_air_tr">
 <td>
-<a name="water_vapor_pressure"></a><img id="water_vapor_pressure_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_vapor_pressure')">water_vapor_pressure</a></code><div id="water_vapor_pressure_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Vapor pressure is the partial pressure of a constituent of air, such as water, which exists as liquid or solid under "normal" conditions. "Water" is specified when the term is being applied to water.</div>
+<a name="water_vapor_partial_pressure_in_air"></a><img id="water_vapor_partial_pressure_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_vapor_partial_pressure_in_air')">water_vapor_partial_pressure_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> water_vapor_pressure</div>
+<div id="water_vapor_partial_pressure_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. </div>
 </td>
 <td>Pa</td>
 <td>
@@ -24861,9 +24965,11 @@ Sea surface foundation temperature is measured at the base of the diurnal thermo
                     </td>
 <td>55</td>
 </tr>
-<tr id="water_vapor_saturation_deficit_tr">
+<tr id="water_vapor_saturation_deficit_in_air_tr">
 <td>
-<a name="water_vapor_saturation_deficit"></a><img id="water_vapor_saturation_deficit_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_vapor_saturation_deficit')">water_vapor_saturation_deficit</a></code><div id="water_vapor_saturation_deficit_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Water vapor saturation deficit is the difference between the saturation water vapor pressure and the actual water vapor pressure.</div>
+<a name="water_vapor_saturation_deficit_in_air"></a><img id="water_vapor_saturation_deficit_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('water_vapor_saturation_deficit_in_air')">water_vapor_saturation_deficit_in_air</a></code><div style="padding-left: 16px;">
+<i>alias:</i> water_vapor_saturation_deficit</div>
+<div id="water_vapor_saturation_deficit_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;"> Water vapor saturation deficit is the difference between the saturationwater vapor partial pressure and the actual water vapor partial pressure in air.</div>
 </td>
 <td>Pa</td>
 <td>
