@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 2,
-          <newdate>26 September 2006</newdate></b><br><br>
+<b>Version 3,
+          <newdate>20 February 2007</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -896,6 +896,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="baseflow_amount_tr">
+<td>
+<a name="baseflow_amount"></a><img id="baseflow_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('baseflow_amount')">baseflow_amount</a></code><div id="baseflow_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Baseflow" is subsurface runoff which takes place below the level of the water table. Runoff is the liquid water which drains from land. "Amount" means mass per unit area.</div>
+</td>
+<td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="bedrock_altitude_tr">
 <td>
 <a name="bedrock_altitude"></a><img id="bedrock_altitude_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('bedrock_altitude')">bedrock_altitude</a></code><div id="bedrock_altitude_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level. "Bedrock" is the solid Earth surface beneath land ice or ocean water.</div>
@@ -1315,6 +1327,18 @@ The canonical units associated with each standard name are usually the SI units 
 <a name="coriolis_parameter"></a><img id="coriolis_parameter_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('coriolis_parameter')">coriolis_parameter</a></code><div id="coriolis_parameter_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The Coriolis parameter is twice the component of the earth's angular velocity about the local vertical i.e. 2 W sin L, where L is latitude and W the angular speed of the earth.</div>
 </td>
 <td>s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="correction_for_model_negative_specific_humidity_tr">
+<td>
+<a name="correction_for_model_negative_specific_humidity"></a><img id="correction_for_model_negative_specific_humidity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('correction_for_model_negative_specific_humidity')">correction_for_model_negative_specific_humidity</a></code><div id="correction_for_model_negative_specific_humidity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A numerical correction which is added to modelled negative specific humidities in order to obtain a value of zero.</div>
+</td>
+<td>1</td>
 <td>
                          
                     </td>
@@ -3680,6 +3704,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="normalized_difference_vegetation_index_tr">
+<td>
+<a name="normalized_difference_vegetation_index"></a><img id="normalized_difference_vegetation_index_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('normalized_difference_vegetation_index')">normalized_difference_vegetation_index</a></code><div id="normalized_difference_vegetation_index_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Normalized_difference_vegetation_index", usually abbreviated to NDVI, is an index calculated from reflectances measured in the visible and near infrared channels.  It is calculated as NDVI = (NIR - R) / (NIR + R) where NIR is the reflectance in the near-infrared band and R is the reflectance in the red visible band.  Reflectance is the ratio of the reflected over the incoming radiation in each spectral band.  The calculated value of NDVI depends on the precise definitions of the spectral bands and these definitions may vary between different models and remote sensing instruments.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="northward_atmosphere_dry_static_energy_transport_across_unit_distance_tr">
 <td>
 <a name="northward_atmosphere_dry_static_energy_transport_across_unit_distance"></a><img id="northward_atmosphere_dry_static_energy_transport_across_unit_distance_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('northward_atmosphere_dry_static_energy_transport_across_unit_distance')">northward_atmosphere_dry_static_energy_transport_across_unit_distance</a></code><div id="northward_atmosphere_dry_static_energy_transport_across_unit_distance_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Northward" indicates a vector component which is positive when directed northward (negative southward). Transport across_unit_distance means expressed per unit distance normal to the direction of transport. Dry static energy is the sum of enthalpy and potential energy (itself the sum of gravitational and centripetal potential energy). Enthalpy can be written either as (1) CpT, where Cp is heat capacity at constant pressure, T is absolute temperature, or (2) U+pV, where U is internal energy, p is pressure and V is volume.</div>
@@ -4838,6 +4874,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="runoff_amount_excluding_baseflow_tr">
+<td>
+<a name="runoff_amount_excluding_baseflow"></a><img id="runoff_amount_excluding_baseflow_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('runoff_amount_excluding_baseflow')">runoff_amount_excluding_baseflow</a></code><div id="runoff_amount_excluding_baseflow_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Runoff is the liquid water which drains from land. "Runoff_excluding_baseflow" is the sum of surface runoff and subsurface runoff excluding baseflow.  Baseflow is subsurface runoff which takes place below the level of the water table.  "Amount" means mass per unit area.</div>
+</td>
+<td>kg m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="runoff_flux_tr">
 <td>
 <a name="runoff_flux"></a><img id="runoff_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('runoff_flux')">runoff_flux</a></code><div id="runoff_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
@@ -5082,7 +5130,19 @@ The canonical units associated with each standard name are usually the SI units 
 <i>alias:</i> sea_surface_elevation</div>
 <div style="padding-left: 16px;">
 <i>alias:</i> sea_surface_elevation_anomaly</div>
-<div id="sea_surface_height_above_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level.</div>
+<div id="sea_surface_height_above_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</div>
+</td>
+<td>m</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="sea_surface_height_above_reference_ellipsoid_tr">
+<td>
+<a name="sea_surface_height_above_reference_ellipsoid"></a><img id="sea_surface_height_above_reference_ellipsoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_height_above_reference_ellipsoid')">sea_surface_height_above_reference_ellipsoid</a></code><div id="sea_surface_height_above_reference_ellipsoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Sea surface height" is a time-varying quantity.  A reference ellipsoid is a mathematical figure that approximates the geoid.  The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy.  The standard name for the height of the sea surface above the geoid is sea_surface_height_above_geoid.  The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level.</div>
 </td>
 <td>m</td>
 <td>
@@ -5096,7 +5156,7 @@ The canonical units associated with each standard name are usually the SI units 
 <td>
 <a name="sea_surface_height_above_sea_level"></a><img id="sea_surface_height_above_sea_level_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_height_above_sea_level')">sea_surface_height_above_sea_level</a></code><div style="padding-left: 16px;">
 <i>alias:</i> sea_surface_height</div>
-<div id="sea_surface_height_above_sea_level_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">sea_level means mean sea level, which is close to the geoid in sea areas. "Sea surface height" is a time-varying quantity. The standard name for the height of the sea surface above the geoid is sea_surface_height_above_geoid.</div>
+<div id="sea_surface_height_above_sea_level_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">sea_level means mean sea level, which is close to the geoid in sea areas. "Sea surface height" is a time-varying quantity. The standard name for the height of the sea surface above the geoid is sea_surface_height_above_geoid. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</div>
 </td>
 <td>m</td>
 <td>
@@ -6544,6 +6604,30 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 </tr>
+<tr id="surface_eastward_geostrophic_sea_water_velocity_tr">
+<td>
+<a name="surface_eastward_geostrophic_sea_water_velocity"></a><img id="surface_eastward_geostrophic_sea_water_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_eastward_geostrophic_sea_water_velocity')">surface_eastward_geostrophic_sea_water_velocity</a></code><div id="surface_eastward_geostrophic_sea_water_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Geostrophic" indicates that geostrophic balance is assumed.  "Water" means water in all phases.  surface_eastward_sea_water_geostrophic_velocity is the sum of a variable part, surface_eastward_sea_water_geostrophic_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_tr">
+<td>
+<a name="surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid"></a><img id="surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid')">surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_eastward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Geostrophic" indicates that geostrophic balance is assumed.  "Water" means water in all phases.  "sea_level" means mean sea level.  The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_eastward_sea_water_geostrophic_velocity_assuming_sea_level_for_geoid is the variable part of surface_eastward_sea_water_geostrophic_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
 <tr id="surface_eastward_sea_water_velocity_tr">
 <td>
 <a name="surface_eastward_sea_water_velocity"></a><img id="surface_eastward_sea_water_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_eastward_sea_water_velocity')">surface_eastward_sea_water_velocity</a></code><div id="surface_eastward_sea_water_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward).</div>
@@ -6587,6 +6671,18 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 <td>E211</td>
+</tr>
+<tr id="surface_net_downward_radiative_flux_where_land_tr">
+<td>
+<a name="surface_net_downward_radiative_flux_where_land"></a><img id="surface_net_downward_radiative_flux_where_land_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_net_downward_radiative_flux_where_land')">surface_net_downward_radiative_flux_where_land</a></code><div id="surface_net_downward_radiative_flux_where_land_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). Radiative flux is the sum of shortwave and longwave radiative fluxes. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. Unless indicated, a quantity is assumed to apply to the whole area of each horizontal grid box. The qualifier where_type specifies instead that the quantity applies only to the part of the grid box of the named type.</div>
+</td>
+<td>W m-2</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
 </tr>
 <tr id="surface_net_downward_shortwave_flux_tr">
 <td>
@@ -6639,6 +6735,30 @@ The canonical units associated with each standard name are usually the SI units 
                          
                     </td>
 <td>111 E177</td>
+</tr>
+<tr id="surface_northward_geostrophic_sea_water_velocity_tr">
+<td>
+<a name="surface_northward_geostrophic_sea_water_velocity"></a><img id="surface_northward_geostrophic_sea_water_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_northward_geostrophic_sea_water_velocity')">surface_northward_geostrophic_sea_water_velocity</a></code><div id="surface_northward_geostrophic_sea_water_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).  "Geostrophic" indicates that geostrophic balance is assumed.  "Water" means water in all phases.  surface_northward_sea_water_geostrophic_velocity is the sum of a variable part, surface_northward_sea_water_geostrophic_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_tr">
+<td>
+<a name="surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid"></a><img id="surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid')">surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid</a></code><div id="surface_northward_geostrophic_sea_water_velocity_assuming_sea_level_for_geoid_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere.  A velocity is a vector quantity.  "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed.  "Water" means water in all phases.  "sea_level" means mean sea level.  The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_northward_sea_water_geostrophic_velocity_assuming_sea_level_for_geoid is the variable part of surface_northward_sea_water_geostrophic_velocity.  The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</div>
+</td>
+<td>m s-1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
 </tr>
 <tr id="surface_northward_sea_water_velocity_tr">
 <td>
@@ -8811,6 +8931,18 @@ The canonical units associated with each standard name are usually the SI units 
 <tr id="volume_fraction_of_water_in_soil_tr">
 <td>
 <a name="volume_fraction_of_water_in_soil"></a><img id="volume_fraction_of_water_in_soil_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('volume_fraction_of_water_in_soil')">volume_fraction_of_water_in_soil</a></code><div id="volume_fraction_of_water_in_soil_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. "Volume fraction" is used in the construction volume_fraction_of_X_in_Y, where X is a material constituent of Y.</div>
+</td>
+<td>1</td>
+<td>
+                         
+                    </td>
+<td>
+                         
+                    </td>
+</tr>
+<tr id="volume_fraction_of_water_in_soil_at_critical_point_tr">
+<td>
+<a name="volume_fraction_of_water_in_soil_at_critical_point"></a><img id="volume_fraction_of_water_in_soil_at_critical_point_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('volume_fraction_of_water_in_soil_at_critical_point')">volume_fraction_of_water_in_soil_at_critical_point</a></code><div id="volume_fraction_of_water_in_soil_at_critical_point_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Water" means water in all phases. "Volume fraction" is used in the construction volume_fraction_of_X_in_Y, where X is a material constituent of Y.  When soil moisture equals or exceeds the critical point evapotranspiration takes place at the potential rate and is controlled by the ambient meteorological conditions (temperature, wind, relative humidity).  Evapotranspiration is the sum of evaporation and plant transpiration.  Potential evapotranspiration is the rate at which evapotranspiration would occur under ambient conditions from a uniformly vegetated area when the water supply is not limiting.</div>
 </td>
 <td>1</td>
 <td>
