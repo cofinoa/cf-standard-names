@@ -215,8 +215,8 @@
         </script></div>
 </head>
 <body>
-<b>Version 28,
-          <newdate>07 January 2015</newdate></b><br><br>
+<b>Version 29,
+          <newdate>08 July 2015</newdate></b><br><br>
 Refer to the <span class="link-external"><a href="http://cfconventions.org/Data/cf-standard-names/docs/guidelines.html">Guidelines for Construction of CF Standard Names</a></span> for information on how the names are constructed and interpreted, and how new names could be derived.
           <br><br><b>A note about units</b><br>
 The canonical units associated with each standard name are usually the SI units for the quantity. <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#standard-name">Section 3.3 of the CF conventions</a></span> states: "Unless it is dimensionless, a variable with a standard_name attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier ... or by the cell_methods attribute." Furthermore, <span class="link-external"><a href="http://cfconventions.org/cf-conventions/cf-conventions.html#_overview"> Section 1.3 of the CF conventions</a></span> states: "The values of the units attributes are character strings that are recognized by UNIDATA's Udunits package [UDUNITS], (with exceptions allowed as discussed in Section 3.1, “Units”)." For example, a variable with the standard name of "air_temperature" may have a units attribute of "degree_Celsius" because Celsius can be converted to Kelvin by Udunits. For the full range of supported units, refer to the <a href="https://www.unidata.ucar.edu/software/udunits/udunits-current/doc/udunits/udunits2.html#Database"> Udunits documentation</a>. Refer to the <a href="http://cfconventions.org/cf-conventions/cf-conventions.html"> CF conventions</a> for full details of the units attribute.<br><br><div style="border: 1px solid rgb(153, 153, 153); background-color: rgb(204, 204, 204); padding-top: 10px; padding-left: 10px; padding-bottom: 10px; margin-bottom: 10px;">
@@ -532,6 +532,14 @@ The canonical units associated with each standard name are usually the SI units 
 <td></td>
 <td></td>
 </tr>
+<tr id="apparent_oxygen_utilization_tr">
+<td>
+<a name="apparent_oxygen_utilization"></a><img id="apparent_oxygen_utilization_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('apparent_oxygen_utilization')">apparent_oxygen_utilization</a></code><div id="apparent_oxygen_utilization_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Apparent Oxygen Utilization (AOU) is the difference between measured dissolved oxygen concentration in water, and the equilibrium saturation concentration of dissolved oxygen in water with the same physical and chemical properties. Reference: Broecker, W. S. and T. H. Peng (1982), Tracers in the Sea, Lamont-Doherty Earth Observatory, Palisades, N. Y.</div>
+</td>
+<td>mol kg-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="area_fraction_tr">
 <td>
 <a name="area_fraction"></a><img id="area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_fraction')">area_fraction</a></code><div id="area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Area fraction" means the fraction of horizontal area. To specify which area is quantified by a variable of "area_fraction", provide a coordinate variable or scalar coordinate variable of "area_type". Alternatively, if one is defined, use a more specific standard name of "X_area_fraction" for the fraction of horizontal area occupied by X.</div>
@@ -548,6 +556,30 @@ The canonical units associated with each standard name are usually the SI units 
 <td>psbg</td>
 <td></td>
 </tr>
+<tr id="area_fraction_of_day_defined_by_solar_zenith_angle_tr">
+<td>
+<a name="area_fraction_of_day_defined_by_solar_zenith_angle"></a><img id="area_fraction_of_day_defined_by_solar_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_fraction_of_day_defined_by_solar_zenith_angle')">area_fraction_of_day_defined_by_solar_zenith_angle</a></code><div id="area_fraction_of_day_defined_by_solar_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the day extent should be specified.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="area_fraction_of_night_defined_by_solar_zenith_angle_tr">
+<td>
+<a name="area_fraction_of_night_defined_by_solar_zenith_angle"></a><img id="area_fraction_of_night_defined_by_solar_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_fraction_of_night_defined_by_solar_zenith_angle')">area_fraction_of_night_defined_by_solar_zenith_angle</a></code><div id="area_fraction_of_night_defined_by_solar_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the night extent should be specified.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="area_fraction_of_twilight_defined_by_solar_zenith_angle_tr">
+<td>
+<a name="area_fraction_of_twilight_defined_by_solar_zenith_angle"></a><img id="area_fraction_of_twilight_defined_by_solar_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_fraction_of_twilight_defined_by_solar_zenith_angle')">area_fraction_of_twilight_defined_by_solar_zenith_angle</a></code><div id="area_fraction_of_twilight_defined_by_solar_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the twilight extent should be specified.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="area_type_tr">
 <td>
 <a name="area_type"></a><img id="area_type_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('area_type')">area_type</a></code><div style="padding-left: 16px;">
@@ -556,7 +588,7 @@ The canonical units associated with each standard name are usually the SI units 
 <i>alias:</i> surface_cover</div>
 <div id="area_type_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of area_type contains strings which indicate the nature of the surface e.g. land, sea, sea_ice. These strings are standardised.  Values must be taken from the <a href="http://cfconventions.org/Data/area-type-table/current/build/area-type-table.html">area_type table</a>.</div>
 </td>
-<td>1</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -2693,7 +2725,7 @@ The canonical units associated with each standard name are usually the SI units 
 </tr>
 <tr id="atmosphere_optical_thickness_due_to_cloud_tr">
 <td>
-<a name="atmosphere_optical_thickness_due_to_cloud"></a><img id="atmosphere_optical_thickness_due_to_cloud_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_optical_thickness_due_to_cloud')">atmosphere_optical_thickness_due_to_cloud</a></code><div id="atmosphere_optical_thickness_due_to_cloud_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path.  A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. The atmosphere optical thickness applies to radiation passing through the entire atmosphere.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</div>
+<a name="atmosphere_optical_thickness_due_to_cloud"></a><img id="atmosphere_optical_thickness_due_to_cloud_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('atmosphere_optical_thickness_due_to_cloud')">atmosphere_optical_thickness_due_to_cloud</a></code><div id="atmosphere_optical_thickness_due_to_cloud_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. The atmosphere optical thickness applies to radiation passing through the entire atmosphere. "Cloud" means the component of extinction owing to the presence of liquid or ice water particles. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</div>
 </td>
 <td>1</td>
 <td></td>
@@ -2884,6 +2916,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="automated_tropical_cyclone_forecasting_system_storm_identifier_tr">
+<td>
+<a name="automated_tropical_cyclone_forecasting_system_storm_identifier"></a><img id="automated_tropical_cyclone_forecasting_system_storm_identifier_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('automated_tropical_cyclone_forecasting_system_storm_identifier')">automated_tropical_cyclone_forecasting_system_storm_identifier</a></code><div id="automated_tropical_cyclone_forecasting_system_storm_identifier_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The Automated Tropical Cyclone Forecasting System (ATCF) storm identifier is an 8 character string which identifies a tropical cyclone. The storm identifier has the form BBCCYYYY, where BB is the ocean basin, specifically: AL - North Atlantic basin, north of the Equator; SL - South Atlantic basin, south of the Equator; EP - North East Pacific basin, eastward of 140 degrees west longitude; CP - North Central Pacific basin, between the dateline and 140 degrees west longitude; WP -North West Pacific basin, westward of the dateline; IO - North Indian Ocean basin, north of the Equator between 40 and 100 degrees east longitude; SH - South Pacific Ocean basin and South Indian Ocean basin. CC is the cyclone number. Numbers 01 through 49 are reserved for tropical and subtropical cyclones. A cyclone number is assigned to each tropical or subtropical cyclone in each basin as it develops. Numbers are assigned in chronological order. Numbers 50 through 79 are reserved for internal use by operational forecast centers. Numbers 80 through 89 are reserved for training, exercises and testing. Numbers 90 through 99 are reserved for tropical disturbances having the potential to become tropical or subtropical cyclones. The 90's are assigned sequentially and reused throughout the calendar year. YYYY is the four-digit year. This is calendar year for the northern hemisphere. For the southern hemisphere, the year begins July 1, with calendar year plus one. Reference: Miller, R.J., Schrader, A.J., Sampson, C.R., &amp; Tsui, T.L. (1990), The Automated Tropical Cyclone Forecasting System (ATCF), American Meteorological Society Computer Techniques, 5, 653–660.</div>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr id="backscattering_ratio_tr">
 <td>
 <a name="backscattering_ratio"></a><img id="backscattering_ratio_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('backscattering_ratio')">backscattering_ratio</a></code><div id="backscattering_ratio_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Scattering of radiation is its deflection from its incident path without loss of energy.  Backwards scattering refers to the sum of scattering into all backward angles i.e. scattering_angle exceeding pi/2 radians. A scattering_angle should not be specified with this quantity.  "Backscattering ratio" is the ratio of the  quantity with standard name volume_attenuated_backwards_scattering_function_in_air to the quantity with standard name volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud.</div>
@@ -3049,6 +3089,14 @@ totals are summed to obtain the index.</div>
 <tr id="brightness_temperature_anomaly_tr">
 <td>
 <a name="brightness_temperature_anomaly"></a><img id="brightness_temperature_anomaly_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('brightness_temperature_anomaly')">brightness_temperature_anomaly</a></code><div id="brightness_temperature_anomaly_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The brightness temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area. "anomaly" means difference from climatology.</div>
+</td>
+<td>K</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="brightness_temperature_at_cloud_top_tr">
+<td>
+<a name="brightness_temperature_at_cloud_top"></a><img id="brightness_temperature_at_cloud_top_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('brightness_temperature_at_cloud_top')">brightness_temperature_at_cloud_top</a></code><div id="brightness_temperature_at_cloud_top_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">cloud_top refers to the top of the highest cloud. brightness_temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area. A coordinate variable of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</div>
 </td>
 <td>K</td>
 <td></td>
@@ -3244,9 +3292,9 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="change_over_time_in_sea_water_practical_salinity_tr">
 <td>
-<a name="change_over_time_in_sea_water_practical_salinity"></a><img id="change_over_time_in_sea_water_practical_salinity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('change_over_time_in_sea_water_practical_salinity')">change_over_time_in_sea_water_practical_salinity</a></code><div id="change_over_time_in_sea_water_practical_salinity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"change_over_time_in_X" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. Practical Salinity, S_P, is defined on the Practical Salinity Scale of 1978 (PSS-78) and is calculated from the electrical conductivity of sea water (as well as temperature and pressure).  Officially S_P is dimensionless so that, while convenient, and while it is common practice, it is not officially sanctioned to say S_P = 35 psu. Often authors use PSS-78, as in S_P = 35 PSS-78. If salinity was measured using remote sensing techniques and not conductivity, then it is recommended that additional metadata (calibration/validation information) be described in the variable comment attribute. This name should be used to describe salinity observations made from 1978 onwards (Practical Salinity is the salinity quantity stored by national data centres for post-1978 observations). The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale.  There are also standard names for the precisely defined salinity quantities sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Salinity quantities that do not match any of the precise definitions should be given the more general standard name of sea_water_salinity.  Reference: www.teos-10.org; Lewis, 1980 doi: 10.1109/JOE.1980.1145448</div>
+<a name="change_over_time_in_sea_water_practical_salinity"></a><img id="change_over_time_in_sea_water_practical_salinity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('change_over_time_in_sea_water_practical_salinity')">change_over_time_in_sea_water_practical_salinity</a></code><div id="change_over_time_in_sea_water_practical_salinity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"change_over_time_in_X" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*), sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C), used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions shoul d be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</div>
 </td>
-<td>1e-3</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -3290,6 +3338,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="clear_sky_area_fraction_tr">
+<td>
+<a name="clear_sky_area_fraction"></a><img id="clear_sky_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('clear_sky_area_fraction')">clear_sky_area_fraction</a></code><div id="clear_sky_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. The clear_sky area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="cloud_albedo_tr">
 <td>
 <a name="cloud_albedo"></a><img id="cloud_albedo_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_albedo')">cloud_albedo</a></code><div id="cloud_albedo_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The albedo of cloud.</div>
@@ -3319,6 +3375,14 @@ totals are summed to obtain the index.</div>
 <a name="cloud_base_altitude"></a><img id="cloud_base_altitude_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_base_altitude')">cloud_base_altitude</a></code><div id="cloud_base_altitude_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">cloud_base refers to the base of the lowest cloud. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.</div>
 </td>
 <td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="cloud_binary_mask_tr">
+<td>
+<a name="cloud_binary_mask"></a><img id="cloud_binary_mask_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('cloud_binary_mask')">cloud_binary_mask</a></code><div id="cloud_binary_mask_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">X_binary_mask has 1 where condition X is met, 0 elsewhere. 1 = cloud present, 0 = cloud absent (clear). If no threshold is supplied, the binary mask is 1 if there is any non-zero amount of cloud. if a threshold is supplied, it should be specified by associating a coordinate variable or scalar coordinate variable with the data variable and giving the coordinate variable a standard name of cloud_area_fraction. The values of the coordinate variable are the threshold values for the corresponding subarrays of the data variable.</div>
+</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -3620,6 +3684,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td>47</td>
 </tr>
+<tr id="distance_from_sun_tr">
+<td>
+<a name="distance_from_sun"></a><img id="distance_from_sun_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('distance_from_sun')">distance_from_sun</a></code><div id="distance_from_sun_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The distance from the sun to the point of observation.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection_tr">
+<td>
+<a name="distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection"></a><img id="distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection')">distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection</a></code><div id="distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The great circle distance measured from the tropical cyclone center to the leading edge of displaced convection, which is defined as the closest point that exceeds a threshold brightness temperature at top of atmosphere limit. The threshold applied should be recorded in a coordinate variable having the standard name of toa_brightness_temperature. A coordinate variable with standard name of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="divergence_of_sea_ice_velocity_tr">
 <td>
 <a name="divergence_of_sea_ice_velocity"></a><img id="divergence_of_sea_ice_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('divergence_of_sea_ice_velocity')">divergence_of_sea_ice_velocity</a></code><div id="divergence_of_sea_ice_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"[horizontal_]divergence_of_X" means [horizontal] divergence of a vector X; if X does not have a vertical component then "horizontal" should be omitted. A velocity is a vector quantity. Sea ice velocity is defined as a two-dimensional vector, with no vertical component.</div>
@@ -3852,7 +3932,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_photon_flux_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_photon_flux_in_sea_water"></a><img id="downwelling_photosynthetic_photon_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_flux_in_sea_water')">downwelling_photosynthetic_photon_flux_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="downwelling_photosynthetic_photon_flux_in_sea_water"></a><img id="downwelling_photosynthetic_photon_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_flux_in_sea_water')">downwelling_photosynthetic_photon_flux_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -3860,7 +3940,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_photon_radiance_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_photon_radiance_in_sea_water"></a><img id="downwelling_photosynthetic_photon_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_radiance_in_sea_water')">downwelling_photosynthetic_photon_radiance_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
+<a name="downwelling_photosynthetic_photon_radiance_in_sea_water"></a><img id="downwelling_photosynthetic_photon_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_radiance_in_sea_water')">downwelling_photosynthetic_photon_radiance_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
 </td>
 <td>mol m-2 s-1 sr-1</td>
 <td></td>
@@ -3868,7 +3948,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water"></a><img id="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water')">downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
+<a name="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water"></a><img id="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water')">downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</a></code><div id="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. The direction ("up/downwelling") is specified. Radiation incident on a 4-pi collector has a standard name referring to "omnidirectional spherical irradiance". A photon flux is specified in terms of numbers of photons expressed in moles.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -3876,7 +3956,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_radiance_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_radiance_in_sea_water"></a><img id="downwelling_photosynthetic_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_radiance_in_sea_water')">downwelling_photosynthetic_radiance_in_sea_water</a></code><div id="downwelling_photosynthetic_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</div>
+<a name="downwelling_photosynthetic_radiance_in_sea_water"></a><img id="downwelling_photosynthetic_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_radiance_in_sea_water')">downwelling_photosynthetic_radiance_in_sea_water</a></code><div id="downwelling_photosynthetic_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</div>
 </td>
 <td>W m-2 sr-1</td>
 <td></td>
@@ -3884,7 +3964,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_radiative_flux_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_radiative_flux_in_sea_water"></a><img id="downwelling_photosynthetic_radiative_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_radiative_flux_in_sea_water')">downwelling_photosynthetic_radiative_flux_in_sea_water</a></code><div id="downwelling_photosynthetic_radiative_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="downwelling_photosynthetic_radiative_flux_in_sea_water"></a><img id="downwelling_photosynthetic_radiative_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_radiative_flux_in_sea_water')">downwelling_photosynthetic_radiative_flux_in_sea_water</a></code><div id="downwelling_photosynthetic_radiative_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -3892,7 +3972,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="downwelling_photosynthetic_spherical_irradiance_in_sea_water_tr">
 <td>
-<a name="downwelling_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="downwelling_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_spherical_irradiance_in_sea_water')">downwelling_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="downwelling_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</div>
+<a name="downwelling_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="downwelling_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('downwelling_photosynthetic_spherical_irradiance_in_sea_water')">downwelling_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="downwelling_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -4025,6 +4105,22 @@ totals are summed to obtain the index.</div>
 <a name="duration_of_sunshine"></a><img id="duration_of_sunshine_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('duration_of_sunshine')">duration_of_sunshine</a></code><div id="duration_of_sunshine_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. "Duration" is the length of time for which a condition holds.</div>
 </td>
 <td>s</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="dvorak_tropical_cyclone_current_intensity_number_tr">
+<td>
+<a name="dvorak_tropical_cyclone_current_intensity_number"></a><img id="dvorak_tropical_cyclone_current_intensity_number_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dvorak_tropical_cyclone_current_intensity_number')">dvorak_tropical_cyclone_current_intensity_number</a></code><div id="dvorak_tropical_cyclone_current_intensity_number_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Dvorak current intensity number" indicates the ranking of tropical cyclone strength (ranging from 1.0 to 8.0, increasing with storm intensity). The current intensity (CI) number is derived using the Advanced Dvorak Technique based on satellite observations over time. The CI number maps to a maximum sustained 1-minute wind speed and is derived by applying a series of intensity constraints to previous Dvorak-calculated trends of the same storm. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meteorological Society Weather and Forecasting, 22, 287-298.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="dvorak_tropical_number_tr">
+<td>
+<a name="dvorak_tropical_number"></a><img id="dvorak_tropical_number_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('dvorak_tropical_number')">dvorak_tropical_number</a></code><div id="dvorak_tropical_number_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The Advanced Dvorak Technique (ADT) is used to derive a set of Dvorak Tropical numbers using an objective pattern recognition algorithm to determine the intensity of a tropical cyclone by matching observed brightness temperature patterns, maximum sustained winds and minimum sea level pressure to a set of pre-defined tropical cyclone structures. Dvorak Tropical numbers range from 1.0 to 8.0, increasing with storm intensity. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meterorological Society Weather and Forecasting, 22, 287-298.</div>
+</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -4352,11 +4448,43 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="fire_area_tr">
+<td>
+<a name="fire_area"></a><img id="fire_area_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fire_area')">fire_area</a></code><div id="fire_area_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"X_area" means the horizontal area occupied by X within the grid cell. "Fire area" means the area of detected biomass fire.</div>
+</td>
+<td>m2</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="fire_radiative_power_tr">
+<td>
+<a name="fire_radiative_power"></a><img id="fire_radiative_power_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fire_radiative_power')">fire_radiative_power</a></code><div id="fire_radiative_power_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The product of the irradiance (the power per unit area) of a biomass fire and the corresponding fire area. A data variable containing the area affected by fire should be given the standard name fire_area.</div>
+</td>
+<td>W</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="fire_temperature_tr">
+<td>
+<a name="fire_temperature"></a><img id="fire_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fire_temperature')">fire_temperature</a></code><div id="fire_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The overall temperature of a fire area due to contributions from smoldering and flaming biomass. A data variable containing the area affected by fire should be given the standard name fire_area.</div>
+</td>
+<td>K</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="floating_ice_thickness_tr">
 <td>
 <a name="floating_ice_thickness"></a><img id="floating_ice_thickness_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('floating_ice_thickness')">floating_ice_thickness</a></code><div id="floating_ice_thickness_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Floating ice" means any ice that is floating on water, e.g. on a sea or lake surface.  "Thickness" means the vertical extent of the ice.</div>
 </td>
 <td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="fog_area_fraction_tr">
+<td>
+<a name="fog_area_fraction"></a><img id="fog_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fog_area_fraction')">fog_area_fraction</a></code><div id="fog_area_fraction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Fog means water droplets or minute ice crystals close to the surface which reduce visibility in air to less than 1000m. "X_area_fraction" means the fraction of horizontal area occupied by X.</div>
+</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -4379,6 +4507,14 @@ totals are summed to obtain the index.</div>
 <tr id="fractional_saturation_of_oxygen_in_sea_water_tr">
 <td>
 <a name="fractional_saturation_of_oxygen_in_sea_water"></a><img id="fractional_saturation_of_oxygen_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fractional_saturation_of_oxygen_in_sea_water')">fractional_saturation_of_oxygen_in_sea_water</a></code><div id="fractional_saturation_of_oxygen_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Fractional saturation is the ratio of some measure of concentration to the saturated value of the same quantity.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation_tr">
+<td>
+<a name="fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation"></a><img id="fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation')">fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation</a></code><div id="fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Downwelling radiation is radiation from above. It does not mean "net downward". The quantity with standard name fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation, often called Fraction of Absorbed Photosynthetically Active Radiation (FAPAR), is the fraction of incoming solar radiation in the photosynthetically active radiation spectral region that is absorbed by a vegetation canopy. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of "radiation_wavelength". The surface called "surface" means the lower boundary of the atmosphere. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". "Vegetation" means any plants e.g. trees, shrubs, grass. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>1</td>
 <td></td>
@@ -4441,6 +4577,14 @@ totals are summed to obtain the index.</div>
 <td>m</td>
 <td></td>
 <td>27</td>
+</tr>
+<tr id="geopotential_height_at_cloud_top_tr">
+<td>
+<a name="geopotential_height_at_cloud_top"></a><img id="geopotential_height_at_cloud_top_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('geopotential_height_at_cloud_top')">geopotential_height_at_cloud_top</a></code><div id="geopotential_height_at_cloud_top_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Cloud_top refers to the top of the highest cloud. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name "height", which is relative to the surface.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
 </tr>
 <tr id="geopotential_height_at_volcanic_ash_cloud_top_tr">
 <td>
@@ -5067,6 +5211,14 @@ totals are summed to obtain the index.</div>
 <a name="leaf_carbon_content"></a><img id="leaf_carbon_content_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('leaf_carbon_content')">leaf_carbon_content</a></code><div id="leaf_carbon_content_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Content" indicates a quantity per unit area.</div>
 </td>
 <td>kg m-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="lightning_radiant_energy_tr">
+<td>
+<a name="lightning_radiant_energy"></a><img id="lightning_radiant_energy_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('lightning_radiant_energy')">lightning_radiant_energy</a></code><div id="lightning_radiant_energy_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The standard name "lightning radiant energy" means the energy emitted as electromagnetic radiation due to lightning. A coordinate variable of radiation_wavelength, radiation_frequency, or sensor_band_central_wavelength may be specified to indicate that the lightning_radiant_energy applies at specific wavelengths or frequencies. Bounds of the time and spatial coordinates may be specified to indicate the time interval and spatial extent over which the energy is emitted.</div>
+</td>
+<td>J</td>
 <td></td>
 <td></td>
 </tr>
@@ -10525,6 +10677,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="number_of_observations_tr">
+<td>
+<a name="number_of_observations"></a><img id="number_of_observations_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('number_of_observations')">number_of_observations</a></code><div id="number_of_observations_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of number_of_observations contains the number of discrete observations or measurements from which the values of  another data variable have been derived. The linkage between the data variable and the variable with a standard_name of number_of_observations is achieved using the ancillary_variables attribute.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="ocean_barotropic_mass_streamfunction_tr">
 <td>
 <a name="ocean_barotropic_mass_streamfunction"></a><img id="ocean_barotropic_mass_streamfunction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('ocean_barotropic_mass_streamfunction')">ocean_barotropic_mass_streamfunction</a></code><div id="ocean_barotropic_mass_streamfunction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The barotropic stream function with the dimensions of volume transport has the standard name ocean_barotropic_streamfunction.</div>
@@ -11053,7 +11213,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water_tr">
 <td>
-<a name="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('omnidirectional_photosynthetic_spherical_irradiance_in_sea_water')">omnidirectional_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Omnidirectional spherical irradiance is the radiation incident on unit area of a spherical (or "4-pi") collector. It is sometimes called "scalar irradiance". Radiation incident on a 2-pi collector has standard names of "spherical irradiance" which specify up/downwelling.</div>
+<a name="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('omnidirectional_photosynthetic_spherical_irradiance_in_sea_water')">omnidirectional_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Omnidirectional spherical irradiance is the radiation incident on unit area of a spherical (or "4-pi") collector. It is sometimes called "scalar irradiance". Radiation incident on a 2-pi collector has standard names of "spherical irradiance" which specify up/downwelling.</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -11577,6 +11737,30 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="radius_of_tropical_cyclone_central_dense_overcast_region_tr">
+<td>
+<a name="radius_of_tropical_cyclone_central_dense_overcast_region"></a><img id="radius_of_tropical_cyclone_central_dense_overcast_region_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('radius_of_tropical_cyclone_central_dense_overcast_region')">radius_of_tropical_cyclone_central_dense_overcast_region</a></code><div id="radius_of_tropical_cyclone_central_dense_overcast_region_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The average radius of a central region of clouds in tropical cyclones lacking well-defined eye features, which is computed by averaging the great circle distance in four cardinal directions. The radius in each direction is measured from the estimated storm center position to a warm point that exceeds a threshold brightness temperature at top of atmosphere limit. The threshold applied should be recorded in a coordinate variable having the standard_name of toa_brightness_temperature. A coordinate variable of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="radius_of_tropical_cyclone_eye_tr">
+<td>
+<a name="radius_of_tropical_cyclone_eye"></a><img id="radius_of_tropical_cyclone_eye_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('radius_of_tropical_cyclone_eye')">radius_of_tropical_cyclone_eye</a></code><div id="radius_of_tropical_cyclone_eye_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The radius of a tropical cyclone eye is defined to be the great circle distance measured from the cyclone center to the eye wall.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="radius_of_tropical_cyclone_maximum_sustained_wind_speed_tr">
+<td>
+<a name="radius_of_tropical_cyclone_maximum_sustained_wind_speed"></a><img id="radius_of_tropical_cyclone_maximum_sustained_wind_speed_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('radius_of_tropical_cyclone_maximum_sustained_wind_speed')">radius_of_tropical_cyclone_maximum_sustained_wind_speed</a></code><div id="radius_of_tropical_cyclone_maximum_sustained_wind_speed_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The great circle distance measured from the tropical cyclone center to the region of sustained 1-minute duration maximum wind speed, as defined by the standard name, tropical_cyclone_maximum_sustained_wind_speed.</div>
+</td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="rainfall_amount_tr">
 <td>
 <a name="rainfall_amount"></a><img id="rainfall_amount_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('rainfall_amount')">rainfall_amount</a></code><div id="rainfall_amount_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"Amount" means mass per unit area.</div>
@@ -11647,7 +11831,7 @@ totals are summed to obtain the index.</div>
 <td>
 <a name="region"></a><img id="region_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('region')">region</a></code><div id="region_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list.</div>
 </td>
-<td>string</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -11727,7 +11911,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="runoff_flux_tr">
 <td>
-<a name="runoff_flux"></a><img id="runoff_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('runoff_flux')">runoff_flux</a></code><div id="runoff_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</div>
+<a name="runoff_flux"></a><img id="runoff_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('runoff_flux')">runoff_flux</a></code><div id="runoff_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>kg m-2 s-1</td>
 <td>mrro</td>
@@ -11746,6 +11930,22 @@ totals are summed to obtain the index.</div>
 <a name="scattering_angle"></a><img id="scattering_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('scattering_angle')">scattering_angle</a></code><div id="scattering_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The scattering angle is that between the direction of the beam of incident radiation and the direction into which it is scattered.</div>
 </td>
 <td>rad</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="scene_type_of_dvorak_tropical_cyclone_cloud_region_tr">
+<td>
+<a name="scene_type_of_dvorak_tropical_cyclone_cloud_region"></a><img id="scene_type_of_dvorak_tropical_cyclone_cloud_region_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('scene_type_of_dvorak_tropical_cyclone_cloud_region')">scene_type_of_dvorak_tropical_cyclone_cloud_region</a></code><div id="scene_type_of_dvorak_tropical_cyclone_cloud_region_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of scene_type_of_dvorak_tropical_cyclone_cloud_region contains integers which can be translated to strings using flag_values and flag_meanings attributes. It indicates the Advanced Dvorak Technique tropical cyclone cloud region scene type chosen from the following list: uniform_central_dense_overcast; embedded_center; irregular_central_dense_overcast; curved_band; shear. Alternatively, the data variable may contain strings chosen from the same standardised list to indicate the scene type. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="scene_type_of_dvorak_tropical_cyclone_eye_region_tr">
+<td>
+<a name="scene_type_of_dvorak_tropical_cyclone_eye_region"></a><img id="scene_type_of_dvorak_tropical_cyclone_eye_region_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('scene_type_of_dvorak_tropical_cyclone_eye_region')">scene_type_of_dvorak_tropical_cyclone_eye_region</a></code><div id="scene_type_of_dvorak_tropical_cyclone_eye_region_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of scene_type_of_dvorak_tropical_cyclone_eye_region contains integers which can be translated to strings using flag_values and flag_meanings attributes. It indicates the Advanced Dvorak Technique tropical cyclone eye region scene type chosen from the following list: clear_ragged_or_obscured_eye; pinhole_eye; large_eye;  no_eye.  Alternatively, the data variable may contain strings chosen from the same standardised list to indicate the scene type. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</div>
+</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -12247,6 +12447,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td>100</td>
 </tr>
+<tr id="sea_surface_wave_stokes_drift_x_velocity_tr">
+<td>
+<a name="sea_surface_wave_stokes_drift_x_velocity"></a><img id="sea_surface_wave_stokes_drift_x_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_stokes_drift_x_velocity')">sea_surface_wave_stokes_drift_x_velocity</a></code><div id="sea_surface_wave_stokes_drift_x_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="sea_surface_wave_stokes_drift_y_velocity_tr">
+<td>
+<a name="sea_surface_wave_stokes_drift_y_velocity"></a><img id="sea_surface_wave_stokes_drift_y_velocity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_stokes_drift_y_velocity')">sea_surface_wave_stokes_drift_y_velocity</a></code><div id="sea_surface_wave_stokes_drift_y_velocity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A velocity is a vector quantity. "y" indicates a vector component along the grid x-axis, positive with increasing y. The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.</div>
+</td>
+<td>m s-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="sea_surface_wave_to_direction_tr">
 <td>
 <a name="sea_surface_wave_to_direction"></a><img id="sea_surface_wave_to_direction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_surface_wave_to_direction')">sea_surface_wave_to_direction</a></code><div id="sea_surface_wave_to_direction_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north. </div>
@@ -12449,9 +12665,10 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="sea_water_practical_salinity_tr">
 <td>
-<a name="sea_water_practical_salinity"></a><img id="sea_water_practical_salinity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_water_practical_salinity')">sea_water_practical_salinity</a></code><div id="sea_water_practical_salinity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Practical Salinity, S_P, is defined on the Practical Salinity Scale of 1978 (PSS-78) and is calculated from the electrical conductivity of sea water (as well as temperature and pressure).  Officially S_P is dimensionless so that, while convenient, and while it is common practice, it is not officially sanctioned to say S_P = 35 psu. Often authors use PSS-78, as in S_P = 35 PSS-78. If salinity was measured using remote sensing techniques and not conductivity, then it is recommended that additional metadata (calibration/validation information) be described in the variable comment attribute. This name should be used to describe salinity observations made from 1978 onwards (Practical Salinity is the salinity quantity stored by national data centres for post-1978 observations). The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale.  There are also standard names for the precisely defined salinity quantities sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Salinity quantities that do not match any of the precise definitions should be given the more general standard name of sea_water_salinity.  Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448</div>
+<a name="sea_water_practical_salinity"></a><img id="sea_water_practical_salinity_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sea_water_practical_salinity')">sea_water_practical_salinity</a></code><div id="sea_water_practical_salinity_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*),  sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C),  used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions shoul
+ d be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</div>
 </td>
-<td>1e-3</td>
+<td>1</td>
 <td></td>
 <td></td>
 </tr>
@@ -12888,6 +13105,22 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="solar_irradiance_tr">
+<td>
+<a name="solar_irradiance"></a><img id="solar_irradiance_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('solar_irradiance')">solar_irradiance</a></code><div id="solar_irradiance_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name solar_irradiance, often called Total Solar Irradiance (TSI), is the radiation from the sun integrated over the whole electromagnetic spectrum and over the entire solar disk. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun, but a coordinate or scalar coordinate variable of distance_from_sun can be used to specify a value other than the default. "Irradiance" means the power per unit area (called radiative flux in other standard names), the area being normal to the direction of flow of the radiant energy.</div>
+</td>
+<td>W m-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="solar_irradiance_per_unit_wavelength_tr">
+<td>
+<a name="solar_irradiance_per_unit_wavelength"></a><img id="solar_irradiance_per_unit_wavelength_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('solar_irradiance_per_unit_wavelength')">solar_irradiance_per_unit_wavelength</a></code><div id="solar_irradiance_per_unit_wavelength_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The quantity with standard name solar_irradiance_per_unit_wavelength, often called Solar Spectral Irradiance (SSI), is the radiation from the sun as a function of wavelength integrated over the entire solar disk. A coordinate variable for radiation wavelength should be given the standard name radiation_wavelength. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun, but a coordinate or scalar coordinate variable of distance_from_sun can be used to specify a value other than the default. "Irradiance" means the power per unit area (called radiative flux in other standard names), the area being normal to the direction of flow of the radiant energy.</div>
+</td>
+<td>W m-2 m-1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="solar_zenith_angle_tr">
 <td>
 <a name="solar_zenith_angle"></a><img id="solar_zenith_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('solar_zenith_angle')">solar_zenith_angle</a></code><div id="solar_zenith_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">Solar zenith angle is the the angle between the line of sight to the sun and the local vertical.</div>
@@ -13156,6 +13389,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="status_flag_tr">
+<td>
+<a name="status_flag"></a><img id="status_flag_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('status_flag')">status_flag</a></code><div id="status_flag_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">A variable with the standard name of status_flag contains an indication of quality or other status of another data variable. The linkage between the data variable and the variable with the standard_name of status_flag is achieved using the ancillary_variables attribute.</div>
+</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="stratiform_cloud_area_fraction_tr">
 <td>
 <a name="stratiform_cloud_area_fraction"></a><img id="stratiform_cloud_area_fraction_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('stratiform_cloud_area_fraction')">stratiform_cloud_area_fraction</a></code><div style="padding-left: 16px;">
@@ -13294,6 +13535,14 @@ totals are summed to obtain the index.</div>
 <td></td>
 <td></td>
 </tr>
+<tr id="sunglint_angle_tr">
+<td>
+<a name="sunglint_angle"></a><img id="sunglint_angle_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sunglint_angle')">sunglint_angle</a></code><div id="sunglint_angle_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The angle between an incident beam of solar radiation and the outgoing beam specularly reflected at a sea surface.</div>
+</td>
+<td>rad</td>
+<td></td>
+<td></td>
+</tr>
 <tr id="sunlit_binary_mask_tr">
 <td>
 <a name="sunlit_binary_mask"></a><img id="sunlit_binary_mask_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('sunlit_binary_mask')">sunlit_binary_mask</a></code><div id="sunlit_binary_mask_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">X_binary_mask has 1 where condition X is met, 0 elsewhere.</div>
@@ -13384,7 +13633,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_tr">
 <td>
-<a name="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air"></a><img id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air')">surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air</a></code><div id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air"></a><img id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air')">surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air</a></code><div id="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. "Diffuse" radiation is radiation that has been scattered by particles in the atmosphere such as cloud droplets and aerosols. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -13610,7 +13859,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_photon_flux_in_air_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_photon_flux_in_air"></a><img id="surface_downwelling_photosynthetic_photon_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_flux_in_air')">surface_downwelling_photosynthetic_photon_flux_in_air</a></code><div id="surface_downwelling_photosynthetic_photon_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_downwelling_photosynthetic_photon_flux_in_air"></a><img id="surface_downwelling_photosynthetic_photon_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_flux_in_air')">surface_downwelling_photosynthetic_photon_flux_in_air</a></code><div id="surface_downwelling_photosynthetic_photon_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -13618,7 +13867,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_photon_flux_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_photon_flux_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_flux_in_sea_water')">surface_downwelling_photosynthetic_photon_flux_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_downwelling_photosynthetic_photon_flux_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_flux_in_sea_water')">surface_downwelling_photosynthetic_photon_flux_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -13626,7 +13875,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_photon_radiance_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_photon_radiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_radiance_in_sea_water')">surface_downwelling_photosynthetic_photon_radiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
+<a name="surface_downwelling_photosynthetic_photon_radiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_radiance_in_sea_water')">surface_downwelling_photosynthetic_photon_radiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
 </td>
 <td>mol m-2 s-1 sr-1</td>
 <td></td>
@@ -13634,7 +13883,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water')">surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. A photon flux is specified in terms of numbers of photons expressed in moles.</div>
+<a name="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water')">surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. The direction ("up/downwelling") is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance". A photon flux is specified in terms of numbers of photons expressed in moles.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -13642,7 +13891,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_radiance_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_radiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiance_in_sea_water')">surface_downwelling_photosynthetic_radiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</div>
+<a name="surface_downwelling_photosynthetic_radiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_radiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiance_in_sea_water')">surface_downwelling_photosynthetic_radiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_radiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2 sr-1</td>
 <td></td>
@@ -13650,7 +13899,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_radiative_flux_in_air_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_radiative_flux_in_air"></a><img id="surface_downwelling_photosynthetic_radiative_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiative_flux_in_air')">surface_downwelling_photosynthetic_radiative_flux_in_air</a></code><div id="surface_downwelling_photosynthetic_radiative_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_downwelling_photosynthetic_radiative_flux_in_air"></a><img id="surface_downwelling_photosynthetic_radiative_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiative_flux_in_air')">surface_downwelling_photosynthetic_radiative_flux_in_air</a></code><div id="surface_downwelling_photosynthetic_radiative_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -13658,7 +13907,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_radiative_flux_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_radiative_flux_in_sea_water"></a><img id="surface_downwelling_photosynthetic_radiative_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiative_flux_in_sea_water')">surface_downwelling_photosynthetic_radiative_flux_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_radiative_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_downwelling_photosynthetic_radiative_flux_in_sea_water"></a><img id="surface_downwelling_photosynthetic_radiative_flux_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_radiative_flux_in_sea_water')">surface_downwelling_photosynthetic_radiative_flux_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_radiative_flux_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -13666,7 +13915,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water_tr">
 <td>
-<a name="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water')">surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</div>
+<a name="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water"></a><img id="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water')">surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water</a></code><div id="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</div>
 </td>
 <td>W m-2</td>
 <td></td>
@@ -14366,7 +14615,7 @@ totals are summed to obtain the index.</div>
 </tr>
 <tr id="surface_upwelling_photosynthetic_photon_flux_in_air_tr">
 <td>
-<a name="surface_upwelling_photosynthetic_photon_flux_in_air"></a><img id="surface_upwelling_photosynthetic_photon_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upwelling_photosynthetic_photon_flux_in_air')">surface_upwelling_photosynthetic_photon_flux_in_air</a></code><div id="surface_upwelling_photosynthetic_photon_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean "net upward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
+<a name="surface_upwelling_photosynthetic_photon_flux_in_air"></a><img id="surface_upwelling_photosynthetic_photon_flux_in_air_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('surface_upwelling_photosynthetic_photon_flux_in_air')">surface_upwelling_photosynthetic_photon_flux_in_air</a></code><div id="surface_upwelling_photosynthetic_photon_flux_in_air_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">The surface called "surface" means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean "net upward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>mol m-2 s-1</td>
 <td></td>
@@ -20744,7 +20993,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
 </tr>
 <tr id="thermodynamic_phase_of_cloud_water_particles_at_cloud_top_tr">
 <td>
-<a name="thermodynamic_phase_of_cloud_water_particles_at_cloud_top"></a><img id="thermodynamic_phase_of_cloud_water_particles_at_cloud_top_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thermodynamic_phase_of_cloud_water_particles_at_cloud_top')">thermodynamic_phase_of_cloud_water_particles_at_cloud_top</a></code><div id="thermodynamic_phase_of_cloud_water_particles_at_cloud_top_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"cloud_top" refers to the top of the  highest cloud. "Water" means water in all phases. A variable with the standard name of thermodynamic_phase_of_cloud_water_particles_at_cloud_top contains integers which can be translated to strings using flag_values and flag_meanings attributes. Alternatively, the data variable may contain strings which indicate the thermodynamic phase. These strings are standardised. Values must be chosen from the following list: liquid; ice; mixed.</div>
+<a name="thermodynamic_phase_of_cloud_water_particles_at_cloud_top"></a><img id="thermodynamic_phase_of_cloud_water_particles_at_cloud_top_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('thermodynamic_phase_of_cloud_water_particles_at_cloud_top')">thermodynamic_phase_of_cloud_water_particles_at_cloud_top</a></code><div id="thermodynamic_phase_of_cloud_water_particles_at_cloud_top_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"cloud_top" refers to the top of the highest cloud. "Water" means water in all phases. A variable with the standard name of thermodynamic_phase_of_cloud_water_particles_at_cloud_top contains integers which can be translated to strings using flag_values and flag_meanings attributes. Alternatively, the data variable may contain strings which indicate the thermodynamic phase. These strings are standardised. Values must be chosen from the following list: liquid; ice; mixed; clear_sky; super_cooled_liquid_water; unknown.</div>
 </td>
 <td>1</td>
 <td></td>
@@ -21123,6 +21372,22 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
 <a name="transpiration_flux"></a><img id="transpiration_flux_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('transpiration_flux')">transpiration_flux</a></code><div id="transpiration_flux_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</div>
 </td>
 <td>kg m-2 s-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="tropical_cyclone_eye_brightness_temperature_tr">
+<td>
+<a name="tropical_cyclone_eye_brightness_temperature"></a><img id="tropical_cyclone_eye_brightness_temperature_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tropical_cyclone_eye_brightness_temperature')">tropical_cyclone_eye_brightness_temperature</a></code><div id="tropical_cyclone_eye_brightness_temperature_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"tropical_cyclone_eye_brightness_temperature" means the warmest  brightness temperature value in the eye region of a tropical cyclone (0 - 24 km from the storm center) derived using the Advanced Dvorak Technique, based on satellite observations. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meterorological Society Weather and Forecasting, 22, 287-298. The brightness temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area.</div>
+</td>
+<td>K</td>
+<td></td>
+<td></td>
+</tr>
+<tr id="tropical_cyclone_maximum_sustained_wind_speed_tr">
+<td>
+<a name="tropical_cyclone_maximum_sustained_wind_speed"></a><img id="tropical_cyclone_maximum_sustained_wind_speed_arrow" src="../build/media/images/arrow_right.gif"><code class="varname"><a href="javascript:void(0)" onclick="toggleHelp('tropical_cyclone_maximum_sustained_wind_speed')">tropical_cyclone_maximum_sustained_wind_speed</a></code><div id="tropical_cyclone_maximum_sustained_wind_speed_help" style="display: none; padding-left: 16px; margin-top: 4px; border-top: 1px dashed #cccccc;">"tropical_cyclone_maximum_sustained_wind_speed" means the maximum sustained wind speed of a tropical cyclone, sustained over a period of one minute at the surface of the earth, derived using the Advanced Dvorak Technique based on satellite observations. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</div>
+</td>
+<td>m s-1</td>
 <td></td>
 <td></td>
 </tr>
