@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # BEGIN
-PREFIX=doc/
+PREFIX=docs/
 mkdir -p ${PREFIX}
 OUTFILE=${PREFIX}index.html
 # create images dir and copy them
@@ -20,23 +20,30 @@ printf '<title>CF Standard Names</title>\n'               >> ${OUTFILE}
 printf '</head>\n<body>\n'                                >> ${OUTFILE}
 printf '<h1>CF Standard Names</h1>\n<dl>\n'               >> ${OUTFILE}
  
+#https://cdn.githubraw.com/cofinoa/cf-standard-names/78/cf_standard_names/build/cf-standard-name-table.html
 test_print_file () {
-  if [ -f "${PREFIX}$FILE" ]; then
-    printf "      <a href="${FILE}">${TEXT}</a> &nbsp;\n" >> ${OUTFILE}
+  if [ -f "${PREFIX}${DIR}/${FILE}" ]; then
+    printf "      <a href="${URL}">${TEXT}</a> &nbsp;\n" >> ${OUTFILE}
   else
-    printf "      ${TEXT} &nbsp;\n"                       >> ${OUTFILE}
+    printf "      ${TEXT} &nbsp;\n"                      >> ${OUTFILE}
   fi
 }
 
 print_all_files () {
-  FILE=${DIR}/cf-standard-name-table.xml
+  FILE=cf-standard-name-table.xml
   TEXT=XML
+  #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/src/${FILE}"
+  URL=${DIR}/${FILE}
   test_print_file
-  FILE=${DIR}/cf-standard-name-table.html
+  FILE=cf-standard-name-table.html
   TEXT=HTML
+  #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
+  URL=${DIR}/${FILE}
   test_print_file
-  FILE=${DIR}/kwic_index_for_cf_standard_names.html
+  FILE=kwic_index_for_cf_standard_names.html
   TEXT=KWIC
+  #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
+  URL=${DIR}/${FILE}
   test_print_file
 }
 
