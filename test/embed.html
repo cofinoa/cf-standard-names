@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CF Standard Name Table</title>
+        <style>
+        .frame {
+            position:fixed; 
+            top:0; 
+            left:0; 
+            bottom:0; 
+            right:0; 
+            width:100%; 
+            height:100%; 
+            border:none; 
+            margin:0; 
+            padding:0;
+        }
+        </style>
+        <script defer>
+          const getBlobURL = (code, type) => {
+              const blob = new Blob([code], { type })
+              return URL.createObjectURL(blob)
+          }
+          function onReceive() {
+            url = getBlobURL(this.responseText, 'text/html')
+            console.log(url)
+            if (window.location.hash) {
+              console.log("   With hash: " + window.location.hash)
+              url = url + window.location.hash
+              console.log("   url+hash: " + url)
+            }
+            const iframe = document.querySelector('#iframe')
+            iframe.src = url
+            console.log(this.responseText);
+            URL.revokeObjectURL(url)
+          }
+          const req = new XMLHttpRequest();
+          req.addEventListener("load", onReceive);
+          req.open("GET", "https://raw.githubusercontent.com/cofinoa/cf-standard-names/83/cf_standard_names/build/cf-standard-name-table.html");
+          req.send();
+          
+        </script>
+    </head>
+    <body>
+        <iframe class="frame" id="iframe"></iframe>
+    </body>
+</html>

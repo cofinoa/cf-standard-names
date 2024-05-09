@@ -32,16 +32,19 @@ test_print_file () {
 print_all_files () {
   FILE=cf-standard-name-table.xml
   TEXT=XML
+  #URL="https://raw.githubusercontent.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/src/${FILE}"
   #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/src/${FILE}"
   URL=${DIR}/${FILE}
   test_print_file
   FILE=cf-standard-name-table.html
   TEXT=HTML
+  #URL="https://raw.githubusercontent.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
   #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
   URL=${DIR}/${FILE}
   test_print_file
   FILE=kwic_index_for_cf_standard_names.html
   TEXT=KWIC
+  #URL="https://raw.githubusercontent.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
   #URL="https://cdn.githubraw.com/cofinoa/cf-standard-names/${TAG}/cf_standard_names/build/${FILE}"
   URL=${DIR}/${FILE}
   test_print_file

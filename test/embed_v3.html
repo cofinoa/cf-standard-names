@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CF Standard Name Table</title>
+        <script defer>
+          function onReceive() {
+            hash = location.hash
+            const parser = new DOMParser();
+            const html = parser.parseFromString(this.responseText, 'text/html');
+            document.body = html.body
+            if(hash !== null){
+              console.log('   with hash:' + hash)
+              id = hash.substring(1)
+              element = document.getElementById(id);
+              if(element !== null){
+                console.log('   scroll to element id: ' + id)
+                element.scrollIntoView();
+              }else{
+                console.log('   not found element id: ' + id)
+              }
+            }
+            console.log(this.responseText);
+          }
+          const req = new XMLHttpRequest();
+          req.addEventListener("load", onReceive);
+          req.open("GET", "https://raw.githubusercontent.com/cofinoa/cf-standard-names/83/cf_standard_names/build/cf-standard-name-table.html");
+          req.send();
+          
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
