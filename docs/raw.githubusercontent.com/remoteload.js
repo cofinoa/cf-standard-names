@@ -1,0 +1,65 @@
+function onReceive() {
+    var data = this.responseText
+    var hash = location.hash
+    /*
+    Adapted from: 
+    https://stackoverflow.com/questions/22945884/domparser-appending-script-tags-to-head-body-but-not-executing/58862506#58862506
+    */
+    // create a DOMParser to parse the HTML content
+    var parser = new DOMParser();
+    var parsedDocument = parser.parseFromString(data, 'text/html');
+    
+    // set the current page's <html> contents to the newly parsed <html> content
+    document.getElementsByTagName('html')[0].innerHTML = parsedDocument.getElementsByTagName('html')[0].innerHTML;
+    
+    // get a list of all <script> tags in the new page
+    var tmpScripts = document.getElementsByTagName('script');
+    if (tmpScripts.length > 0) {
+        // push all of the document's script tags into an array
+        // (to prevent dom manipulation while iterating over dom nodes)
+        var scripts = [];
+        for (var i = 0; i < tmpScripts.length; i++) {
+            scripts.push(tmpScripts[i]);
+        }
+    
+        // iterate over all script tags and create a duplicate tags for each
+        for (var i = 0; i < scripts.length; i++) {
+            var s = document.createElement('script');
+            s.innerHTML = scripts[i].innerHTML;
+    
+            // add the new node to the page
+            scripts[i].parentNode.appendChild(s);
+    
+            // remove the original (non-executing) node from the page
+            scripts[i].parentNode.removeChild(scripts[i]);
+        }
+    }
+    if(hash){
+      console.log('   with hash:' + hash)
+      id = hash.substring(1)
+      element = document.querySelector('a[name="' + id + '"]');
+      if(element !== null){
+        console.log('   scroll to element id: ' + id)
+        element.scrollIntoView();
+      }else{
+        console.log('   not found element id: ' + id)
+      }
+    }
+  }
+  function loadURL(remoteURL){
+    // https://raw.githubusercontent.com/cofinoa/cf-standard-names/83/cf_standard_names/build/cf-standard-name-table.html
+    const req = new XMLHttpRequest();
+    req.addEventListener("load", onReceive);
+    req.open("GET", remoteURL);
+    req.send();
+  }
+  function loadDoc(doc){
+    tableURL = "https://raw.githubusercontent.com/cofinoa/cf-standard-names/" + doc
+    loadURL(tableURL)
+  }
+  
+  function loadTable(version, file){
+    tableDoc = version + '/cf_standard_names/build/' + file
+    loadDoc(tableDoc)
+  }
+  
